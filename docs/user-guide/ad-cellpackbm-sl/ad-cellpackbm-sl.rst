@@ -17,13 +17,15 @@ AD-CELLPACKBM-SL User Guide
 Overview
 --------
 
-.. |download_icon| 
 .. image:: download_icon.png
-    :width: 16px
-    :height: 16px
-    :alt: Download
+    :width: 50px
+    :align: left
 
-|download_icon| `AD-CELLPACKBM-SL QuickStart Guide <quick_start_guide.pdf>`_
+
+
+`AD-CELLPACKBM-SL QuickStart Guide <quick_start_guide.pdf>`_
+
+::
 
 
 The AD-CELLPACKBM-SL is a complete BMS kit consisting of the EVAL-ADBMS6830BMSW 16-channel cell monitoring module, the EVAL-ADBMS2950-BASIC pack monitoring module, EVAL-ADBMS6822 isoSPI adapter, and the SDP-K1 microcontroller board.
@@ -240,13 +242,14 @@ Resources
 Design & Integration Files
 --------------------------
 
-.. |download_icon| image:: download_icon.png
-    :width: 16px
-    :height: 16px
-    :alt: Download
+.. image:: download_icon.png
+    :width: 50px
+    :align: left
 
-|download_icon| `AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
 
+`AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
+
+::
 
 * Schematic
 * PCB Layout

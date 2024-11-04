@@ -86,10 +86,7 @@ MCU Configuration & Setup
 
 .. note:: 
 
-   By default (upon purchase), the AD-CELLPACKBM-SL Kit comes with a MAX32625PICO programmer adapter that is already loaded with the appropriate firmware image.
-
-
-   Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before using it with the AD-CELLPACKBM-SL BMS Kit. If you do not know how to load the image, follow the instructions below.
+   By default (upon purchase), the AD-CELLPACKBM-SL Kit comes with a MAX32625PICO programmer adapter that is already loaded with the appropriate firmware image. Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before using it with the AD-CELLPACKBM-SL BMS Kit. If you do not know how to load the image, follow the instructions below.
 
  
 
@@ -101,11 +98,11 @@ MAX326825PICO Debugger (One-time setup)
 #. Download and install the BMS Browser GUI Broadmarket.
 #. Open the program files folder of the BMS Browser GUI in the host PC and look for the SDP-K1 .bin file.
     ``C:\Analog Devices\BMS_Browser_GUI_Broadmarket-Rel2.0.0\USB_TO_SPI_Firmware``
-#. Plug the micro-USB cable to the MAX32625PICO.
+#. Plug the micro USB cable to the MAX32625PICO.
 #. Press the button on the MAX32625PICO and then plug the other end of the micro-USB cable into the PC. A red LED should blink, then hold steady, and a MAINTENANCE drive should appear on your PC.
 #. Drag and drop the ``SDP_K1_PyBMS_USB_TO_SPI_Bytes_Debug_USB_Port.bin`` file onto the MAINTENANCE drive. The file transfer should be complete in about 30 seconds.
 #. Unplug and replug the device.
-#. After completing this step, a “DAPLINK” drive should appear. You can drag and drop the firmware (.bin files separate from the above) onto it to program the SDP-K1.
+#. After completing this step, a  **DAPLINK** drive should appear. You can drag and drop the firmware (.bin files separate from the above) onto it to program the SDP-K1.
 
 
 
