@@ -25,6 +25,11 @@ This solution is based on high performance BMS devices that are specifically des
 
 The AD-CELLPACKBM-SL can operate either in embedded mode or through a PC-based graphical user interface. Complete with working software and hardware, as well as software examples, this kit makes it easier for customers to prototype and create connected systems and solutions for BMS applications.
 
+.. image:: ad-cellpackbm-sl.jpg
+    :alt: AD-CELLPACKBM-SL Kit
+    :align: center
+    :width: 600px
+
 
 System Setup
 ------------
@@ -61,6 +66,12 @@ The following list of equipment are not provided as part of the kit, but are req
 - Digital power supply (such as the Keysight e3631A 0V to 6V power supply)
 - 2x wall plugs (to plug USB cable from DC2472A to provide power)
 
+
+.. image:: Kit_Contents.png
+     :align: center
+     :width: 600px
+ 
+
 Software
 --------
 The BMS Browser is a PC browser based Graphical User Interface (GUI) tool designed to work in conjunction with the hardware in the AD-CELLPACKBM-SL. MyAnalog.com account will be required to download the BMS Browser GUI from below link:
@@ -73,9 +84,14 @@ When software updates or new versions of the software are available an email not
 MCU Configuration & Setup
 --------------------------
 
-By default (upon purchase), the AD-CELLPACKBM-SL Kit comes with a MAX32625PICO programmer adapter that is already loaded with the appropriate firmware image.
+.. note:: 
 
-Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before using it with the AD-CELLPACKBM-SL BMS Kit. If you do not know how to load the image, follow the instructions below.
+   By default (upon purchase), the AD-CELLPACKBM-SL Kit comes with a MAX32625PICO programmer adapter that is already loaded with the appropriate firmware image.
+
+   Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before using it with the AD-CELLPACKBM-SL BMS Kit. If you do not know how to load the image, follow the instructions below.
+
+ 
+
 
 The MCU should be programmed using the following steps:
 
@@ -90,7 +106,7 @@ MAX326825PICO Debugger (One-time setup)
 #. Unplug and replug the device.
 #. After completing this step, a “DAPLINK” drive should appear. You can drag and drop the firmware (.bin files separate from the above) onto it to program the SDP-K1.
 
-Consult the MSDK User Guide for detailed instructions on updating the MAX32625PICO Debug Adapter Firmware.
+
 
 
 BMS Browser GUI Installation
@@ -98,9 +114,13 @@ BMS Browser GUI Installation
 
 #. Download the BMS Browser GUI in your Host PC.
 #. Double click on ``bms_browser_gui_broadmarket-relX.Y.Z.exe`` to install the GUI.
-#. Accept the license terms and click Next to proceed with the installation. The default installation directory will be in ``C:\Analog Devices\``.
+#. Accept the license terms and click `Next`` to proceed with the installation. The default installation directory will be in ``C:\Analog Devices\``.
+
 
 Launching the BMS Browser GUI
+------------------------------
+
+
 
 #. Open the BMS Browser GUI either by searching for it in the Start Menu or using the shortcut on the Desktop.
 #. Run the application to launch the BMS Browser GUI.
@@ -115,6 +135,11 @@ Battery Cell Monitoring
 -----------------------
 
 **Setup**
+
+.. image:: ADBMS6830_Setup.png
+     :align: center
+     :width: 600 px
+
 
 This setup uses the SDP-K1 as the controller board, but users may also use the AD-APARD32690-SL as MCU and follow the same hardware setup instructions.
 
@@ -144,10 +169,18 @@ Check the EVAL-ADBMS6830BMSW User Guide for procedure on connecting resistors.
 #. Ensure the EVAL-ADBMS6830BMSW board is powered correctly, indicated by the Blue LED on the DC2472A being illuminated.
 #. Verify the connection of the twisted cable between the EVAL-ADBMS6822 and the EVAL-ADBMS6830BMSW.
 #. Check the voltage readings by adjusting the potentiometer (POT1) on the DC2472A to modify the emulated cell voltages. Monitor the voltage channels on the Quick Measure Utility graph. Select which signals to display on the graph under the Plot All Devices column.
+.. image:: browser_plot_all_devices.png
+
 
 
 Battery Pack Monitoring
------------------------
+------------------------
+
+.. image:: pack_monitoring.png
+    :align: center
+    :width: 600 px
+
+
 
 **Setup**
 
@@ -175,6 +208,11 @@ Complete Daisy Chain
 --------------------
 
 **Setup**
+
+.. image:: complete_daisychain.png
+     :align: center
+     :width: 600 px
+
 
 Once familiar with the setup for each of the individual boards the entire signal chain can be verified.
 

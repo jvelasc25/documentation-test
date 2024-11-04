@@ -17,7 +17,8 @@ AD-CELLPACKBM-SL User Guide
 Overview
 --------
 
-.. |download_icon| image:: download_icon.png
+.. |download_icon| 
+.. image:: download_icon.png
     :width: 16px
     :height: 16px
     :alt: Download
@@ -69,7 +70,7 @@ Specifications
 
 Below are the absolute maximum ratings of voltages relative to GND unless noted otherwise.
 
-.. list-table:: Absolute Maximum Ratings
+.. list-table:: 
     :header-rows: 1
     :widths: 20 10 10 10 10
 
@@ -251,6 +252,8 @@ Design & Integration Files
 * PCB Layout
 * Bill of Materials
 * Allegro Project
+
+
 
 Help and Support
 ----------------
