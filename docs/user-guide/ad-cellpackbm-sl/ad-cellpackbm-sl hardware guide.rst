@@ -177,7 +177,7 @@ Check the **EVAL-ADBMS6830BMSW** User Guide for procedure on connecting resistor
 Battery Pack Monitoring
 ------------------------
 
-.. image:: pack monitoring.png
+.. image:: pack_monitoring.png
     :align: center
     :width: 600 px
 
