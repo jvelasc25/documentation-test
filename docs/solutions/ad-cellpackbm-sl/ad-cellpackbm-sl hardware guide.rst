@@ -1,16 +1,4 @@
-.. Wiki Page Migration Trial documentation master file, created by
-   sphinx-quickstart on Tue Oct 15 19:54:57 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-.. toctree::index.rst
-   :maxdepth: 2
-   :caption:
-   
-.. toctree::ad-cellpackbm-sl.rst
-   :maxdepth: 2
-   :caption: 
-
+.. _ad_cellpackbm_sl_hardware_guide.rst:
 
 
 AD-CELLPACKBM-SL Hardware User Guide
@@ -102,7 +90,7 @@ MAX326825PICO Debugger (One-time setup)
 #. Press the button on the MAX32625PICO and then plug the other end of the micro-USB cable into the PC. A red LED should blink, then hold steady, and a MAINTENANCE drive should appear on your PC.
 #. Drag and drop the ``SDP_K1_PyBMS_USB_TO_SPI_Bytes_Debug_USB_Port.bin`` file onto the MAINTENANCE drive. The file transfer should be complete in about 30 seconds.
 #. Unplug and replug the device.
-#. After completing this step, a  **DAPLINK** drive should appear. You can drag and drop the firmware (.bin files separate from the above) onto it to program the SDP-K1.
+#. After completing this step, a **DAPLINK** drive should appear. You can drag and drop the firmware (.bin files separate from the above) onto it to program the SDP-K1.
 
 
 
@@ -243,5 +231,46 @@ In the configured Daisy Chain, the EVAL-ADBMS2950-BASIC is designated as Device 
 
 Simply choose the desired Plot number from the dropdown menu under each device to display the relevant data.
 
+.. image:: daisychain_plot3.png
+
 
 Plot settings can be saved to the PC to be reloaded for future session to save time.
+
+---------
+
+
+Resources
+---------
+
+* `AD-CELLPACKBM-SL Product Page <https://www.analog.com/AD-CELLPACKBM-SL>`_
+* `EVAL-ADBMS6830BMSW Product Page <https://www.analog.com/EVAL-ADBMS2950-BASIC>`_
+* `EVAL-ADBMS6822 Product Page <https://www.analog.com/EVAL-ADBMS6822>`_
+* `SDP-K1 Product Page <https://www.analog.com/SDP-K1>`_
+
+
+
+Design & Integration Files
+--------------------------
+
+.. image:: download_icon.png
+    :width: 50px
+    :align: left
+
+
+`AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
+
+::
+
+* Schematic
+* PCB Layout
+* Bill of Materials
+* Allegro Project
+
+
+
+Help and Support
+----------------
+
+For questions and more information, please visit the Analog Devices Engineer Zone.
+
+`EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
