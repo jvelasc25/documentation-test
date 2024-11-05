@@ -10,4 +10,4 @@ Solutions
    :maxdepth: 1
    :glob:
 
-   */index
+   ad-cellpackbm-sl/index
