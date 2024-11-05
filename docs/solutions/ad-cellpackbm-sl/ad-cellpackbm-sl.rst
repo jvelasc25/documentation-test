@@ -8,11 +8,7 @@ AD-CELLPACKBM-SL User Guide
 Overview
 --------
 
-.. image:: download_icon.png
-    :width: 50px
-    :align: left
-
-
+.. ADMONITION:: Download
 
 `AD-CELLPACKBM-SL QuickStart Guide <quick_start_guide.pdf>`_
 
@@ -233,10 +229,7 @@ Resources
 Design & Integration Files
 --------------------------
 
-.. image:: download_icon.png
-    :width: 50px
-    :align: left
-
+.. ADMONITION:: Download
 
 `AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
 
