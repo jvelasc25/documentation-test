@@ -7,5 +7,6 @@ AD-CELLPACKBM-SL User Guide
 
     ad-cellpackbm-sl
     ad-cellpackbm-sl_hardware_guide
+    software_guide
 
 

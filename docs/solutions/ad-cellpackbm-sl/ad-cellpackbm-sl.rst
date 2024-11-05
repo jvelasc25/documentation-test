@@ -6,13 +6,12 @@ AD-CELLPACKBM-SL User Guide
 ===========================
 
 Overview
---------
+---------
 
 .. ADMONITION:: Download
 
 `AD-CELLPACKBM-SL QuickStart Guide <quick_start_guide.pdf>`_
 
-::
 
 
 The AD-CELLPACKBM-SL is a complete BMS kit consisting of the EVAL-ADBMS6830BMSW 16-channel cell monitoring module, the EVAL-ADBMS2950-BASIC pack monitoring module, EVAL-ADBMS6822 isoSPI adapter, and the SDP-K1 microcontroller board.
@@ -61,104 +60,105 @@ Below are the absolute maximum ratings of voltages relative to GND unless noted 
 
 .. list-table:: 
     :header-rows: 1
-    :widths: 20 10 10 10 10
+    :widths: 25 5 5 5 5
 
-    * - Parameter
-      - Minimum
-      - Typical
-      - Maximum
-      - Unit
-    * - System Vin+ Supply Voltage
+
+    * - **Parameter**
+      - **Minimum**
+      - **Typical**
+      - **Maximum**
+      - **Unit**
+    * - **System Vin+ Supply Voltage**
       - 6
       - 12
       - 60
       - V
-    * - Cell Monitoring Main Supply Voltage
+    * - **Cell Monitoring Main Supply Voltage**
       - 11
       - 
       - 85
       - V
-    * - VREG Supply Voltage
+    * - **VREG Supply Voltage**
       - 4.5
       - 5
       - 5.5
       - V
-    * - VREF1 1st Reference
+    * - **VREF1 1st Reference**
       - 3.0
       - 3.2
       - 3.3
       - V
-    * - Voltage No Load
+    * - **Voltage No Load**
       - 
       - 
       - 
       - 
-    * - VREF2 2nd Reference
+    * - **VREF2 2nd Reference**
       - 2.995
       - 3
       - 24
       - V
-    * - Voltage, 5k Load to V-
+    * - **Voltage, 5k Load to V-**
       - 
       - 
       - 
       - 
-    * - CPIN Input Range
+    * - **CPIN Input Range**
       - -2.5
       - 
       - 5.5
       - V
-    * - Cell Count
+    * - **Cell Count**
       - 
       - 
       - 16
       - 
-    * - Pack Monitoring Main Supply Voltage In
+    * - **Pack Monitoring Main Supply Voltage In**
       - 21
       - 
       - 
       - V
-    * - Pack Monitoring Main Supply Voltage Out
+    * - **Pack Monitoring Main Supply Voltage Out**
       - 
       - 
       - 1000
       - V
-    * - VREG Pack Monitor
+    * - **VREG Pack Monitor**
       - 4.5
       - 5
       - 5.5
       - V
-    * - Current Input S1A, I1A, I1B
+    * - **Current Input S1A, I1A, I1B**
       - -4
       - 
       - 4
       - V
-    * - Current Input S2A, I2A, I2B
+    * - **Current Input S2A, I2A, I2B**
       - -4
       - 
       - 4
       - V
-    * - Current Input I3A, I3B
+    * - **Current Input I3A, I3B**
       - -4
       - 
       - 4
       - V
-    * - MCU Supply Voltage
+    * - **MCU Supply Voltage**
       - 3.3
       - 
       - 5.5
       - V
-    * - MCU Standalone Supply Range
+    * - **MCU Standalone Supply Range**
       - 5
       - 
       - 5.5
       - V
-    * - MCU via USB Supply range
+    * - **MCU via USB Supply range**
       - 3.3
       - 
       - 5.5
       - V
-    * - Cx Voltage
+    * - **Cx Voltage**
       - -0.3
       - 
       - 85
