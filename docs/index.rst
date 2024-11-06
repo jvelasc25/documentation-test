@@ -56,3 +56,10 @@ Contents
    contributing/forking_publishing
    contributing/creating_new_pages
    contributing/docs_guidelines
+
+.. toctree::
+   :caption: Solutions
+   :maxdepth: 2
+
+   Solutions/index
+   
