@@ -14,7 +14,6 @@ This solution is based on high performance BMS devices that are specifically des
 The **AD-CELLPACKBM-SL** can operate either in embedded mode or through a PC-based graphical user interface. Complete with working software and hardware, as well as software examples, this kit makes it easier for customers to prototype and create connected systems and solutions for BMS applications.
 
 .. image:: ad-cellpackbm-sl.jpg
-    :alt: AD-CELLPACKBM-SL Kit
     :align: center
     :width: 600px
 
