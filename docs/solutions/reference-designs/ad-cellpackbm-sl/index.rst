@@ -241,21 +241,22 @@ Design & Integration Files
 Help and Support
 ----------------
 
-For questions and more information, please visit the Analog Devices Engineer Zone.
-
-`EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
+For questions and more information, please visit the `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_.
 
 
+
+
+----------------------------------------------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    
    hardware_guide/index
 
 
-
+-----------------------------------------------------------------------------------------------------------
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    software_guide/index
 

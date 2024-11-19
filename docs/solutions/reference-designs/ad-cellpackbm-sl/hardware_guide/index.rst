@@ -267,6 +267,6 @@ Design & Integration Files
 Help and Support
 ----------------
 
-For questions and more information, please visit the Analog Devices Engineer Zone.
+For questions and more information, please visit the `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_.
 
-`EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
+

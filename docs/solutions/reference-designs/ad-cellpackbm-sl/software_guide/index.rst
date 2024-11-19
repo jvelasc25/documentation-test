@@ -488,7 +488,7 @@ The Diagnostics tab offers a straightforward way to execute on-device diagnostic
 Help and Support
 -----------------
 
-For questions and more information, please visit the Analog Devices Engineer Zone.
+For questions and more information, please visit the `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_.
 
-`EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
+
 
