@@ -1,8 +1,14 @@
+:orphan:
+
 Applications and Solutions
-############################
+=============================
+
+Contents
+--------
 
 .. toctree::
    :maxdepth: 4
+
 
 Application Software (Reference Designs)
 -------------------------------------------------------------------------------

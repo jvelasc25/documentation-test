@@ -59,7 +59,7 @@ Contents
 
 .. toctree::
    :caption: Apps & Solutions
-   :maxdepth: 2
+   :maxdepth: 4
 
    solutions/application-software/index
    solutions/reference-designs/index
