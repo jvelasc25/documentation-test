@@ -38,6 +38,13 @@ Contents
    eval/user-guide/index
 
 .. toctree::
+   :caption: Apps & Solutions
+   :maxdepth: 4
+
+   solutions/application-software/index
+   solutions/reference-designs/index
+
+.. toctree::
    :caption: University Program
    :maxdepth: 4
 
@@ -57,10 +64,5 @@ Contents
    contributing/creating_new_pages
    contributing/docs_guidelines
 
-.. toctree::
-   :caption: Apps & Solutions
-   :maxdepth: 4
 
-   solutions/application-software/index
-   solutions/reference-designs/index
    
