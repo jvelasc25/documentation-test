@@ -15,6 +15,8 @@
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Engineering University Program" href="../../../../university/index.html" />
+    <link rel="prev" title="AD-CELLPACKBM-SL" href="../index.html" />
    
   
   <meta name="global_root" content="../../../../../">
@@ -96,14 +98,19 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">AD-CELLPACKBM-SL Software User Guide</a></li>
+<li><a class="reference internal" href="#">AD-CELLPACKBM-SL Software User Guide</a><ul>
 <li><a class="reference internal" href="#prerequisite">Prerequisite</a></li>
 <li><a class="reference internal" href="#request-for-bms-embedded-drivers">Request for BMS Embedded Drivers</a></li>
-<li><a class="reference internal" href="#downloading-the-bms-embedded-drivers-installer">Downloading the BMS Embedded Drivers Installer</a><ul>
+<li><a class="reference internal" href="#downloading-the-bms-embedded-drivers-installer">Downloading the BMS Embedded Drivers Installer</a></li>
 <li><a class="reference internal" href="#installing-the-bms-embedded-drivers">Installing the BMS Embedded Drivers</a></li>
+<li><a class="reference internal" href="#graphical-user-interface">Graphical User Interface</a><ul>
+<li><a class="reference internal" href="#downloading-the-gui-installer">Downloading the GUI Installer</a></li>
+<li><a class="reference internal" href="#launching-the-gui">Launching the GUI</a></li>
+<li><a class="reference internal" href="#launcher-configuration">Launcher Configuration</a></li>
+<li><a class="reference internal" href="#establishing-interface-connection">Establishing Interface Connection</a></li>
+<li><a class="reference internal" href="#daisy-chain-connection">Daisy Chain Connection</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#graphical-user-interface">Graphical User Interface</a><ul>
 <li><a class="reference internal" href="#gui-tabs">GUI Tabs</a><ul>
 <li><a class="reference internal" href="#quick-measure">Quick Measure</a></li>
 <li><a class="reference internal" href="#sequences">Sequences</a></li>
@@ -114,9 +121,9 @@
 <li><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#help-and-support">Help and Support</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#help-and-support">Help and Support</a></li>
 </ul>
 
         </nav>
@@ -222,11 +229,12 @@ Content on this topic
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Apps &amp; Solutions</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-8" id="toctree-collapse-8"/><div class="collapse"><a class="reference internal" href="../../../application-software/index.html">Application Software</a><label for="toctree-collapse-8"><div class="icon"></div></label></div><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9" id="toctree-collapse-9"/><div class="collapse"><a class="reference internal" href="../../index.html">Reference Designs</a><label for="toctree-collapse-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9" id="toctree-collapse-9" checked=""/><div class="collapse"><a class="reference internal" href="../../index.html">Reference Designs</a><label for="toctree-collapse-9"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AD-CELLPACKBM-SL Software User Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html">AD-CELLPACKBM-SL</a></li>
 </ul>
 </li>
@@ -276,9 +284,8 @@ Content on this topic
   <section id="ad-cellpackbm-sl-software-user-guide">
 <span id="ad-cellpackbm-sl-software-guide"></span><h1>AD-CELLPACKBM-SL Software User Guide<a class="headerlink" href="#ad-cellpackbm-sl-software-user-guide" title="Link to this heading">#</a></h1>
 <p>This software guide provides the essential steps for firmware installation, launching the GUI, configuring the launcher, establishing interface connections, and utilizing various tabs for effective device evaluation. This covers tasks such as daisy chain configuration, quick measurements, custom command sequences, scheduling, memory mapping, plotting, data recall, diagnostics, and EIS measurements.</p>
-</section>
 <section id="prerequisite">
-<h1>Prerequisite<a class="headerlink" href="#prerequisite" title="Link to this heading">#</a></h1>
+<h2>Prerequisite<a class="headerlink" href="#prerequisite" title="Link to this heading">#</a></h2>
 <p>The AD-CELLPACKBM-SL Kit can use the available no-OS BMS embedded drivers as well as the Broadmarket BMS GUI for monitoring of crucial BMS parameters.</p>
 <p><strong>MyAnalog.com account is required to download the BMS software resources.</strong></p>
 <p>Follow the steps below to create a MyAnalog account:</p>
@@ -288,7 +295,7 @@ Content on this topic
 </ol>
 </section>
 <section id="request-for-bms-embedded-drivers">
-<h1>Request for BMS Embedded Drivers<a class="headerlink" href="#request-for-bms-embedded-drivers" title="Link to this heading">#</a></h1>
+<h2>Request for BMS Embedded Drivers<a class="headerlink" href="#request-for-bms-embedded-drivers" title="Link to this heading">#</a></h2>
 <p>This reference design comes with no-OS BMS Embedded Drivers designed to run BMS measurements using a serial terminal.</p>
 <p>The example projects feature the ADI Broad Market BMS boards such as the EVAL-ADBMS6830BMSW cell monitor and EVAL-ADBMS2950-BASIC pack monitor, the AD-APARD32690-SL as the microcontroller, and the DC2472A battery emulator for cell voltage input.</p>
 <div class="admonition tip">
@@ -312,7 +319,7 @@ Content on this topic
 </div>
 </section>
 <section id="downloading-the-bms-embedded-drivers-installer">
-<h1>Downloading the BMS Embedded Drivers Installer<a class="headerlink" href="#downloading-the-bms-embedded-drivers-installer" title="Link to this heading">#</a></h1>
+<h2>Downloading the BMS Embedded Drivers Installer<a class="headerlink" href="#downloading-the-bms-embedded-drivers-installer" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Click this link: <a class="reference external" href="https://download.analog.com/secure/bms-drivers-early-access/bmsed-00/1-0-0/no-os-bms-examples-rel1.0.0_beta.exe">BMS Embedded Drivers Version 1.0.0</a></p></li>
 <li><p>You will be directed to the <em>Software Package Download</em> page.</p>
@@ -325,6 +332,7 @@ Content on this topic
 <li><p>Click the <strong>Download</strong> button to download the installer package.</p></li>
 </ol>
 <p>When software updates or new versions of the software are available an email notification will be sent to the email address associated with the MyAnalog account used to download the original software package.</p>
+</section>
 <section id="installing-the-bms-embedded-drivers">
 <h2>Installing the BMS Embedded Drivers<a class="headerlink" href="#installing-the-bms-embedded-drivers" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -411,17 +419,24 @@ Content on this topic
 <div><img alt="solutions/reference-designs/ad-cellpackbm-sl/software_guide/examples_installation_guide.png" src="solutions/reference-designs/ad-cellpackbm-sl/software_guide/examples_installation_guide.png" />
 </div></blockquote>
 </section>
-</section>
 <section id="graphical-user-interface">
-<h1>Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Link to this heading">#</a></h1>
+<h2>Graphical User Interface<a class="headerlink" href="#graphical-user-interface" title="Link to this heading">#</a></h2>
+<section id="downloading-the-gui-installer">
+<h3>Downloading the GUI Installer<a class="headerlink" href="#downloading-the-gui-installer" title="Link to this heading">#</a></h3>
 <div class="admonition-download admonition">
 <p class="admonition-title">Download</p>
 <p><strong>Evaluation GUI for ADI Broad Market BMS products:</strong></p>
 <p><a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/software/software-download.html?swpart=SD_ELPTRFU">BMS Browser GUI Version 2.0.0</a></p>
 <p>When software updates or new versions of the software are available an email notification will be sent to the email address associated with the MyAnalog account used to download the original software package.</p>
 </div>
+</section>
+<section id="launching-the-gui">
+<h3>Launching the GUI<a class="headerlink" href="#launching-the-gui" title="Link to this heading">#</a></h3>
 <p>To launch the GUI, navigate to the BMS_BROWSER_GUI_BroadMarket_V2.0.0 directory.</p>
 <p>Double-click the <strong>BMS_BROWSER_GUI_BroadMarket_V2.0.0.exe</strong> file.</p>
+</section>
+<section id="launcher-configuration">
+<h3>Launcher Configuration<a class="headerlink" href="#launcher-configuration" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Use the launcher page to configure a daisy chain of ADBMS devices.</p></li>
 <li><p>Select an appropriately flashed microcontroller board (for this example, SDP-K1).</p></li>
@@ -430,6 +445,9 @@ Content on this topic
 <blockquote>
 <div><img alt="solutions/reference-designs/ad-cellpackbm-sl/software_guide/install_gui.png" src="solutions/reference-designs/ad-cellpackbm-sl/software_guide/install_gui.png" />
 </div></blockquote>
+</section>
+<section id="establishing-interface-connection">
+<h3>Establishing Interface Connection<a class="headerlink" href="#establishing-interface-connection" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>The <cite>Interface Connection`</cite> section displays available SDP-K1 devices on the left.</p></li>
 <li><p>Left-side selection determines the device for launching the evaluation GUI with the <cite>Launch Button</cite>.</p></li>
@@ -438,6 +456,9 @@ Content on this topic
 <li><p>Use the refresh button to reload the available MCU boards list.</p></li>
 </ol>
 <img alt="solutions/reference-designs/ad-cellpackbm-sl/software_guide/interface_connection.png" src="solutions/reference-designs/ad-cellpackbm-sl/software_guide/interface_connection.png" />
+</section>
+<section id="daisy-chain-connection">
+<h3>Daisy Chain Connection<a class="headerlink" href="#daisy-chain-connection" title="Link to this heading">#</a></h3>
 <p>The Daisy Chain section facilitates the creation of a daisy chain using compatible ADBMS devices. This process involves selecting a generation of ADBMS devices, adding devices to the daisy chain, and configuring the setup for the evaluation GUI.</p>
 <img alt="solutions/reference-designs/ad-cellpackbm-sl/software_guide/daisy_chain_connection.png" src="solutions/reference-designs/ad-cellpackbm-sl/software_guide/daisy_chain_connection.png" />
 <p><strong>Select ADBMS Generation</strong></p>
@@ -468,6 +489,8 @@ Content on this topic
 <li><p>Configure the daisy chain in the Daisy Chain section.</p></li>
 <li><p>Click on the launch button to initiate the evaluation GUI.</p></li>
 </ol>
+</section>
+</section>
 <section id="gui-tabs">
 <h2>GUI Tabs<a class="headerlink" href="#gui-tabs" title="Link to this heading">#</a></h2>
 <section id="quick-measure">
@@ -710,19 +733,19 @@ Content on this topic
 </div></blockquote>
 </section>
 </section>
-</section>
 <section id="help-and-support">
-<h1>Help and Support<a class="headerlink" href="#help-and-support" title="Link to this heading">#</a></h1>
+<h2>Help and Support<a class="headerlink" href="#help-and-support" title="Link to this heading">#</a></h2>
 <p>For questions and more information, please visit the Analog Devices Engineer Zone.</p>
 <p><a class="reference external" href="https://ez.analog.com/reference-designs">EngineerZone Support Community</a></p>
+</section>
 </section>
 
 
           </div>
               <div class="related">
                 &nbsp;
-    <div></div>
-    <div></div>
+    <a href="../index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">AD-CELLPACKBM-SL</a>
+    <a href="../../../../university/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">Engineering University Program</a>
               </div>
           
         </div>
