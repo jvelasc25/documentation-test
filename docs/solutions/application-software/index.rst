@@ -1,4 +1,4 @@
-Application Software
+Application Software (Sample Page)
 ------------------------
 
 
@@ -9,5 +9,5 @@ Application Software
    */index
 
 
-This is a placeholder main page for reference design application software.
+This is a placeholder page for a reference design application software.
 
