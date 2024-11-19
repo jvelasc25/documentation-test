@@ -1,9 +1,9 @@
 :orphan:
 
-Solutions
-=========
+reference-designs
+==================
 
-
+ADI provides and maintains a series of open-source software:
 
 .. toctree::
    :titlesonly:
