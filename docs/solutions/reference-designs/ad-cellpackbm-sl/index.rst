@@ -1,18 +1,4 @@
 
-.. toctree::
-   :maxdepth: 1
-   
-    hardware_guide/index
-
-
-
-.. toctree::
-   :maxdepth: 1
-
-   software_guide/index
-
-
-
 AD-CELLPACKBM-SL
 ##################
 
@@ -259,4 +245,17 @@ For questions and more information, please visit the Analog Devices Engineer Zon
 
 `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
 
+
+
+.. toctree::
+   :maxdepth: 2
+   
+    hardware_guide/index
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   software_guide/index
 
