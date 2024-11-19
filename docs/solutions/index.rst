@@ -1,14 +1,24 @@
-:orphan:
-
-reference-designs
-==================
-
-ADI provides and maintains a series of open-source software:
+Applications and Solutions
+############################
 
 .. toctree::
-   :titlesonly:
-   :maxdepth: 1
-   :glob:
+   :maxdepth: 4
 
-   solutions/application-software/index
-   solutions/reference-designs/index
+Application Software (Reference Designs)
+-------------------------------------------------------------------------------
+
+.. toctree::
+   :caption: Application Software
+   :maxdepth: 1
+   
+   application-software/index
+
+
+Reference Designs (HW with SW)
+-------------------------------------------------------------------------------
+
+.. toctree::
+   :caption: Reference Designs (HW with SW)
+   :maxdepth: 1
+   
+   reference-designs/index
