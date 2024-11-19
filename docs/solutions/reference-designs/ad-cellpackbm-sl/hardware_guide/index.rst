@@ -1,22 +1,17 @@
 .. _ad-cellpackbm-sl hardware_guide:
 
 
-AD-CELLPACKBM-SL Hardware User Guide
-######################################
+Hardware User Guide
+####################
+
+.. toctree::
+   :hidden:
+
+   hardware_guide
 
 
-Overview
---------
-
-The **AD-CELLPACKBM-SL** is a complete BMS kit consisting of the EVAL-ADBMS6830BMSW 16-channel cell monitoring module, the EVAL-ADBMS2950-BASIC pack monitoring module, EVAL-ADBMS6822 isoSPI adapter, and the SDP-K1 microcontroller board.
-
-This solution is based on high performance BMS devices that are specifically designed for broad market applications and is suitable for determining the battery's state of charge (SoC) and state of health (SoH), as well as performing important BMS diagnostics.
-
-The **AD-CELLPACKBM-SL** can operate either in embedded mode or through a PC-based graphical user interface. Complete with working software and hardware, as well as software examples, this kit makes it easier for customers to prototype and create connected systems and solutions for BMS applications.
-
-.. image:: ad-cellpackbm-sl.jpg
-    :align: center
-    :width: 600px
+AD-CELLPACKBM-SL
+==================
 
 
 System Setup
