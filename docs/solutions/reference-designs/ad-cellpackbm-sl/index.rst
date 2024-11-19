@@ -1,4 +1,4 @@
-AD-CELLPACKBM-SL User Guide
+AD-CELLPACKBM-SL Overview
 ===========================
 
 Overview
@@ -245,9 +245,3 @@ For questions and more information, please visit the Analog Devices Engineer Zon
 `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_
 
 
-.. toctree::
-   :maxdepth: 3
-
-    ad-cellpackbm-sl_overview.rst
-    ad-cellpackbm-sl_hardware_guide.rst
-    ad-cellpackbm-sl_software_guide.rst
