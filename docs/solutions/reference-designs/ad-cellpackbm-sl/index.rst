@@ -1,14 +1,28 @@
-
-.. toctree:: 
-   :maxdepth: 1
-
-   ad-cellpackbm-sl/hardware_guide/index
-   ad-cellpackbm-sl/software_guide/index
-
-
-
 AD-CELLPACKBM-SL
 =================
+
+   
+   ad-cellpackbm-sl/software_guide/index
+
+AD-CELLPACKBM-SL: Hardware Guide
+-------------------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   hardware_guide/index
+
+
+AD-CELLPACKBM-SL: Software Guide
+-------------------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   software_guide/index
+
+
+
 
 Overview
 ---------

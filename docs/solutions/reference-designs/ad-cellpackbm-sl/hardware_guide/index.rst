@@ -1,3 +1,6 @@
+.. _ad-cellpackbm-sl hardware_guide:
+
+
 AD-CELLPACKBM-SL Hardware User Guide
 ====================================
 
