@@ -250,7 +250,7 @@ For questions and more information, please visit the Analog Devices Engineer Zon
 .. toctree::
    :maxdepth: 2
    
-    hardware_guide/index
+   hardware_guide/index
 
 
 
