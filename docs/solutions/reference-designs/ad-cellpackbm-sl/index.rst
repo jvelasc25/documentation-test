@@ -250,11 +250,13 @@ For questions and more information, please visit the `EngineerZone Support Commu
 
 .. toctree::
    :maxdepth: 2
-   
+   :caption: Hardware Guide
+
    hardware_guide/index
 
 .. toctree::
    :maxdepth: 2
+   :caption: Software Guide
 
    software_guide/index
 
