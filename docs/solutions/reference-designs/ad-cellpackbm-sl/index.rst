@@ -249,14 +249,12 @@ For questions and more information, please visit the `EngineerZone Support Commu
 ----------------------------------------------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
    hardware_guide/index
 
-
------------------------------------------------------------------------------------------------------------
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    software_guide/index
 
