@@ -2,8 +2,8 @@
 
 
 
-AD-CELLPACKBM-SL Software Guide
-===============================
+AD-CELLPACKBM-SL Software User Guide
+=====================================
 
 This software guide provides the essential steps for firmware installation, launching the GUI, configuring the launcher, establishing interface connections, and utilizing various tabs for effective device evaluation. This covers tasks such as daisy chain configuration, quick measurements, custom command sequences, scheduling, memory mapping, plotting, data recall, diagnostics, and EIS measurements.
 

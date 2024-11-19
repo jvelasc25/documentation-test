@@ -1,10 +1,8 @@
 AD-CELLPACKBM-SL
-=================
+========================
 
-   
-   ad-cellpackbm-sl/software_guide/index
 
-AD-CELLPACKBM-SL: Hardware Guide
+AD-CELLPACKBM-SL: Hardware User Guide
 -------------------------------------------------------------------------------
 
 .. toctree::
@@ -13,7 +11,7 @@ AD-CELLPACKBM-SL: Hardware Guide
    hardware_guide/index
 
 
-AD-CELLPACKBM-SL: Software Guide
+AD-CELLPACKBM-SL: Software User Guide
 -------------------------------------------------------------------------------
 
 .. toctree::
