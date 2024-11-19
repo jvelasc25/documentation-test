@@ -92,7 +92,7 @@ Installing the BMS Embedded Drivers
 
 3. While MaximSDK installation is in progress, set up the no-OS-BMS-Examples by going to the no-OS-BMS-Examples directory:  
 
-  * Examples Directory: **C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0** 
+  * Examples Directory: C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0 
 
 
 
@@ -118,10 +118,10 @@ Installing the BMS Embedded Drivers
 
 8. Open the no-OS-BMS-Examples file on VS Code or any other code editor. 
 
-   * Examples Directory: **C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0** 
+   * Examples Directory: C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0
    
 
-9. Open the Makefile inside **C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0\examples** folder. 
+9. Open the Makefile inside C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0\examples folder. 
 
    * This will display all the available example projects on the code editor.
    
