@@ -252,20 +252,16 @@ Resources
 Design & Integration Files
 --------------------------
 
-.. image:: download_icon.png
-    :width: 50px
-    :align: left
+.. ADMONITION:: Download
 
-
-`AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
+   `AD-CELLPACKBM-SL Design Support Package <design_support_package.zip>`_
+    
+    * Schematic
+    * PCB Layout
+    * Bill of Materials
+    * Allegro Project
 
 ::
-
-* Schematic
-* PCB Layout
-* Bill of Materials
-* Allegro Project
-
 
 
 Help and Support
