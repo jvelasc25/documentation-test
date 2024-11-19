@@ -1,7 +1,6 @@
 .. _ad-cellpackbm-sl software_guide:
 
 
-
 AD-CELLPACKBM-SL Software User Guide
 =====================================
 
