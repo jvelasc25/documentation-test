@@ -1,7 +1,3 @@
-.. _ad_cellpackbm_sl.rst:
-
-
-
 AD-CELLPACKBM-SL User Guide
 ===========================
 

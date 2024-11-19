@@ -1,9 +1,7 @@
 Reference Designs
---------------------
-
+-------------------------------------------------------------------------------
 
 .. toctree::
-   :titlesonly:
-   :glob:
+   :maxdepth: 1
 
-   */index
+   ad-cellpackbm-sl/index
