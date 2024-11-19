@@ -1,5 +1,20 @@
+
+.. toctree::
+   :maxdepth: 1
+   
+    hardware_guide/index
+
+
+
+.. toctree::
+   :maxdepth: 1
+
+   software_guide/index
+
+
+
 AD-CELLPACKBM-SL
-========================
+##################
 
 Overview
 ---------

@@ -2,13 +2,13 @@
 
 
 AD-CELLPACKBM-SL Software User Guide
-=====================================
+#######################################
 
 This software guide provides the essential steps for firmware installation, launching the GUI, configuring the launcher, establishing interface connections, and utilizing various tabs for effective device evaluation. This covers tasks such as daisy chain configuration, quick measurements, custom command sequences, scheduling, memory mapping, plotting, data recall, diagnostics, and EIS measurements.
 
 
 Prerequisite
-==============
+---------------
 
 The AD-CELLPACKBM-SL Kit can use the available no-OS BMS embedded drivers as well as the Broadmarket BMS GUI for monitoring of crucial BMS parameters.
 
@@ -21,7 +21,7 @@ Follow the steps below to create a MyAnalog account:
 
 
 Request for BMS Embedded Drivers
-=================================
+---------------------------------
 
 
 This reference design comes with no-OS BMS Embedded Drivers designed to run BMS measurements using a serial terminal. 
@@ -45,7 +45,7 @@ The example projects feature the ADI Broad Market BMS boards such as the EVAL-AD
  
 
 Downloading the BMS Embedded Drivers Installer
-=================================================
+--------------------------------------------------
 
 
 1. Click this link: `BMS Embedded Drivers Version 1.0.0 <https://download.analog.com/secure/bms-drivers-early-access/bmsed-00/1-0-0/no-os-bms-examples-rel1.0.0_beta.exe>`__ 
@@ -142,7 +142,7 @@ File Location: **C:\Analog Devices\no-OS-BMS-Examples-Rel1.0.0\Documents**
 
 
 Graphical User Interface
-==========================
+---------------------------
 
 Downloading the GUI Installer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -486,7 +486,7 @@ The Diagnostics tab offers a straightforward way to execute on-device diagnostic
 
 
 Help and Support
-===================
+-----------------
 
 For questions and more information, please visit the Analog Devices Engineer Zone.
 
