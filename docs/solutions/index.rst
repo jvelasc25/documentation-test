@@ -10,4 +10,5 @@ Solutions
    :maxdepth: 1
    :glob:
 
-   ad-cellpackbm-sl/index
+   solutions/application-software/index
+   solutions/reference-designs/index

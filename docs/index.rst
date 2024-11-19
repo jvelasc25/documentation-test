@@ -58,8 +58,9 @@ Contents
    contributing/docs_guidelines
 
 .. toctree::
-   :caption: Solutions
+   :caption: Apps & Solutions
    :maxdepth: 2
 
-   Solutions/index
+   solutions/application-software/index
+   solutions/reference-designs/index
    
