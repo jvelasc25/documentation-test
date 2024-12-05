@@ -3,12 +3,22 @@
 AD-BMSE2E3W-SL User Guide
 ===========================
 
+
+A concise version of this document is available in portable document format. Click on the file below to download:
+
+.. ADMONITION:: Download
+
+   `AD-BMSE2E3W-SL QuickStart Guide (pdf) <AD-BMSE2E3W-SL-UG-2245.pdf>`_
+    
+
+
+
 Overview
 ----------
 
-The AD-BMSE2E3W-SL is a BMS reference design for light electric vehicles (LEVs). With a voltage range of 72 V to 96 V, this solution is suitable for electric 2-wheeler and 3-wheeler vehicles with high current capacity ranging up to 100 A. ​
+The AD-BMSE2E3W-SL is a BMS reference design for light electric vehicles (LEVs). With a voltage range of 72 V to 96 V, this solution is suitable for electric 2-wheeler and 3-wheeler vehicles with high current capacity ranging up to 100 A.
 
-This single-board system utilizes the best-in-class ADBMS6830 cell monitoring chip that is capable of monitoring up to 2x 16-channel. This board also features battery pack monitoring using the ADBMS2950. ​The ADBMS6822 dual isoSPI transceiver provides a built-in 2-wire reversible isoSPI connection, which simplifies the communication of BMS parts in a daisy chain configuration before sending the data to SPI lines in the microcontroller. ​
+This single-board system utilizes the best-in-class ADBMS6830 cell monitoring chip that is capable of monitoring up to 2x 16-channel. This board also features battery pack monitoring using the ADBMS2950. The ADBMS6822 dual isoSPI transceiver provides a built-in 2-wire reversible isoSPI connection, which simplifies the communication of BMS parts in a daisy chain configuration before sending the data to SPI lines in the microcontroller.
 
 The on-board MAX32690 MCU, when loaded with the firmware, can perform BMS measurements such as cell voltage (average and filtered), and pack voltage and pack current measurement. The board also has a charge, pre-charge, and discharge mode that can be controlled by the ADBMS2950 pack monitor chip.
 
@@ -61,84 +71,10 @@ System Architecture
 
 
 
-Specifications
-----------------
-
-+=====================================================================================================================================================+
-| SYSTEM                                                                                                                                              |
-+===========================================+===================+=======+=======+=====================================================================+
-| Parameter                                 |  Min	 |  Typical	 |  Max	|  Unit | Notes                                                               |
-+===========================================+=======+===========+=======+=======+=====================================================================+
-| System Vin+ Supply Voltage from Battery	  |   60	 |	          |  100	|   V	  | Input voltage supply from battery                                   |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Battery Emulator System Output Voltage	  |  ~66	 |           |  92	|   V	  | Safe output voltage from Battery Emulator                           |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Current Discharge		                    |       |     50	 |  100  |	A    | Current rating that the BMS can deliver at discharge mode           |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Current Charge	                          |  0.3	 |     50	 |  100	|   A	  | Current rating that the BMS can deliver at pre-charge/charge mode   |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Pre-Charge Resistor		                 |       |    3×33	 |	      |   Ω	  |                                                                     |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Charge Voltage Input		                 |       |           |  100	|   V	  |                                                                     |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| Discharge Voltage Output		              |       |     65    |	  92  |   V	  | Regulated voltage range                                             |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET Discharge Rise Time	                 |	    |	          |   42	|   mS  |                                                                     |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET Driver Discharge Input	              |       |           |	  5	|   V	  | Coming from GPIO of ADBMS2950                                       |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET Pre-Charge/Charge Rise Time			  |       |           |   88  |	 mS  |                                                                     |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET Driver Pre-Charge/Charge Input		|       |	        |   5	|   V	| Coming from GPIO of ADBMS2950                                       |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET V(gs) range	                        |       |    -20	|   20	|   V	| Coming from GPIO of ADBMS2950                                       |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| FET Rds(on) range			                |       |           |   4.8 |   mΩ	| Coming from GPIO of ADBMS2950                                       |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| ADBMS6830 Cell Monitor                                                                                                                              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| Total Supply Voltage, V+ to V−            | -0.3	|	        |   85	|   V	|                                                                     |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| VREG Supply	| 4.5	| 5 |	5.5 |	V	            |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-| VREF1, VREF2	| 3.0 |	|	3.3	|	Supply to internal ADCs |
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-VRES/VDD	4.5	5	5.5	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Temp	-40		125	°C	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-CPIN Input Range	-2.5		5.5	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Cell Count	17		32		Min of 17 cells for the system to initiate daisy chain
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Drive	-0.3		7	V	Drive voltage range with respect to each cell monitoring V-
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-ADBMS2950 Pack Monitor
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Main Supply Voltage In	14			V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-VREG Pack Monitor	4.5	5	5.5	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Current Input S1A, I1A, I1B	-4		4	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Current Input S1A, I1A, I1B	-4		4	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Current Input S2A, I2A, I2B	-4		4	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-Current Input I3A, I3B	-4		4	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MAX32690 Microcontroller
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MCU Supply Voltage from BMS	3.3		5.5	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MCU IO Supply for 1.8 V	1.6		3.0	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MCU VDD Supply	3.3		5.5	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MCU Supply at 1.2 V	1.1		1.35	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
-MCU Supply at 1.0 V	0.9		1.2	V	
-+-------------------------------------------+-------+-----------+-------+-------+---------------------------------------------------------------------+
+.. csv-table:: Specifications
+   :file: Specifications.csv
+   :widths: 20, 10, 10, 10, 10, 40
+   :header-rows: 1
 
 
 What's Inside the Box?
@@ -152,7 +88,13 @@ Upon purchase of the AD-BMSE2E3W-SL kit, the package comes with the following bo
 
 Components and Connections
 ----------------------------
+
 .. image:: revised_ad-bmse2e3w-sl_board_with_pin_labels.png
+
+.. csv-table:: Hardware Part Functions
+   :file: Components.csv
+   :widths: 5, 25, 70
+   :header-rows: 1
 
 
 
@@ -177,25 +119,48 @@ Equipment Needed
 - 7x Top Mount Heatsink (to be installed for high current applications)
 - 1x Laptop or PC running Windows 10
 
-.. warning::
-  This reference design has not undergone compliant testing for EMI/ EMC standards for automotive. It is up for the user to do its qualification as the requirements vary depending on its end application or use cases.
+
+.. ADMONITION:: WARNING
+   This reference design has not undergone compliant testing for EMI/ EMC standards for automotive. It is up for the user to do its qualification as the requirements vary depending on its end application or use cases.
 
 
-.. ESD:: All the products described on this page include ESD (electrostatic discharge) sensitive devices. Electrostatic charges as high as 4000V readily accumulate on the human body or test equipment and can discharge without detection.
+.. ESD:: All the products described on this page include ESD (electrostatic discharge) sensitive devices. Electrostatic charges as high as 4000 V readily accumulate on the human body or test equipment and can discharge without detection.
 
    Although the boards feature ESD protection circuitry, permanent damage may occur on devices subjected to high-energy electrostatic discharges. Therefore, proper ESD precautions are recommended to avoid performance degradation or loss of functionality. This includes removing static charge on external equipment, cables, or antennas before connecting to the device.
 
 
 
-.. note:: 
-  For high current applications requiring greater than 50 A, it is advisable to install a heat sink to protect the pre-charge, charge, and discharge MOSFETs from overheating.
+.. note::  For high current applications requiring greater than 50 A, it is advisable to install a heat sink to protect the pre-charge, charge, and discharge MOSFETs from overheating.
 
-  The AD-BMSE2E3W-SL Kit has 7 available HEATSINK PIN-FIN W/TAPE (375424B00034G) easy-to install, adhesive type, aluminum top mount heat sink than can be installed directly on top of the board.
+  The AD-BMSE2E3W-SL Kit has 7 available HEATSINK PIN-FIN W/TAPE (375424B00034G) easy-to-install, adhesive type, aluminum top mount heat sink than can be installed directly on top of the board.
 
   Peel off the protective film from the bottom of each heat sink and firmly press each one on top of the following FETs:
 
   (1) Attach the 5 heat sinks on the top layer of the board (Q4, Q5, Q6, Q7, and Q9),
   (2) the remaining 2 heat sinks on the bottom layer of the board (Q3 and Q8).
+
+
+
+Preparing the MCU
+-------------------
+
+By default (upon purchase), the AD-BMSE2E3W-SL board comes with a MAX32625PICO programmer adapter that is loaded with firmware image.
+
+Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before connecting it to the AD-BMSE2E3W-SL board. If you do not know how to load the image, follow the instructions below:
+
+1. Download the firmware image: `MAX32625PICO Firmware Image for MAX32690 <https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin>`_`
+
+2. Do not connect the MAX32625PICO to the AD-BMSE2E3W-SL Board yet.
+
+3. Connect the MAX32625PICO to the Host PC using the micro USB to USB cable.
+
+4. Press the button on the MAX32625PICO. (Do not release the button until the MAINTENANCE drive is mounted)
+
+5. Release the button once the MAINTENANCE drive is mounted.
+
+6. Drag and drop (to the MAINTENANCE drive) the firmware image.
+
+7. After a few seconds, the MAINTENANCE drive will disappear and be replaced by a drive named DAPLINK. This indicates that the process is complete, and the MAX32625PICO can now be used to flash the firmware of the AD-BMSE2E3W-SL Board.
 
 
 
@@ -205,44 +170,75 @@ The board utilizes the DC2472A battery emulator as input for cell voltage measur
 
 
 1. Screw the two cell connector blocks to the two DC2472A battery emulators. Note that the first two terminals and the last terminal of each DC2472A cell connector must be left hanging (refer to below figure). Make sure to also set the last two terminals' input to low voltage or equivalent range of roughly 1.4V per cell.
+  
    .. image:: battery_emulator_pins.png
+
 2. Connect the DC2472A battery emulators to the ADBMSE2E3W-SL board through the cell connector blocks. Then, connect a micro-USB Type B cable to each DC2472A battery emulator and power the boards by connecting the other end of the cables to the Host PC.
+  
    .. image:: usb_emulator.png
+
 3. Set the DC2472A battery emulators to the lowest voltage by fully turning the Cell Voltage Adjustment Potentiometer counterclockwise.
+
 4. Attach the MAX32625PICO programmer to the AD-BMSE2E3W-SL board using the 10-pin ribbon SWD cable. Power the MAX32625PICO using a micro-USB to USB cable connected to the Host PC.
+  
    .. image:: max32625_power_usb_pc.png
+
 5. Connect the alligator clip cable (red) to the VBATTP Pin or the 3rd of Pin 17 header of the DC2472A battery emulator. Then insert the other end of the cable (banana jack plug) to TP16 (VBAT+ terminal) of the AD-BMSE2E3W-SL board.
+   
    .. image:: connector_supply_vbattp.png
+
 6. Connect the alligator clip cable (black) to the GND (VBAT-) supply of the DC2472A battery emulator. Then, connect the other end of the cable to the Rsense (top side) of the AD-BMSE2E3W-SL.
+  
    .. image:: gnd_vbat-_to_gnd_sense.png
+
 7. Set the DC2472A battery emulators to HIGH voltage or equivalent to 4.1 V per cell by turning the Cell Voltage Adjustment Potentiometer clockwise.
+
 8. Check the supply for the following test points as described in the diagram and table below. Make sure that the voltage levels are within the specified range.
+  
    .. image:: quick_test_points.png
+
+   .. csv-table:: Hardware Supply Quick Test Point
+     :file: test-points.csv
+     :widths: 15, 30, 35, 20
+     :header-rows: 1
+
+
 9. Once all steps are completed, you are now ready to use this reference design and run the accompanying software found in the link below:
-   .. note::
-      The AD-BMSE2E3W-SL comes complete with firmware examples and easy-to-use application GUI.
 
-      Access the software resources and see the setup procedure in the AD-BMSE2E3W-SL Software User Guide.
-
-
-.. note::
-
-   By default (upon purchase), the AD-BMSE2E3W-SL board comes with a MAX32625PICO programmer adapter that is loaded with firmware image.
-
-   Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before connecting it to the AD-BMSE2E3W-SL board. If you do not know how to load the image, follow the instructions below:
+   .. note:: The AD-BMSE2E3W-SL comes complete with firmware examples and easy-to-use application GUI. Access the software resources and see the setup procedure in the AD-BMSE2E3W-SL Software User Guide.
 
 
 
-Software Setup
---------------
+Resources
+==========
 
-1. Download the necessary software from the Analog Devices website.
-2. Follow the installation instructions provided in the software user guide.
+- `ADBMS6830 Product Page <https://www.analog.com/ADBMS6830>`_`
+- `ADBMS2950 Product Page <https://www.analog.com/ADBMS2950>`_`
+- `ADBMS6822 Product Page <https://www.analog.com/ADBMS6822>`_`
+- `MAX32690 Product Page <https://www.analog.com/MAX32690>`_`
+- `LT8303 Product Page <https://www.analog.com/LT8303>`_`
+- `ADUM225N Product Page <https://www.analog.com/ADUM225N>`_`
+- `LTC7001 Product Page <https://www.analog.com/LTC7001>`_`
+- `LTC3639 Product Page <https://www.analog.com/LTC3639>`_`
 
-.. warning::
-
-   Only use the recommended software and hardware to avoid damage to the system.
 
 
+Design & Integration Files
+--------------------------
+
+.. ADMONITION:: Download
+
+   `AD-BMSE2E3W-SL Design Support Package <ad-bmse2e3w-sl-designsupport.zip>`_
+    
+    * Schematic
+    * PCB Layout
+    * Bill of Materials
+    * Allegro Project
+
+::
 
 
+Help and Support
+----------------
+
+For questions and more information, please visit the `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_.
