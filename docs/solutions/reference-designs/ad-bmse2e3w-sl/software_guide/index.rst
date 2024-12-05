@@ -1,5 +1,5 @@
-AD-BMSE2E3W-SL Software User Guide
-====================================
+Software User Guide
+============================
 
 
 
@@ -18,9 +18,9 @@ The **AD-BMSE2E3W-SL GUI** also referred as the **Light EV BMS GUI** is a PC-bas
 
 Follow the steps below to create a MyAnalog account:
 
-1. Go to `MyAnalog <https://www.analog.com/en/index.html>`_`  and create an account using email. Select the **Register with email** option to get started.
+1. Go to `MyAnalog <https://www.analog.com/en/index.html>`_  and create an account using email. Select the **Register with email** option to get started.
 
-2. Once you have a MyAnalog account, log in to `MyAnalog <https://www.analog.com/en/index.html>`_` using your credentials.
+2. Once you have a MyAnalog account, log in to `MyAnalog <https://www.analog.com/en/index.html>`_ using your credentials.
 
 
 
@@ -28,7 +28,7 @@ Follow the steps below to create a MyAnalog account:
 Request for Software Access
 ------------------------------
 
-.. note:: Send the following details to this email address: 
+.. note:: Send the following details to this email address to request for software access:
     
     **LEV_CSESupport@analog.com**
 
@@ -42,7 +42,7 @@ Request for Software Access
 Software Download
 --------------------
 
-1. Click this link: `AD-BMSE2E3W-SL Version 1.0.0 <https://download.analog.com/secure/bms-cse-solutions/e2e3w-00/1-0-0/ad-bmse2e3w-sl-rel1.0.0.exe>`_`
+1. Click this link: `AD-BMSE2E3W-SL Version 1.0.0 <https://download.analog.com/secure/bms-cse-solutions/e2e3w-00/1-0-0/ad-bmse2e3w-sl-rel1.0.0.exe>`_
 
 2. You will be directed to the *Software Package Download* page. Tick the checkbox and click the **I Accept** button to indicate acceptance of the license agreement.
 
@@ -111,7 +111,7 @@ Interface Setup
 
  .. image:: communication_jumper_selection.png
 
- On the GUI landing page, hover to the *Communication Mode* dropdown menu. Select **UART COM** followed by the specific port number if using UART, or //CAN// if using CAN.
+ On the GUI landing page, hover to the *Communication Mode* dropdown menu. Select **UART COM** followed by the specific port number if using UART, or **CAN** if using CAN.
 
  .. image:: communication_mode.png
 

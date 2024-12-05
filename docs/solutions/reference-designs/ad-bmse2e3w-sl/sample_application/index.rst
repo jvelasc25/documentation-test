@@ -1,4 +1,4 @@
-Application
+Application 
 ==============
 
 72V to 96V Light EV Basic System Application
@@ -15,7 +15,6 @@ Below diagram depicts the essential components needed when using this BMS refere
   **Single Side Cell Depopulation** 
 
  .. image:: single_side_cell_depopulation.png
-
 
   **Dual Side Cell Depopulation** 
 
@@ -40,7 +39,7 @@ Below diagram depicts the essential components needed when using this BMS refere
    .. image:: basic_can_comm.png
 
 
-   .. note:: For the BASIC CAN setup, we use the `PCAN-USB connector <https://www.peak-system.com/PCAN-USB.199.0.html?&L=1>`_` as our CAN interpreter. This product is __not included__ in the AD-BMSE2E3W-SL Kit and needs to be purchased separately.
+   .. note:: For the BASIC CAN setup, we use the `PCAN-USB connector <https://www.peak-system.com/PCAN-USB.199.0.html?&L=1>`_ as our CAN interpreter. This product is **not included** in the AD-BMSE2E3W-SL Kit and needs to be purchased separately.
 
 
 4. **Load** - This block is where you can place your external load. The voltage output at this level can vary from 72V to 96V with 50A to 100A range current capacity. The system implements a low side current sensing using Rshunt (sense resistor) where the VBAT- of the battery is connected to the upper end of the Rshunt bar and Shunt- is connected to the lower end of the Rshunt. The Shunt- will then be connected to the end of the load or the negative supply of the load.
@@ -50,3 +49,4 @@ Below diagram depicts the essential components needed when using this BMS refere
 
 
 After the set up for vehicle and load connection is done, you can now load the sample firmware for vehicle application. 
+

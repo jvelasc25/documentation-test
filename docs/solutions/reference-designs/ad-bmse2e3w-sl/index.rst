@@ -1,6 +1,6 @@
 
 ===========================
-AD-BMSE2E3W-SL User Guide
+AD-BMSE2E3W-SL
 ===========================
 
 
@@ -47,13 +47,13 @@ Features
 - E2W/E3W Basic System Behavior Modes
 - Embedded Application-ready (via CLI)
 - GUI capable of the following measurements and fault detection:
-  - Cell Monitoring Voltage and Current
-  - Pack Monitoring Charge Current Monitoring
-  - Discharge Current Monitoring
-  - Temperature Monitoring
-  - Cell OV/UV Detection
-  - Cell/GPIO Open-wire Detection
-  - Cell Balancing
+    - Cell Monitoring Voltage and Current
+    - Pack Monitoring Charge Current Monitoring
+    - Discharge Current Monitoring
+    - Temperature Monitoring
+    - Cell OV/UV Detection
+    - Cell/GPIO Open-wire Detection
+    - Cell Balancing
 
 
 Applications
@@ -132,7 +132,9 @@ Equipment Needed
 
 .. note::  For high current applications requiring greater than 50 A, it is advisable to install a heat sink to protect the pre-charge, charge, and discharge MOSFETs from overheating.
 
+
   The AD-BMSE2E3W-SL Kit has 7 available HEATSINK PIN-FIN W/TAPE (375424B00034G) easy-to-install, adhesive type, aluminum top mount heat sink than can be installed directly on top of the board.
+
 
   Peel off the protective film from the bottom of each heat sink and firmly press each one on top of the following FETs:
 
@@ -148,7 +150,7 @@ By default (upon purchase), the AD-BMSE2E3W-SL board comes with a MAX32625PICO p
 
 Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before connecting it to the AD-BMSE2E3W-SL board. If you do not know how to load the image, follow the instructions below:
 
-1. Download the firmware image: `MAX32625PICO Firmware Image for MAX32690 <https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin>`_`
+1. Download the firmware image: `MAX32625PICO Firmware Image for MAX32690 <https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin> `_
 
 2. Do not connect the MAX32625PICO to the AD-BMSE2E3W-SL Board yet.
 
@@ -210,16 +212,16 @@ The board utilizes the DC2472A battery emulator as input for cell voltage measur
 
 
 Resources
-==========
+------------
 
-- `ADBMS6830 Product Page <https://www.analog.com/ADBMS6830>`_`
-- `ADBMS2950 Product Page <https://www.analog.com/ADBMS2950>`_`
-- `ADBMS6822 Product Page <https://www.analog.com/ADBMS6822>`_`
-- `MAX32690 Product Page <https://www.analog.com/MAX32690>`_`
-- `LT8303 Product Page <https://www.analog.com/LT8303>`_`
-- `ADUM225N Product Page <https://www.analog.com/ADUM225N>`_`
-- `LTC7001 Product Page <https://www.analog.com/LTC7001>`_`
-- `LTC3639 Product Page <https://www.analog.com/LTC3639>`_`
+- `ADBMS6830 Product Page <https://www.analog.com/ADBMS6830>`_
+- `ADBMS2950 Product Page <https://www.analog.com/ADBMS2950>`_
+- `ADBMS6822 Product Page <https://www.analog.com/ADBMS6822>`_
+- `MAX32690 Product Page <https://www.analog.com/MAX32690>`_
+- `LT8303 Product Page <https://www.analog.com/LT8303>`_
+- `ADUM225N Product Page <https://www.analog.com/ADUM225N>`_
+- `LTC7001 Product Page <https://www.analog.com/LTC7001>`_
+- `LTC3639 Product Page <https://www.analog.com/LTC3639>`_
 
 
 
