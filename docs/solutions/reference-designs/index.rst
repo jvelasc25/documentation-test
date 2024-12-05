@@ -20,7 +20,7 @@ Reference Designs
 
 
 .. toctree::
-  :maxdepth: 2
+   :maxdepth: 2
 
    ad-bmse2e3w-sl/index
 
@@ -31,6 +31,7 @@ Reference Designs
 
     .. toctree:: 
       :caption: Sample Application
+      
       ad-bmse2e3w-sl/sample_application/index 
 
-      
+

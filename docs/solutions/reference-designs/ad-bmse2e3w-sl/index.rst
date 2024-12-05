@@ -242,3 +242,19 @@ Help and Support
 ----------------
 
 For questions and more information, please visit the `EngineerZone Support Community <https://ez.analog.com/reference-designs>`_.
+
+
+----------------------------------------------------------------------------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Software Guide
+
+   software_guide/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Sample Application
+
+   sample_application/index
+
