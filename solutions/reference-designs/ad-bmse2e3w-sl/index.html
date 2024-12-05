@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>AD-BMSE2E3W-SL User Guide &#8212; System Level Documentation  documentation</title>
+    <title>AD-BMSE2E3W-SL &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/style.min.css?v=ab97267f" />
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -15,7 +15,7 @@
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="AD-BMSE2E3W-SL Software User Guide" href="software_guide/index.html" />
+    <link rel="next" title="Software User Guide" href="software_guide/index.html" />
     <link rel="prev" title="Software User Guide" href="../ad-cellpackbm-sl/software_guide/index.html" />
    
   
@@ -98,7 +98,7 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">AD-BMSE2E3W-SL User Guide</a><ul>
+<li><a class="reference internal" href="#">AD-BMSE2E3W-SL</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#features">Features</a></li>
 <li><a class="reference internal" href="#applications">Applications</a></li>
@@ -111,6 +111,7 @@
 </li>
 <li><a class="reference internal" href="#preparing-the-mcu">Preparing the MCU</a></li>
 <li><a class="reference internal" href="#hardware-setup">Hardware Setup</a></li>
+<li><a class="reference internal" href="#resources">Resources</a></li>
 <li><a class="reference internal" href="#design-integration-files">Design &amp; Integration Files</a></li>
 <li><a class="reference internal" href="#help-and-support">Help and Support</a><ul>
 </ul>
@@ -234,8 +235,8 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../ad-cellpackbm-sl/software_guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-2" id="toctree-collapse-9-2" checked=""/><div class="collapse"><a class="current reference internal" href="#">AD-BMSE2E3W-SL User Guide</a><label for="toctree-collapse-9-2"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="software_guide/index.html">AD-BMSE2E3W-SL Software User Guide</a></li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-2" id="toctree-collapse-9-2" checked=""/><div class="collapse"><a class="current reference internal" href="#">AD-BMSE2E3W-SL</a><label for="toctree-collapse-9-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="software_guide/index.html">Software User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sample_application/index.html">Application</a></li>
 </ul>
 </li>
@@ -284,8 +285,8 @@ Content on this topic
         <div class="bodywrapper" id="top-anchor">
           <div class="body" role="main">
             
-  <section id="ad-bmse2e3w-sl-user-guide">
-<h1>AD-BMSE2E3W-SL User Guide<a class="headerlink" href="#ad-bmse2e3w-sl-user-guide" title="Link to this heading"></a></h1>
+  <section id="ad-bmse2e3w-sl">
+<h1>AD-BMSE2E3W-SL<a class="headerlink" href="#ad-bmse2e3w-sl" title="Link to this heading"></a></h1>
 <p>A concise version of this document is available in portable document format. Click on the file below to download:</p>
 <div class="admonition-download admonition">
 <p class="admonition-title">Download</p>
@@ -316,14 +317,19 @@ Content on this topic
 <li><p>SOC and SOH through Enhanced Coulomb Counting Technique</p></li>
 <li><p>E2W/E3W Basic System Behavior Modes</p></li>
 <li><p>Embedded Application-ready (via CLI)</p></li>
-<li><p>GUI capable of the following measurements and fault detection:
-- Cell Monitoring Voltage and Current
-- Pack Monitoring Charge Current Monitoring
-- Discharge Current Monitoring
-- Temperature Monitoring
-- Cell OV/UV Detection
-- Cell/GPIO Open-wire Detection
-- Cell Balancing</p></li>
+<li><dl class="simple">
+<dt>GUI capable of the following measurements and fault detection:</dt><dd><ul>
+<li><p>Cell Monitoring Voltage and Current</p></li>
+<li><p>Pack Monitoring Charge Current Monitoring</p></li>
+<li><p>Discharge Current Monitoring</p></li>
+<li><p>Temperature Monitoring</p></li>
+<li><p>Cell OV/UV Detection</p></li>
+<li><p>Cell/GPIO Open-wire Detection</p></li>
+<li><p>Cell Balancing</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </section>
 <section id="applications">
@@ -337,9 +343,9 @@ Content on this topic
 <section id="system-architecture">
 <h2>System Architecture<a class="headerlink" href="#system-architecture" title="Link to this heading"></a></h2>
 <img alt="../../../_images/updated_block_diagram_72vto96v.png" src="../../../_images/updated_block_diagram_72vto96v.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id1">
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Specifications</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id5">
+<table class="docutils align-default" id="id5">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Specifications</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 20.0%" />
 <col style="width: 10.0%" />
@@ -622,16 +628,16 @@ Content on this topic
 <section id="components-and-connections">
 <h2>Components and Connections<a class="headerlink" href="#components-and-connections" title="Link to this heading"></a></h2>
 <img alt="../../../_images/revised_ad-bmse2e3w-sl_board_with_pin_labels.png" src="../../../_images/revised_ad-bmse2e3w-sl_board_with_pin_labels.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id2">
-<table class="docutils align-default" id="id2">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Hardware Part Functions</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id6">
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Hardware Part Functions</span><a class="headerlink" href="#id6" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 5.0%" />
 <col style="width: 25.0%" />
 <col style="width: 70.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>#</p></th>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
 <th class="head"><p>Part</p></th>
 <th class="head"><p>Function</p></th>
 </tr>
@@ -735,7 +741,7 @@ Content on this topic
 <p>By default (upon purchase), the AD-BMSE2E3W-SL board comes with a MAX32625PICO programmer adapter that is loaded with firmware image.</p>
 <p>Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before connecting it to the AD-BMSE2E3W-SL board. If you do not know how to load the image, follow the instructions below:</p>
 <ol class="arabic simple">
-<li><p>Download the firmware image: <cite>MAX32625PICO Firmware Image for MAX32690 &lt;https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin&gt;`_</cite></p></li>
+<li><p>Download the firmware image: <a href="#id1"><span class="problematic" id="id2">`</span></a>MAX32625PICO Firmware Image for MAX32690 &lt;<a class="reference external" href="https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin">https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin</a>&gt; <a href="#id3"><span class="problematic" id="id4">`</span></a>_</p></li>
 <li><p>Do not connect the MAX32625PICO to the AD-BMSE2E3W-SL Board yet.</p></li>
 <li><p>Connect the MAX32625PICO to the Host PC using the micro USB to USB cable.</p></li>
 <li><p>Press the button on the MAX32625PICO. (Do not release the button until the MAINTENANCE drive is mounted)</p></li>
@@ -767,9 +773,9 @@ Content on this topic
 <li><p>Set the DC2472A battery emulators to HIGH voltage or equivalent to 4.1 V per cell by turning the Cell Voltage Adjustment Potentiometer clockwise.</p></li>
 <li><p>Check the supply for the following test points as described in the diagram and table below. Make sure that the voltage levels are within the specified range.</p>
 <img alt="../../../_images/quick_test_points.png" src="../../../_images/quick_test_points.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id3">
-<table class="docutils align-default" id="id3">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Hardware Supply Quick Test Point</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id7">
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Hardware Supply Quick Test Point</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 15.0%" />
 <col style="width: 30.0%" />
@@ -835,15 +841,18 @@ Content on this topic
 </div>
 </li>
 </ol>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><cite>ADBMS6830 Product Page &lt;https://www.analog.com/ADBMS6830&gt;`_</cite></p></li>
-<li><p><cite>ADBMS2950 Product Page &lt;https://www.analog.com/ADBMS2950&gt;`_</cite></p></li>
-<li><p><cite>ADBMS6822 Product Page &lt;https://www.analog.com/ADBMS6822&gt;`_</cite></p></li>
-<li><p><cite>MAX32690 Product Page &lt;https://www.analog.com/MAX32690&gt;`_</cite></p></li>
-<li><p><cite>LT8303 Product Page &lt;https://www.analog.com/LT8303&gt;`_</cite></p></li>
-<li><p><cite>ADUM225N Product Page &lt;https://www.analog.com/ADUM225N&gt;`_</cite></p></li>
-<li><p><cite>LTC7001 Product Page &lt;https://www.analog.com/LTC7001&gt;`_</cite></p></li>
-<li><p><cite>LTC3639 Product Page &lt;https://www.analog.com/LTC3639&gt;`_</cite></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/ADBMS6830">ADBMS6830 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/ADBMS2950">ADBMS2950 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/ADBMS6822">ADBMS6822 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/MAX32690">MAX32690 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/LT8303">LT8303 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/ADUM225N">ADUM225N Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/LTC7001">LTC7001 Product Page</a></p></li>
+<li><p><a class="reference external" href="https://www.analog.com/LTC3639">LTC3639 Product Page</a></p></li>
 </ul>
 </section>
 <section id="design-integration-files">
@@ -868,7 +877,7 @@ Content on this topic
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Software Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="software_guide/index.html">AD-BMSE2E3W-SL Software User Guide</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="software_guide/index.html">Software User Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="software_guide/index.html#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="software_guide/index.html#request-for-software-access">Request for Software Access</a></li>
 <li class="toctree-l2"><a class="reference internal" href="software_guide/index.html#software-download">Software Download</a></li>
@@ -897,7 +906,7 @@ Content on this topic
               <div class="related">
                 &nbsp;
     <a href="../ad-cellpackbm-sl/software_guide/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Software User Guide</a>
-    <a href="software_guide/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">AD-BMSE2E3W-SL Software User Guide</a>
+    <a href="software_guide/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">Software User Guide</a>
               </div>
           
         </div>
