@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Application &#8212; System Level Documentation  documentation</title>
+    <title>Sample Application &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/style.min.css?v=ab97267f" />
     <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -98,7 +98,7 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">Application</a><ul>
+<li><a class="reference internal" href="#">Sample Application</a><ul>
 <li><a class="reference internal" href="#v-to-96v-light-ev-basic-system-application">72V to 96V Light EV Basic System Application</a></li>
 </ul>
 </li>
@@ -221,7 +221,7 @@ Content on this topic
 </li>
 <li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-2" id="toctree-collapse-9-2" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-9-2"><div class="icon"></div></label></div><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../software_guide/index.html">Software User Guide</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Application</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sample Application</a></li>
 </ul>
 </li>
 </ul>
@@ -269,26 +269,23 @@ Content on this topic
         <div class="bodywrapper" id="top-anchor">
           <div class="body" role="main">
             
-  <section id="application">
-<h1>Application<a class="headerlink" href="#application" title="Link to this heading"></a></h1>
+  <section id="sample-application">
+<h1>Sample Application<a class="headerlink" href="#sample-application" title="Link to this heading"></a></h1>
 <section id="v-to-96v-light-ev-basic-system-application">
 <h2>72V to 96V Light EV Basic System Application<a class="headerlink" href="#v-to-96v-light-ev-basic-system-application" title="Link to this heading"></a></h2>
 <p>Below diagram depicts the essential components needed when using this BMS reference design for basic electric 2-wheeler or 3-wheeler applications. Each block represents a component. Use the diagram as a guide to understand the system operation.</p>
 <img alt="../../../../_images/72v-96v_vehicle_system.png" src="../../../../_images/72v-96v_vehicle_system.png" />
-<ol class="arabic simple">
-<li><p><strong>Battery Cell/Pack Block</strong> - This block is where your battery supply or source is located. There are two configurations on how to connect the battery cells to the BMS:</p></li>
-</ol>
-<blockquote>
-<div><blockquote>
-<div><p><strong>Single Side Cell Depopulation</strong></p>
-</div></blockquote>
+<ol class="arabic">
+<li><p><strong>Battery Cell/Pack Block</strong> - This block is where your battery supply or source is located. There are two configurations on how to connect the battery cells to the BMS:</p>
+<p><strong>Single Side Cell Depopulation</strong></p>
+<img alt="../../../../_images/single_side_cell_depopulation.png" src="../../../../_images/single_side_cell_depopulation.png" />
+<p><strong>Dual Side Cell Depopulation</strong></p>
 <img alt="../../../../_images/dual_side_cell_depopulation.png" src="../../../../_images/dual_side_cell_depopulation.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The setup shown in this User Guide uses the single side depopulation method only in connecting/aligning the cell to the BMS. The dual side depopulation is not yet supported by the software.</p>
 </div>
-</div></blockquote>
-<ol class="arabic" start="2">
+</li>
 <li><p><strong>BMS Block</strong> - This block is where the BMS Cell and Pack Monitoring and MCU control happens. This block is also responsible for the control of the <strong>Charging</strong> (if the battery needs to be charged) and <strong>Discharging</strong> (when the battery needs to deliver voltage output going to the load side).</p></li>
 <li><p><strong>User Interface Display</strong> - This block is where the measurement, diagnosis, and status of the BMS are displayed. The Display can have two options (or you can use both):</p>
 <p><strong>UART Communication</strong></p>

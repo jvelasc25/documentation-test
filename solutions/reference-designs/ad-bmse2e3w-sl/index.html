@@ -237,7 +237,7 @@ Content on this topic
 </li>
 <li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-2" id="toctree-collapse-9-2" checked=""/><div class="collapse"><a class="current reference internal" href="#">AD-BMSE2E3W-SL</a><label for="toctree-collapse-9-2"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="software_guide/index.html">Software User Guide</a></li>
-<li class="toctree-l3"><a class="reference internal" href="sample_application/index.html">Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample_application/index.html">Sample Application</a></li>
 </ul>
 </li>
 </ul>
@@ -343,9 +343,9 @@ Content on this topic
 <section id="system-architecture">
 <h2>System Architecture<a class="headerlink" href="#system-architecture" title="Link to this heading"></a></h2>
 <img alt="../../../_images/updated_block_diagram_72vto96v.png" src="../../../_images/updated_block_diagram_72vto96v.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id5">
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Specifications</span><a class="headerlink" href="#id5" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id1">
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Specifications</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 20.0%" />
 <col style="width: 10.0%" />
@@ -628,9 +628,9 @@ Content on this topic
 <section id="components-and-connections">
 <h2>Components and Connections<a class="headerlink" href="#components-and-connections" title="Link to this heading"></a></h2>
 <img alt="../../../_images/revised_ad-bmse2e3w-sl_board_with_pin_labels.png" src="../../../_images/revised_ad-bmse2e3w-sl_board_with_pin_labels.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id6">
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Hardware Part Functions</span><a class="headerlink" href="#id6" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id2">
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Hardware Part Functions</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 5.0%" />
 <col style="width: 25.0%" />
@@ -724,11 +724,22 @@ Content on this topic
 <li><p>7x Top Mount Heatsink (to be installed for high current applications)</p></li>
 <li><p>1x Laptop or PC running Windows 10</p></li>
 </ul>
+<div class="admonition-warning admonition">
+<p class="admonition-title">WARNING</p>
+<p>This reference design has not undergone compliant testing for EMI/ EMC standards for automotive. It is up for the user to do its qualification as the requirements vary depending on its end application or use cases.</p>
+</div>
+<div class="admonition-esd admonition">
+<p class="admonition-title">ESD</p>
+<p>All the products described on this page include ESD (electrostatic discharge) sensitive devices. Electrostatic charges as high as 4000 V readily accumulate on the human body or test equipment and can discharge without detection.</p>
+<p>Although the boards feature ESD protection circuitry, permanent damage may occur on devices subjected to high-energy electrostatic discharges. Therefore, proper ESD precautions are recommended to avoid performance degradation or loss of functionality. This includes removing static charge on external equipment, cables, or antennas before connecting to the device.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For high current applications requiring greater than 50 A, it is advisable to install a heat sink to protect the pre-charge, charge, and discharge MOSFETs from overheating.</p>
-<p>The AD-BMSE2E3W-SL Kit has 7 available HEATSINK PIN-FIN W/TAPE (375424B00034G) easy-to-install, adhesive type, aluminum top mount heat sink than can be installed directly on top of the board.</p>
-<p>Peel off the protective film from the bottom of each heat sink and firmly press each one on top of the following FETs:</p>
+<ul class="simple">
+<li><p>The AD-BMSE2E3W-SL Kit has 7 available HEATSINK PIN-FIN W/TAPE (375424B00034G) easy-to-install, adhesive type, aluminum top mount heat sink than can be installed directly on top of the board.</p></li>
+<li><p>Peel off the protective film from the bottom of each heat sink and firmly press each one on top of the following FETs:</p></li>
+</ul>
 <ol class="arabic simple">
 <li><p>Attach the 5 heat sinks on the top layer of the board (Q4, Q5, Q6, Q7, and Q9),</p></li>
 <li><p>the remaining 2 heat sinks on the bottom layer of the board (Q3 and Q8).</p></li>
@@ -741,7 +752,7 @@ Content on this topic
 <p>By default (upon purchase), the AD-BMSE2E3W-SL board comes with a MAX32625PICO programmer adapter that is loaded with firmware image.</p>
 <p>Otherwise, if you are using a new MAX32625PICO programmer (that is not part of the original kit), make sure to flash it first with the correct firmware image before connecting it to the AD-BMSE2E3W-SL board. If you do not know how to load the image, follow the instructions below:</p>
 <ol class="arabic simple">
-<li><p>Download the firmware image: <a href="#id1"><span class="problematic" id="id2">`</span></a>MAX32625PICO Firmware Image for MAX32690 &lt;<a class="reference external" href="https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin">https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin</a>&gt; <a href="#id3"><span class="problematic" id="id4">`</span></a>_</p></li>
+<li><p>Download the firmware image: <a class="reference external" href="https://github.com/analogdevicesinc/max32625pico-firmware-images/raw/master/bin/max32625_max32690evkit_if_crc_swd_v1.0.7.bin">MAX32625PICO Firmware Image for MAX32690</a></p></li>
 <li><p>Do not connect the MAX32625PICO to the AD-BMSE2E3W-SL Board yet.</p></li>
 <li><p>Connect the MAX32625PICO to the Host PC using the micro USB to USB cable.</p></li>
 <li><p>Press the button on the MAX32625PICO. (Do not release the button until the MAINTENANCE drive is mounted)</p></li>
@@ -773,9 +784,9 @@ Content on this topic
 <li><p>Set the DC2472A battery emulators to HIGH voltage or equivalent to 4.1 V per cell by turning the Cell Voltage Adjustment Potentiometer clockwise.</p></li>
 <li><p>Check the supply for the following test points as described in the diagram and table below. Make sure that the voltage levels are within the specified range.</p>
 <img alt="../../../_images/quick_test_points.png" src="../../../_images/quick_test_points.png" />
-<div class="table-wrapper colwidths-given docutils container" id="id7">
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Hardware Supply Quick Test Point</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
+<div class="table-wrapper colwidths-given docutils container" id="id3">
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Hardware Supply Quick Test Point</span><a class="headerlink" href="#id3" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 15.0%" />
 <col style="width: 30.0%" />
@@ -874,6 +885,7 @@ Content on this topic
 <h2>Help and Support<a class="headerlink" href="#help-and-support" title="Link to this heading"></a></h2>
 <p>For questions and more information, please visit the <a class="reference external" href="https://ez.analog.com/reference-designs">EngineerZone Support Community</a>.</p>
 <hr class="docutils" />
+<p>Up Next…</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Software Guide</span></p>
 <ul>
@@ -892,7 +904,7 @@ Content on this topic
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Sample Application</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="sample_application/index.html">Application</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="sample_application/index.html">Sample Application</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="sample_application/index.html#v-to-96v-light-ev-basic-system-application">72V to 96V Light EV Basic System Application</a></li>
 </ul>
 </li>
