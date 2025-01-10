@@ -35,3 +35,20 @@ Reference Designs
       ad-bmse2e3w-sl/sample_application/index 
 
 
+.. toctree:: 
+   :maxdepth: 2
+
+   eval-isomax/index
+
+
+    .. toctree::
+      :caption: Hardware Guide 
+      
+      eval-isomax/hardware_guide/index
+
+
+    .. toctree::
+      :caption: Software Guide
+
+      eval-isomax/software_guide/index
+
