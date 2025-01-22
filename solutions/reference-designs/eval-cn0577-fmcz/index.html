@@ -15,7 +15,7 @@
     <link rel="icon" href="../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="EVAL-ISOMAX" href="../eval-isomax/index.html" />
+    <link rel="next" title="HDL Reference Design" href="HDL-reference-design/index.html" />
     <link rel="prev" title="EVAL-CN0575-RPIZ" href="../eval-cn0575-rpiz/index.html" />
    
   
@@ -102,30 +102,31 @@
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#simplified-functional-block-diagram">Simplified Functional Block Diagram</a></li>
 <li><a class="reference internal" href="#features">Features</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#hardware-configuration">Hardware Configuration</a><ul>
+<li><a class="reference internal" href="#block-assignments">Block Assignments</a></li>
 <li><a class="reference internal" href="#power-supply">Power Supply</a></li>
 <li><a class="reference internal" href="#analog-inputs">Analog Inputs</a></li>
-<li><a class="reference internal" href="#on-board-clock-reference">On-board Clock Reference</a><ul>
+<li><a class="reference internal" href="#on-board-clock-reference">On-board Clock Reference</a></li>
 <li><a class="reference internal" href="#external-clock-reference-option">External Clock Reference Option</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#system-setup">System Setup</a><ul>
+<li><a class="reference internal" href="#system-setup">System Setup</a></li>
 <li><a class="reference internal" href="#demo-requirements">Demo Requirements</a><ul>
 <li><a class="reference internal" href="#hardware">Hardware</a></li>
 <li><a class="reference internal" href="#software">Software</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#loading-image-on-sd-card">Loading Image on SD Card</a></li>
-<li><a class="reference internal" href="#sd-card">SD-Card</a></li>
-<li><a class="reference internal" href="#system-block-diagram">System Block Diagram</a></li>
+<li><a class="reference internal" href="#sd-card">SD Card</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#system-block-diagram">System Block Diagram</a><ul>
 <li><a class="reference internal" href="#running-the-system">Running the System</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#id1">Software</a><ul>
-<li><a class="reference internal" href="#connection">Connection</a><ul>
+<li><a class="reference internal" href="#connection">Connection</a></li>
+<li><a class="reference internal" href="#for-windows-machine-connected-to-zedboard-via-ethernet-cable">For Windows machine connected to ZedBoard via Ethernet cable:</a><ul>
 <li><a class="reference internal" href="#using-ssh-terminal-software">Using SSH Terminal Software:</a></li>
+<li><a class="reference internal" href="#using-command-terminal">Using Command Terminal:</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#iio-commands">IIO Commands</a></li>
@@ -141,10 +142,8 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#schematic-pcb-layout-bill-of-materials">Schematic, PCB Layout, Bill of Materials</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#reference-demos-software">Reference Demos &amp; Software</a></li>
-<li><a class="reference internal" href="#more-information-and-useful-links">More Information and Useful Links</a><ul>
+<li><a class="reference internal" href="#more-information-and-useful-links">More Information and Useful Links</a></li>
 <li><a class="reference internal" href="#registration">Registration</a></li>
 </ul>
 </li>
@@ -265,14 +264,12 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-2" id="toctree-collapse-9-2"/><div class="collapse"><a class="reference internal" href="../ad-bmse2e3w-sl/index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-9-2"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../ad-bmse2e3w-sl/software_guide/index.html">Software User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ad-bmse2e3w-sl/sample_application/index.html">Sample Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ad-bmse2e3w-sl/software_guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-3" id="toctree-collapse-9-3"/><div class="collapse"><a class="reference internal" href="../ad-cellpackbm-sl/index.html">AD-CELLPACKBM-SL</a><label for="toctree-collapse-9-3"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-3-1" id="toctree-collapse-9-3-1"/><div class="collapse"><a class="reference internal" href="../ad-cellpackbm-sl/hardware_guide/index.html">Hardware User Guide</a><label for="toctree-collapse-9-3-1"><div class="icon"></div></label></div><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../ad-cellpackbm-sl/hardware_guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ad-cellpackbm-sl/software_guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
@@ -281,11 +278,11 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">EVAL-CN0577-FMCZ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hardware-configuration">Hardware Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reference-demos-software">Reference Demos &amp; Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#more-information-and-useful-links">More Information and Useful Links</a></li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-5" id="toctree-collapse-9-5"/><div class="collapse"><a class="reference internal" href="../eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-9-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-5" id="toctree-collapse-9-5" checked=""/><div class="collapse"><a class="current reference internal" href="#">EVAL-CN0577-FMCZ</a><label for="toctree-collapse-9-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="HDL-reference-design/index.html">HDL Reference Design</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-9-6" id="toctree-collapse-9-6"/><div class="collapse"><a class="reference internal" href="../eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-9-6"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../eval-isomax/hardware_guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../eval-isomax/software_guide/index.html">Software User Guide</a></li>
 </ul>
@@ -335,8 +332,7 @@ Content on this topic
         <div class="bodywrapper" id="top-anchor">
           <div class="body" role="main">
             
-  <p>(WIP)</p>
-<section id="eval-cn0577-fmcz">
+  <section id="eval-cn0577-fmcz">
 <h1>EVAL-CN0577-FMCZ<a class="headerlink" href="#eval-cn0577-fmcz" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
@@ -345,7 +341,7 @@ measurement, fast control loops, fast digital distortion correction, and image
 sensor digitization present unique data acquisition challenges. These
 applications often require a combination of high sample rate, high linearity,
 low drift, low noise, and low latency.</p>
-<p>The <a class="icon adi reference external" href="https://www.analog.com/cn0577">EVAL-CN0577-FMCZ</a> is an 18-bit, 15 MSPS, 2 ppm linear data
+<p>The <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> is an 18-bit, 15 MSPS, 2 ppm linear data
 acquisition system with an easy to drive input impedance of 1.1 kΩ. The analog
 input range is 8.096 V peak-to-peak and can be driven in either single-ended
 or differential mode, providing flexibility for many different applications.</p>
@@ -357,7 +353,8 @@ with other FPGA designs</p>
 <p>A separate data clock eases the timing requirements of the host FPGA. An
 on-board 120 MHz clock is forwarded to the FPGA and a CONVERT retiming
 flip-flop reduces jitter from the convert signal of the FPGA.</p>
-<img alt="../../../_images/cn0577_1.jpg" src="../../../_images/cn0577_1.jpg" />
+<a class="reference internal image-reference" href="../../../_images/cn0577_1.jpg"><img alt="../../../_images/cn0577_1.jpg" src="../../../_images/cn0577_1.jpg" style="width: 600px;" />
+</a>
 </section>
 <section id="simplified-functional-block-diagram">
 <h2>Simplified Functional Block Diagram<a class="headerlink" href="#simplified-functional-block-diagram" title="Link to this heading"></a></h2>
@@ -377,9 +374,10 @@ flip-flop reduces jitter from the convert signal of the FPGA.</p>
 <li><p>On-board 120 MHz precision voltage-controlled crystal oscillator (VCXO)</p></li>
 </ul>
 </section>
-</section>
 <section id="hardware-configuration">
-<h1>Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Link to this heading"></a></h1>
+<h2>Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Link to this heading"></a></h2>
+<section id="block-assignments">
+<h3>Block Assignments<a class="headerlink" href="#block-assignments" title="Link to this heading"></a></h3>
 <img alt="../../../_images/cn0577_block_terminal.png" src="../../../_images/cn0577_block_terminal.png" />
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
@@ -448,60 +446,62 @@ TESTPAT = Low (Pins 2 and 3)</p></td>
 </tbody>
 </table>
 </div>
+</section>
 <section id="power-supply">
-<h2>Power Supply<a class="headerlink" href="#power-supply" title="Link to this heading"></a></h2>
+<h3>Power Supply<a class="headerlink" href="#power-supply" title="Link to this heading"></a></h3>
 <p>Power to the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> comes directly from the
 +12 V supply provided through the FMC connector.</p>
 <img alt="../../../_images/power_supply_1.png" src="../../../_images/power_supply_1.png" />
 </section>
 <section id="analog-inputs">
-<h2>Analog Inputs<a class="headerlink" href="#analog-inputs" title="Link to this heading"></a></h2>
-<p>The SMA connectors on the <a class="icon adi reference external" href="https://www.analog.com/CN0577-FMCZ">EVAL-CN0577-FMCZ</a> (VIN+
+<h3>Analog Inputs<a class="headerlink" href="#analog-inputs" title="Link to this heading"></a></h3>
+<p>The SMA connectors on the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> (VIN+
 and VIN−) provide analog inputs from a low noise, audio precision signal
 source (such as the Audio Precision audio analyzer).</p>
 </section>
 <section id="on-board-clock-reference">
-<h2>On-board Clock Reference<a class="headerlink" href="#on-board-clock-reference" title="Link to this heading"></a></h2>
-<p>The <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> clock diagram is shown in Figure
-19. An on-board 120 MHz voltage controlled crystal oscillator is used to provide
-the clock for the <a href="#id2"><span class="problematic" id="id3">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> and the FPGA. This
+<h3>On-board Clock Reference<a class="headerlink" href="#on-board-clock-reference" title="Link to this heading"></a></h3>
+<p>The <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> clock diagram is shown in the figure below.
+An on-board 120 MHz voltage controlled crystal oscillator is used to provide
+the clock for the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> and the FPGA. This
 ultralow noise oscillator has a typical phase noise of -162 dBc/Hz at 10 kHz
 offset, a tuning voltage range of 0 V to 3.3 V, and a frequency pulling range of
 28 ppm to 55 ppm. Additionally, this crystal oscillator has an RMS jitter of &lt;50
 fs to 100 fs at 100 MHz carrier.</p>
 <p>The clock is fanned out to the retiming flip-flop and the FPGA. An
-<a href="#id2"><span class="problematic" id="id4">`ADG3241 &lt;ADI&gt;ADG3241&gt;`__</span></a> level shifter converts the clock’s 3.3 V logic level
+<a class="icon adi reference external" href="https://www.analog.com/ADG3241">ADG3241</a> level shifter converts the clock’s 3.3 V logic level
 to the 2.5 V level required by the retiming flip-flop. An
-<a href="#id2"><span class="problematic" id="id5">`ADN4661 &lt;ADI&gt;ADN4661&gt;`__</span></a> converts the 3.3 V clock to LVDS signaling, which is
-then forwarded to a global clock connection on the FMC connector.
-<a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/cn0577_clock.png"><img alt="cn0577_clock.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/cn0577_clock.png" style="width: 600px;" /></a></p>
+<a class="icon adi reference external" href="https://www.analog.com/ADN4661">ADN4661</a> converts the 3.3 V clock to LVDS signaling, which is
+then forwarded to a global clock connection on the FMC connector.</p>
+<img alt="../../../_images/cn0577_clock.png" src="../../../_images/cn0577_clock.png" />
+</section>
 <section id="external-clock-reference-option">
 <h3>External Clock Reference Option<a class="headerlink" href="#external-clock-reference-option" title="Link to this heading"></a></h3>
-<div class="line-block">
-<div class="line">If the <a href="#id2"><span class="problematic" id="id6">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> is to be synchronized to
+<p>If the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> is to be synchronized to
 other circuits, or if tighter frequency accuracy or drift frequency drift is
 required, an external clock can be applied to the external clock connector
 (J3). Along with connecting it, you will also need to update the solder jumper
 (JP14) to change from the onboard crystal oscillator. If the external clock
 frequency is significantly higher or lower than the on-board 120 MHz clock,
-reanalyze the entire circuit including the FPGA timing constraints. <a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/jp14.png"><img alt="JP14 solder jumper" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/jp14.png" style="width: 400px;" /></a></div>
-<div class="line">The external clock circuitry also includes a high speed single inverter that
+reanalyze the entire circuit including the FPGA timing constraints.</p>
+<a class="reference internal image-reference" href="../../../_images/jp14.png"><img alt="../../../_images/jp14.png" src="../../../_images/jp14.png" style="width: 300px;" />
+</a>
+<p>The external clock circuitry also includes a high speed single inverter that
 provides AC coupling and balances the rise and fall times. This device has a
 typical time propagation delay of 2.4 ns and achieves a high output drive,
 while maintaining low static power dissipation over a broad VCC operating
-range.</div>
-</div>
-</section>
+range.</p>
 </section>
 <section id="system-setup">
-<h2>System Setup<a class="headerlink" href="#system-setup" title="Link to this heading"></a></h2>
+<h3>System Setup<a class="headerlink" href="#system-setup" title="Link to this heading"></a></h3>
+</section>
 <section id="demo-requirements">
 <h3>Demo Requirements<a class="headerlink" href="#demo-requirements" title="Link to this heading"></a></h3>
 <p>The following is the list of items needed in order to replicate this demo.</p>
 <section id="hardware">
 <h4>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h4>
 <ul class="simple">
-<li><p><a href="#id2"><span class="problematic" id="id7">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> Circuit Evaluation Board</p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> Circuit Evaluation Board</p></li>
 <li><p>ZedBoard (AES-Z7EV-7Z020-G)</p></li>
 <li><p>12 V power supply</p></li>
 <li><p>Host PC</p></li>
@@ -509,64 +509,65 @@ range.</div>
 <li><p>LAN cable</p></li>
 <li><p>SMA cables</p></li>
 <li><p>XLR to SMA adapter cable</p></li>
-<li><p>Audio analyzer (Audio Precision© APX525) or other input source (e.g.
-ADALM2000)</p></li>
+<li><p>Audio analyzer (Audio Precision© APX525) or other input source (e.g., ADALM2000)</p></li>
 </ul>
-<p>If using <a href="#id2"><span class="problematic" id="id8">`ADALM2000 &lt;ADI&gt;ADALM2000&gt;`__</span></a> as input source:</p>
+<p>If using <a class="icon adi reference external" href="https://www.analog.com/ADALM2000`">ADALM2000`</a> as input source:</p>
 <ul class="simple">
-<li><p><a href="#id2"><span class="problematic" id="id9">`AD-M2KBNC-EBZ &lt;ADI&gt;AD-M2KBNC-EBZ&gt;`__</span></a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/AD-M2KBNC-EBZ">AD-M2KBNC-EBZ</a></p></li>
 <li><p>BNC to SMA cable</p></li>
 </ul>
 </section>
 <section id="software">
 <h4>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h4>
 <ul class="simple">
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/kuiper-linux">Analog Devices Kuiper Linux
-image</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/kuiper-linux">Analog Devices Kuiper Linux image</a></p></li>
 </ul>
 <p>For the device to run, the SD card should be loaded with Analog Devices Kuiper
 Linux, a distribution based on Raspbian from the Raspberry Pi Foundation. It
-incorporates Linux device drivers for ADI products as well as tools and other
+incorporates Linux device drivers for ADI products as well as tools and other
 software products designed and created with ease of use in mind. The reasoning
 behind creating this distribution is to minimize the barriers to
-integrating ADI hardware devices into a Linux-based embedded system.</p>
-<p>Access to the embedded system can be through ​a remote PC connected ​either via
-LAN cable or Wi-Fi. ​</p>
+integrating ADI hardware devices into a Linux-based embedded system.</p>
+<p>Access to the embedded system can be through a remote PC connected either via
+LAN cable or Wi-Fi.</p>
 </section>
 </section>
 <section id="loading-image-on-sd-card">
 <h3>Loading Image on SD Card<a class="headerlink" href="#loading-image-on-sd-card" title="Link to this heading"></a></h3>
-<p>In order to control the <a href="#id2"><span class="problematic" id="id10">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a>, you will
+<p>In order to control the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a>, you will
 need to install ADI Kuiper Linux on an SD card. Complete instructions, including
 where to download the SD card image, how to write it to the SD card, and how to
-configure the system are provided at <a class="reference external" href="/resources/tools-software/linux-software/kuiper-linux">Kuiper
-Images</a>. Write the
+configure the system are provided at <a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/kuiper-linux">Kuiper Images</a>. Write the
 image and follow the system configuration procedure. Follow the directions for
 preparing the image for the CN0577.</p>
 </section>
 <section id="sd-card">
-<h3>SD-Card<a class="headerlink" href="#sd-card" title="Link to this heading"></a></h3>
-<p>To prepare the SD-card for the Zedboard:</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/kuiper-linux">Download ADI Kuiper Image for
-CN0540</a></p></li>
-<li><p>Validate, Format, and Flash the SD Card</p></li>
+<h3>SD Card<a class="headerlink" href="#sd-card" title="Link to this heading"></a></h3>
+<p>To prepare the SD card for the Zedboard:</p>
+<ol class="arabic">
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/kuiper-linux">Download ADI Kuiper Image for CN0540</a></p></li>
+<li><dl class="simple">
+<dt>Validate, Format, and Flash the SD Card</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/zynq_images/windows_hosts">Format and flash the SD Card using Windows</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/zynq_images/linux_hosts">Format and flash the SD Card using Linux</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Configuring the SD Card. Follow instructions for Xilinx projects.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Directory on SD image: cn0577_zed</p></li>
+<li><p>Image files on SD card: zynq-common</p></li>
+</ul>
+</div></blockquote>
+</li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="o">-</span> <span class="p">[[</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">tools</span><span class="o">-</span><span class="n">software</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">software</span><span class="o">/</span><span class="n">zynq_images</span><span class="o">/</span><span class="n">windows_hosts</span><span class="o">|</span> <span class="n">Format</span> <span class="ow">and</span> <span class="n">flash</span> <span class="n">the</span> <span class="n">SD</span> <span class="n">Card</span> <span class="n">using</span> <span class="n">Windows</span><span class="p">]]</span>
-    <span class="o">-</span> <span class="p">[[</span><span class="o">/</span><span class="n">resources</span><span class="o">/</span><span class="n">tools</span><span class="o">-</span><span class="n">software</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">software</span><span class="o">/</span><span class="n">zynq_images</span><span class="o">/</span><span class="n">linux_hosts</span><span class="o">|</span> <span class="n">Format</span> <span class="ow">and</span> <span class="n">flash</span> <span class="n">the</span> <span class="n">SD</span> <span class="n">Card</span> <span class="n">using</span> <span class="n">Linux</span><span class="p">]]</span>
-<span class="o">-</span> <span class="n">Configuring</span> <span class="n">the</span> <span class="n">SD</span> <span class="n">Card</span><span class="o">.</span> <span class="n">Follow</span> <span class="n">instructions</span> <span class="k">for</span> <span class="n">Xilinx</span> <span class="n">projects</span><span class="o">.</span>
-</pre></div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Directory on SD image: cn0577_zed</div>
-<div class="line">Image files on SD card: zynq-common</div>
-</div>
+</section>
 </section>
 <section id="system-block-diagram">
-<h3>System Block Diagram<a class="headerlink" href="#system-block-diagram" title="Link to this heading"></a></h3>
-<p><a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/sys_block_diag.png"><img alt="sys_block_diag.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/sys_block_diag.png" style="width: 600px;" /></a></p>
-</section>
+<h2>System Block Diagram<a class="headerlink" href="#system-block-diagram" title="Link to this heading"></a></h2>
+<img alt="../../../_images/sys_block_diag.png" src="../../../_images/sys_block_diag.png" />
 <section id="running-the-system">
 <h3>Running the System<a class="headerlink" href="#running-the-system" title="Link to this heading"></a></h3>
 <p>To set up the complete system using <strong>Audio Precision audio analyzer</strong> as input
@@ -575,55 +576,50 @@ source, follow these steps:</p>
 <li><p>Download and install the IIO Oscilloscope application on the PC, Mac, or
 Linux host.</p></li>
 <li><p>Load the Analog Devices Kuiper Linux image onto the SD card.</p></li>
-<li><p>Configure the SD card for the <a href="#id2"><span class="problematic" id="id11">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a>.</p></li>
+<li><p>Configure the SD card for the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a>.</p></li>
 <li><p>Place the SD card into the ZedBoard.</p></li>
-<li><p>Connect <a href="#id2"><span class="problematic" id="id12">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> to the ZedBoard through
+<li><p>Connect <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> to the ZedBoard through
 the FMC pin connector.</p></li>
 <li><p>Connect the 12 V power supply jack on the ZedBoard.</p></li>
 <li><p>Plug in the LAN cable from the ZedBoard to the host computer.</p></li>
-<li><p>Connect the <a href="#id2"><span class="problematic" id="id13">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> to the Audio
+<li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> to the Audio
 Precision audio analyzer using the XLR to SMA adapter cable.</p></li>
-<li><p>Connect the ground of the <a href="#id2"><span class="problematic" id="id14">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> to the
+<li><p>Connect the ground of the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> to the
 Audio Precision audio analyzer.</p></li>
 <li><p>Connect the Audio Precision audio analyzer USB cable to PC.</p></li>
 <li><p>Run the IIO Oscilloscope software and capture the resulting ADC data.</p></li>
 </ol>
-<div class="line-block">
-<div class="line"><a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/demo_with_ap.png"><img alt="Demo with AP as input source" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/demo_with_ap.png" style="width: 600px;" /></a></div>
-<div class="line">Using <a href="#id2"><span class="problematic" id="id15">`ADALM2000 &lt;ADI&gt;ADALM2000&gt;`__</span></a> as input source:</div>
-</div>
+<img alt="../../../_images/demo_with_ap.png" src="../../../_images/demo_with_ap.png" />
+<p>Using <a class="icon adi reference external" href="https://www.analog.com/ADALM2000">ADALM2000</a> as input source:</p>
 <ol class="arabic simple">
 <li><p>Download and install the IIO Oscilloscope application on the PC, Mac, or
 Linux host.</p></li>
 <li><p>Load the Analog Devices Kuiper Linux image onto the SD card.</p></li>
-<li><p>Configure the SD card for the <a href="#id2"><span class="problematic" id="id16">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a>.</p></li>
+<li><p>Configure the SD card for the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a>.</p></li>
 <li><p>Place the SD card into the ZedBoard.</p></li>
-<li><p>Connect <a href="#id2"><span class="problematic" id="id17">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> to the ZedBoard through
+<li><p>Connect <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> to the ZedBoard through
 the FMC pin connector.</p></li>
 <li><p>Connect the 12 V power supply jack on the ZedBoard.</p></li>
 <li><p>Plug in the LAN cable from the ZedBoard to the host computer.</p></li>
-<li><p>Connect the <a href="#id2"><span class="problematic" id="id18">`AD-M2KBNC-EBZ &lt;ADI&gt;AD-M2KBNC-EBZ&gt;`__</span></a> to the ADALM2000.</p></li>
-<li><p>Connect the ADALM2000 to <a href="#id2"><span class="problematic" id="id19">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> using
+<li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/AD-M2KBNC-EBZ">AD-M2KBNC-EBZ</a> to the ADALM2000.</p></li>
+<li><p>Connect the ADALM2000 to <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> using
 BNC to SMA cable (W1 to J1 and W2 to J2)</p></li>
 <li><p>Plug the ADALM2000 to the host PC. Open Scopy and use the Signal Generator
-feature to set input. More information on using the Scopy Signal Generator in
-<a class="reference external" href="/university/tools/m2k/scopy/siggen">here</a>.</p></li>
+feature to set input. More information on using the Scopy Signal Generator in <a class="reference external" href="https://wiki.analog.com/university/tools/m2k/scopy/siggen">here</a>.</p></li>
 <li><p>Run the IIO Oscilloscope software and capture the resulting ADC data.</p></li>
 </ol>
-<p><a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/demo_with_m2k.png"><img alt="Demo with M2K as input source" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/demo_with_m2k.png" style="width: 600px;" /></a></p>
+<img alt="../../../_images/demo_with_m2k.png" src="../../../_images/demo_with_m2k.png" />
 </section>
 </section>
 <section id="id1">
 <h2>Software<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<p>The <a href="#id2"><span class="problematic" id="id20">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> is supported with the Libiio
+<p>The <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> is supported with the Libiio
 library. This library is cross-platform (Windows, Linux, Mac) with language
 bindings for C, C#, Python, MATLAB, and others. Two easy to examples that can be
-used with the <a href="#id2"><span class="problematic" id="id21">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> are:</p>
+used with the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> are:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/iio_oscilloscope">IIO
-Oscilloscope</a></p></li>
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/pyadi-iio">Python (via
-Pyadi-iio)</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/iio_oscilloscope">IIO Oscilloscope</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio">Python (via Pyadi-iio)</a></p></li>
 </ul>
 <section id="connection">
 <h3>Connection<a class="headerlink" href="#connection" title="Link to this heading"></a></h3>
@@ -633,16 +629,15 @@ connect to the device as well as the platform where the EVAL-CN0577-FMCZ is
 attached. The platform currently supported for the CN0557: ZedBoard using the
 ADI Kuiper Linux. The user needs to supply a URI which will be used in the
 context creation. The Libiio is a library for interfacing with IIO devices.</p>
-<p>&lt;WRAP center round download 60%&gt; Install the <a class="reference external" href="https://github.com/analogdevicesinc/libiio/releases">Libiio
-package</a> on your
-machine. &lt;/WRAP&gt;</p>
-<p>The <a class="reference external" href="/resources/tools-software/linux-software/libiio/iio_info">iio_info</a>
+<p>Install the <a class="reference external" href="https://github.com/analogdevicesinc/libiio/releases">Libiio package</a> on your
+machine.</p>
+<p>The <a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/iio_info">iio_info</a>
 command is a part of the libIIO package that reports all IIO attributes.</p>
-<div class="line-block">
-<div class="line">Upon installation, simply enter the command on the terminal command line to
-access it.</div>
-<div class="line">=== For Windows machine connected to ZedBoard via Ethernet cable: ===</div>
-</div>
+<p>Upon installation, simply enter the command on the terminal command line to
+access it.</p>
+</section>
+<section id="for-windows-machine-connected-to-zedboard-via-ethernet-cable">
+<h3>For Windows machine connected to ZedBoard via Ethernet cable:<a class="headerlink" href="#for-windows-machine-connected-to-zedboard-via-ethernet-cable" title="Link to this heading"></a></h3>
 <section id="using-ssh-terminal-software">
 <h4>Using SSH Terminal Software:<a class="headerlink" href="#using-ssh-terminal-software" title="Link to this heading"></a></h4>
 <p>Open SSH Terminal Software (PuTTY, TeraTerm or similar). User should now start
@@ -651,10 +646,9 @@ the terminal, run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>analog@analog:~$ iio_info -u ip:&lt;ip_address&gt;
 </pre></div>
 </div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">==Using command terminal:==</div>
-</div>
+</section>
+<section id="using-command-terminal">
+<h4>Using Command Terminal:<a class="headerlink" href="#using-command-terminal" title="Link to this heading"></a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iio_info</span> <span class="o">-</span><span class="n">s</span>
 </pre></div>
 </div>
@@ -674,7 +668,7 @@ address to access the EVAL-CN0577-FMCZ.</p>
 <section id="iio-commands">
 <h3>IIO Commands<a class="headerlink" href="#iio-commands" title="Link to this heading"></a></h3>
 <p>There are different commands that can be used to manage the device being used.
-The <a class="reference external" href="/resources/tools-software/linux-software/libiio/iio_attr">iio_attr</a>
+The <a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/libiio/iio_attr">iio_attr</a>
 command reads and writes IIO attributes.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>analog@analog:~$ iio_attr [OPTION]...
 </pre></div>
@@ -692,46 +686,51 @@ command reads and writes IIO attributes.</p>
 </section>
 <section id="iio-oscilloscope">
 <h3>IIO Oscilloscope<a class="headerlink" href="#iio-oscilloscope" title="Link to this heading"></a></h3>
-<p>&lt;WRAP center round download 60%&gt; Make sure to download/update to the latest
-version of IIO-Oscilloscope.</p>
-<p><a class="reference external" href="https://github.com/analogdevicesinc/iio-oscilloscope/releases">https://github.com/analogdevicesinc/iio-oscilloscope/releases</a> &lt;/WRAP&gt;</p>
+<blockquote>
+<div><div class="admonition-download admonition">
+<p class="admonition-title">Download</p>
+<dl class="simple">
+<dt>Make sure to download/update to the latest version of IIO Oscilloscope.</dt><dd><p><a href="#id2"><span class="problematic" id="id3">`https://github.com/analogdevicesinc/iio-oscilloscope/releases`_</span></a></p>
+</dd>
+</dl>
+</div>
+</div></blockquote>
 <ol class="arabic simple">
-<li><p>Once done with the installation or an update of the latest IIO-Oscilloscope,
+<li><p>Once done with the installation or an update of the latest IIO Oscilloscope,
 open the application. The user needs to supply a URI which will be used in
 the context creation of the IIO Oscilloscope and the instructions can be seen
 from the previous section.</p></li>
 <li><p>Press refresh to display available IIO Devices, once ltc2387 appeared, press
 connect.</p></li>
 </ol>
-<p><a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_osc.png"><img alt="577_osc.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_osc.png" style="width: 500px;" /></a></p>
+<img alt="../../../_images/577_osc.png" src="../../../_images/577_osc.png" />
 <section id="debug-panel">
 <h4>Debug Panel<a class="headerlink" href="#debug-panel" title="Link to this heading"></a></h4>
 <p>Below is the Debug panel of ltc2387 wherein you can directly access the
-attributes of the device. <a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_debug_panel.png"><img alt="577_debug_panel.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_debug_panel.png" style="width: 500px;" /></a></p>
+attributes of the device.</p>
+<img alt="../../../_images/577_debug_panel.png" src="../../../_images/577_debug_panel.png" />
 </section>
 <section id="dmm-panel">
 <h4>DMM Panel<a class="headerlink" href="#dmm-panel" title="Link to this heading"></a></h4>
 <p>Access the DMM panel to see the instantaneous reading of the ADC voltages and
-the device temperature. <a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_dmm_panel.png"><img alt="577_dmm_panel.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/577_dmm_panel.png" style="width: 500px;" /></a></p>
+the device temperature.</p>
 </section>
 </section>
 <section id="pyadi-iio">
 <h3>Pyadi-IIO<a class="headerlink" href="#pyadi-iio" title="Link to this heading"></a></h3>
-<div class="line-block">
-<div class="line"><a class="reference external" href="/resources/tools-software/linux-software/pyadi-iio">PyADI-IIO</a> is a python
+<p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio">PyADI-IIO</a> is a python
 abstraction module for ADI hardware with IIO drivers to make them easier to
 use. This module provides device-specific APIs built on top of the current
 libIIO python bindings. These interfaces try to match the driver naming as
 much as possible without the need to understand the complexities of libIIO and
-IIO.</div>
-</div>
+IIO.</p>
 <section id="running-the-example">
 <h4>Running the Example<a class="headerlink" href="#running-the-example" title="Link to this heading"></a></h4>
 <p>After installing and configuring PYADI-IIO in your machine, you are now ready to
 run python script examples. In our case, run the ltc2387_example.py found in the
 examples folder.</p>
 <ol class="arabic simple">
-<li><p>Connect the <a href="#id2"><span class="problematic" id="id22">`EVAL-CN0577-FMCZ &lt;ADI&gt;EVAL-CN0577-FMCZ&gt;`__</span></a> to the ZedBoard.</p></li>
+<li><p>Connect the <a class="icon adi reference external" href="https://www.analog.com/CN0577">EVAL-CN0577-FMCZ</a> to the ZedBoard.</p></li>
 <li><p>Open command prompt or terminal and navigate through the examples folder
 inside the downloaded or cloned <em>pyadi-iio</em> directory.</p></li>
 <li><p>Run the example script using the command.</p></li>
@@ -739,63 +738,66 @@ inside the downloaded or cloned <em>pyadi-iio</em> directory.</p></li>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.../pyadi-iio/examples $ python3 ltc2387_example.py
 </pre></div>
 </div>
-<p>Running example with ADALM2000 with the setting below: <a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/scopy_diff_input.png"><img alt="scopy_diff_input.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/scopy_diff_input.png" style="width: 600px;" /></a></p>
-<p>The expected output should look like this: <a class="reference internal" href="resources/eval/user-guides/circuits-from-the-lab/cn0577/output_time_domain.png"><img alt="output_time_domain.png" src="resources/eval/user-guides/circuits-from-the-lab/cn0577/output_time_domain.png" style="width: 600px;" /></a></p>
-<p>&lt;WRAP round 80% download&gt; Github link for the python sample script: <a class="reference external" href="https://github.com/analogdevicesinc/pyadi-iio/blob/master/examples/ltc2387_example.py">CN0577
-Python
-Example</a>
-&lt;/WRAP&gt;</p>
+<p>Running example with ADALM2000 with the setting below:</p>
+<img alt="../../../_images/scopy_diff_input.png" src="../../../_images/scopy_diff_input.png" />
+<p>The expected output should look like this:</p>
+<img alt="../../../_images/output_time_domain.png" src="../../../_images/output_time_domain.png" />
+<p>GitHub link for the python sample script: <a class="reference external" href="https://github.com/analogdevicesinc/pyadi-iio/blob/master/examples/ltc2387_example.py">CN0577 Python Example</a></p>
 </section>
 </section>
 </section>
 <section id="schematic-pcb-layout-bill-of-materials">
 <h2>Schematic, PCB Layout, Bill of Materials<a class="headerlink" href="#schematic-pcb-layout-bill-of-materials" title="Link to this heading"></a></h2>
-<p>&lt;WRAP round 80% download&gt; <a href="#id2"><span class="problematic" id="id23">`EVAL-CN0577-FMCZ Design &amp; Integration
-Files &lt;ADI&gt;CN0577-designsupport&gt;`__</span></a></p>
-<ul class="simple">
+<div class="admonition-download admonition">
+<p class="admonition-title">Download</p>
+<p><cite>EVAL-CN0577-FMCZ Design &amp; Integration Files &lt;CN0577-designsupport.zip&gt;</cite></p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Schematics</p></li>
 <li><p>PCB Layout</p></li>
 <li><p>Bill of Materials</p></li>
 <li><p>Allegro Project</p></li>
 <li><p>LTspice Simulation File</p></li>
 </ul>
-<p>&lt;/WRAP&gt;</p>
-</section>
+</div></blockquote>
+</div>
 </section>
 <section id="reference-demos-software">
-<h1>Reference Demos &amp; Software<a class="headerlink" href="#reference-demos-software" title="Link to this heading"></a></h1>
+<h2>Reference Demos &amp; Software<a class="headerlink" href="#reference-demos-software" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/analogdevicesinc/pyadi-iio">pyADI-IIO</a></p></li>
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/pyadi-iio">PyADI-IIO Installation
-Guide</a></p></li>
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/iio_oscilloscope">IIO Oscilloscope Installation
-Guide</a></p></li>
-<li><p><a class="reference external" href="/resources/tools-software/linux-software/kuiper-linux">Kuiper Images</a></p></li>
-<li><p><a class="reference external" href="/resources/eval/user-guides/circuits-from-the-lab/cn0577/hdl">CN0577 HDL Reference
-Design</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio">PyADI-IIO Installation Guide</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/iio_oscilloscope">IIO Oscilloscope Installation Guide</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/tools-software/linux-software/kuiper-linux">Kuiper Images</a></p></li>
+<li><p><a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/circuits-from-the-lab/cn0577/hdl">CN0577 HDL Reference Design</a></p></li>
 </ul>
 </section>
 <section id="more-information-and-useful-links">
-<h1>More Information and Useful Links<a class="headerlink" href="#more-information-and-useful-links" title="Link to this heading"></a></h1>
+<h2>More Information and Useful Links<a class="headerlink" href="#more-information-and-useful-links" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a href="#id2"><span class="problematic" id="id24">`CN0577 Circuit Note Page &lt;ADI&gt;CN0577&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id25">`LTC2387-18 Product Page &lt;ADI&gt;LTC2387-18&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id26">`ADR4520 Product Page &lt;ADI&gt;ADR4520&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id27">`ADA4945-1 Product Page &lt;ADI&gt;ADA4945-1&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id28">`ADN4661 Product Page &lt;ADI&gt;ADN4661&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id29">`ADG3241 Product Page &lt;ADI&gt;ADG3241&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id30">`LT3042 Product Page &lt;ADI&gt;LT3042&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id31">`LT3080 Product Page &lt;ADI&gt;LT3080&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id32">`LT3094 Product Page &lt;ADI&gt;LT3094&gt;`__</span></a></p></li>
-<li><p><a href="#id2"><span class="problematic" id="id33">`LT1931 Product Page &lt;ADI&gt;LT1931&gt;`__</span></a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/ADCN0577">CN0577 Circuit Note Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/LTC2387-18">LTC2387-18 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/ADR4520">ADR4520 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/ADA4945-1">ADA4945-1 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/ADN4661">ADN4661 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/ADG3241">ADG3241 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/LT3042">LT3042 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/LT3080">LT3080 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/LT3094">LT3094 Product Page</a></p></li>
+<li><p><a class="icon adi reference external" href="https://www.analog.com/LT1931">LT1931 Product Page</a></p></li>
 </ul>
+</section>
 <section id="registration">
 <h2>Registration<a class="headerlink" href="#registration" title="Link to this heading"></a></h2>
-<p>&lt;WRAP round tip 80% &gt; Receive software update notifications, documentation
+<p>Receive software update notifications, documentation
 updates, view the latest videos, and more when you register your hardware.
-<a href="#id2"><span class="problematic" id="id34">`Register &lt;reg&gt;EVAL-CN0577-FMCZ?&amp;v=RevB&gt;`__</span></a> to receive all these great benefits
-and more! &lt;/WRAP&gt;</p>
-<p>// End of Document //</p>
+<a class="reference external" href="https://my.analog.com/en/app/registration/hardware/EVAL-CN0577-FMCZ?&amp;v=RevB">Register</a> to receive all these great benefits
+and more!</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="HDL-reference-design/index.html">HDL Reference Design</a></li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -804,7 +806,7 @@ and more! &lt;/WRAP&gt;</p>
               <div class="related">
                 &nbsp;
     <a href="../eval-cn0575-rpiz/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">EVAL-CN0575-RPIZ</a>
-    <a href="../eval-isomax/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">EVAL-ISOMAX</a>
+    <a href="HDL-reference-design/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">HDL Reference Design</a>
               </div>
           
         </div>
