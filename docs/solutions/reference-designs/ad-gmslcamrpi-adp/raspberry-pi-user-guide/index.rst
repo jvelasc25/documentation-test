@@ -1,5 +1,5 @@
-Raspberry Pi User Guide
-=======================
+Using with Raspberry Pi 
+=========================
 
 Required Hardware
 -----------------

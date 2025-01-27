@@ -3,7 +3,6 @@
 Reference Designs
 ==================
 
-ADI provides and maintains a series of open-source software:
 
 .. toctree::
    :titlesonly:
