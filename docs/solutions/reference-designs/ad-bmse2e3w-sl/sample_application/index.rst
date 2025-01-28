@@ -44,3 +44,4 @@ Below diagram depicts the essential components needed when using this BMS refere
    .. image:: load_diagram.png
 
 After the set up for vehicle and load connection is done, you can now load the sample firmware for vehicle application.
+

@@ -437,3 +437,4 @@ The Diagnostics tab offers a straightforward way to execute on-device diagnostic
 
 - A log of diagnostic-specific data appears in the center of the screen.
 - The log provides context for understanding why a diagnostic may have failed.
+

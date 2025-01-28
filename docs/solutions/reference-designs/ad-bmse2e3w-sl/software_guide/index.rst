@@ -147,3 +147,4 @@ Indicators:
 * Red color = failed
 
  .. image:: update_diagnsotic_page.png
+

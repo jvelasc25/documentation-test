@@ -22,7 +22,6 @@ The on-board MAX32690 MCU, when loaded with the firmware, can perform BMS measur
 
 The AD-BMSE2E3W-SL is designed to perform either in embedded mode or using a GUI, where it calculates the battery's State of Charge (SoC) and State of Health (SoH) through enhanced coulomb counting technique.
 
-
 Features
 ++++++++
 
@@ -227,3 +226,4 @@ Help and Support
 ----------------
 
 For questions and more information, please visit the :ez:`EngineerZone Support Community </>`.
+
