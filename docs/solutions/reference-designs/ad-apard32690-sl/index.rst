@@ -18,13 +18,19 @@ industrial field devices. Some of the main features and benefits include:
 - Built-in security for root-of-trust, mutual authentication, data confidentiality and integrity, secure boot, and secure communications
 - Open-source software stack
 
- .. image:: eval-max32690-ardz_angle.jpg
+
+ .. figure:: eval-max32690-ardz_angle.jpg
     :width: 450 px
     :align: left
 
- .. image:: ad-apard32690-sl-fbl.png
-   :width: 450 px
-   :align: right
+    AD-APARD32690-SL Microcontroller Board
+
+ .. figure:: ad-apard32690-sl-fbl.png
+    :width: 450 px
+    :align: right
+    
+    Simplified Block Diagram
+
 
 
 .. csv-table:: Specifications
@@ -35,6 +41,7 @@ industrial field devices. Some of the main features and benefits include:
 - :download:`Schematics <02-073637-01-c.pdf>`
 - :download:`Layout <08_073637c.zip>`
 - :download:`Bill of Materials <05-073637-01-c.zip>`
+
 
 System Setup & Evaluation
 -------------------------
@@ -56,8 +63,10 @@ This is what you’ll find in the development kit box:
 Application Development
 -----------------------
 
-.. image:: sw_block_diagram.png
+.. figure:: sw_block_diagram.png
     :width: 400 px
+
+    Software Architecture
 
 The :adi:`AD-APARD32690-SL <AD-APARD32690-SL>` firmware is based on ADI’s
 open-source no-OS framework. It includes the bare-metal device drivers for all

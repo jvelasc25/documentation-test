@@ -12,7 +12,9 @@ Required Hardware
 AD-APARD32690-SL Board Description
 ----------------------------------
 
-.. image:: apard32690_hw_components.png
+.. figure:: apard32690_hw_components.png
+    
+    Hardware Components and Connections
 
 .. csv-table:: Pin Descriptions
     :file: pin-descriptions.csv
@@ -28,8 +30,10 @@ System Setup
   interface, to the AD-APARD32690-SL.
 - Connect the power supply to the AD-APARD32690-SL.
 
-.. image:: apard32690_system_setup.jpg
+.. figure:: apard32690_system_setup.jpg
     :width: 600 px
+
+    System Setup
 
 Updating the AD-APARD32690-SL firmware
 --------------------------------------
@@ -50,8 +54,10 @@ MAX32625PICO.
   * Plug the micro USB cable into the PC.
   * Once you see the MAINTENANCE drive being mounted, you may release the button.
 
-    .. image:: picture2.jpg
-      :width: 200 px
+    .. figure:: picture2.jpg
+      :width: 300 px
+
+      Imaging the MAX32625PICO
 
 - Drag and drop (to the MAINTENANCE drive) the firmware image you previously downloaded.
 - After a few seconds, the MAINTENANCE drive will disappear and will be replaced
@@ -63,8 +69,7 @@ Programming the AD-APARD32690-SL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Connect the MAX32625PICO to the PC using the micro USB cable.
-- Connect the MAX32625PICO to the AD-APARD32690-SL board using the 10-pin ribbon
-  cable.
+- Connect the MAX32625PICO to the AD-APARD32690-SL board using the 10-pin ribbon cable.
 - Connect the power supply to the AD-APARD32690-SL. Make sure the board is
   powered up for the next steps.
 - A DAPLINK drive should appear as mounted on your PC.

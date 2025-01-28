@@ -4,9 +4,10 @@ AD-GMSL2ETH-SL
 Introduction
 ------------
 
-.. image:: ad-gmsl2eth-sl.jpg
+.. figure:: ad-gmsl2eth-sl.jpg
     :width: 400 px
 
+    AD-GMSL2ETH-SL GMSL Board
 
 The **AD-GMSL2ETH-SL** is an edge compute platform enabling low latency data
 transfer from eight :adi:`Gigabit Multimedia Serial Link™ (GMSL) <en/product-category/gigabit-multimedia-serial-link.html>`
