@@ -4,58 +4,63 @@ Using with AMD Kria
 Required Hardware
 -----------------
 
-**Development kits**
+ **Development kits**
 
-- :adi:`MAX96724-BAK-EVK GMSL Deserializer evaluation kit <en/products/max96724.html>`
-- `AMD KV260 <https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html>`__
+ - :adi:`MAX96724-BAK-EVK GMSL Deserializer evaluation kit <en/products/max96724.html>`
+ - `AMD KV260 <https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html>`__
 
-**Supported image sensors & cameras**
+ **Supported image sensors & cameras**
 
-- `C1 TIER-IV camera with integrated GMSL serializer <https://sensor.tier4.jp/automotive-camera/#C1>`__
+ - `C1 TIER-IV camera with integrated GMSL serializer <https://sensor.tier4.jp/automotive-camera/#C1>`__
 
-**Cables**
+ **Cables**
 
-- 15 pin same-side ribbon cable, P/N: MP-FFCA10152003A or similar
-
-
+ - 15 pin same-side ribbon cable, P/N: MP-FFCA10152003A or similar
 
 Hardware changes
 ----------------
 
 **GMSL Deserializer Evaluation Kit**
 
-- Flip the SW5 switches to the ON position - enables I2C communication over the CSI bus
-     .. image:: gmsl_deserializer_sw5.jpg
+ - Flip the SW5 switches to the ON position to enable I2C communication over the CSI bus
+     .. figure:: gmsl_deserializer_sw5.jpg
         :width: 300 px
+
+        SW5 Switch for Enabling I2C
 
 
 - Bridge R88 - provides VDDIO to the adapter
-     .. image:: deserializer_resistors.jpg
+     .. figure:: deserializer_resistors.jpg
         :width: 300 px
-   
 
+        R88 for VDDIO Provision
+   
 |
 
 **AD-GMSLCAMRPI-ADP# Adapter**
 
 - Configure the switches on the GMSL Deserializer adapter for **CAM2**.
 
-
 **Serializer adapter**           
 
-.. image:: ser_interposer.jpg
+.. figure:: ser_interposer.jpg
     :width: 400 px
    
+   Serializer Adapter Camera Switches 
 
 **Deserializer adapter**
 
-.. image:: deser_interposer.jpg
+.. figure:: deser_interposer.jpg
     :width: 400 px
 
-
+    Deserializer Adapter Camera Switches
 
 System Setup
 --------------
+
+.. figure:: kria_adapter.jpg
+
+    Hardware Setup with AMD Kria SoM
 
 #. Write the `AMD Kria latest SD card image <https://github.com/analogdevicesinc/gmsl#platforms-user-guides-sd-card-images-and-build-instructions>`__ on a 8GB (or more) SD card
 #. Plug the SD card into the Kria SD card slot.
@@ -69,45 +74,49 @@ System Setup
 
 .. note:: 
        Ubuntu credentials 
+
       * user:analog
       * pass:analog
 
-
 .. note:: 
-    To change the number of cameras that would be used in the setup, you would
-    need to change the default devicetree binary that is located in the boot
-    partition of the SD card to the corresponding number of cameras (between 1 and
-    2), by overwriting the system.dtb to an one from the corresponding directory.
-    
-    The devicetree binary options are located in the bootfs partiiton (in
-    **nr_cams/1cam or 2cams directory/system.dtb**). The **bootfs** partition can be
-    mounted by using the mount utility: e.g., **mount /dev/mmcblk1p1 /mnt**.
+     To change the number of cameras that would be used in the setup, you would
+     need to change the default devicetree binary that is located in the boot
+     partition of the SD card to the corresponding number of cameras (between 1 and
+     2), by overwriting the system.dtb to an one from the corresponding directory.
 
-.. image:: kria_adapter.jpg
+     The devicetree binary options are located in the bootfs partiiton (in
+     **nr_cams/1cam or 2cams directory/system.dtb**). The **bootfs** partition can be
+     mounted by using the mount utility: e.g., **mount /dev/mmcblk1p1 /mnt**.
 
 |
 
 Running the Evaluation Application
 ----------------------------------
 
-Once Linux boots you’ll see on the HDMI monitor the Linux desktop and on the top
-left corner a shortcut to the script named **video_cfg.sh**. Double clicking on
+Once Linux boots, you’ll see on the HDMI monitor the Linux desktop and on the top
+left corner a shortcut to the script named **video_cfg.sh**. Double-clicking on
 the icon will start the media-ctl configuration script. The script is running in
-background without any pop ups.
+background without any pop-ups.
 
-.. image:: kria_video_cfg.png
+.. figure:: kria_video_cfg.png
 
-After the script was executed once, one should double click on Qt V4L2 test
-Utility icon to start the video capture application. A window like bellow should
-open. First the user must select **video0** device by clicking the open icon.
+    Kria Video Configuration Script
 
-.. image:: qv4l2_select_video_dev.png
+After the script was executed once, one should double-click on Qt V4L2 test
+Utility icon to start the video capture application. A window like below should
+open. First, the user must select **video0** device by clicking the open icon.
+
+.. figure:: qv4l2_select_video_dev.png
+
+    Selecting Video Device
 
 A new instance of Qt V4L2 test Utility should be started and selected **video1**
 this time. After this step the play button should be pressed on both Qt V4L2
 test Utility instances. Video should be visible on the 2 windows.
 
-.. image:: qv4l2_video.jpg
+.. figure:: qv4l2_video.jpg
+
+    Starting a New Instance
 
 OpenGL rendering is recommended to be disabled by accessing Qt V4L2 test Utility
 capture menu. Capture will start only if both Qt V4L2 test Utility instances are
@@ -136,5 +145,14 @@ The project and the project’s overview can be found at the following links:
   * `project's link <https://github.com/analogdevicesinc/hdl/tree/main/projects/max96724/kv260>`__ 
   * :dokuwiki:`overview's link <resources/eval/user-guides/ad-gmslcamrpi-adp/ug_amd_kria/hdl>`
 
-|
------------------------------------------------------------------------------------------------------------------------------------
+Up Next...
+
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 2
+   :glob:
+
+   */index
+
+----------------------------------------------------------------------------------------------------------
