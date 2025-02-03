@@ -7,11 +7,12 @@
 
     <title>Software Guide &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/style.min.css?v=a9555194" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=2acfe7ed" />
     <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script defer="" src="../../../../_static/app.umd.js?v=689b8755"></script>
+    <script defer="" src="../../../../_static/app.umd.js?v=2e023412"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -19,8 +20,8 @@
     <link rel="prev" title="Hardware Guide" href="../hardware-guide/index.html" />
    
   
-  <meta name="global_root" content="../../../../../">
-  <meta name="repo" content="documentation">
+  <meta name="repository" content="documentation">
+  <meta name="version" content="">
   
 
 
@@ -40,7 +41,6 @@
   }
 </style>
   </head><body>
-  <div class="banner"></div>
   <input type="checkbox" id="input-show-toc">
   <input type="checkbox" id="input-show-localtoc">
   <input type="checkbox" id="input-show-repotoc">
@@ -78,15 +78,6 @@
   <div class="repotoc-tree overlay">
     <root>
   <a href="../../../../index.html" class="current">System Level</a>
-  <a href="../../../../../hdl/index.html">HDL</a>
-  <a href="../../../../../testbenches/index.html">HDL Testbenches</a>
-  <a href="../../../../../pyadi-iio/index.html">Hardware Python Interfaces</a>
-  <a href="../../../../../libiio/index.html">libiio</a>
-  <a href="../../../../../no-OS/index.html">no-OS</a>
-  <a href="../../../../../precision-converters-firmware/index.html">Precision Converters Firmware</a>
-  <a href="../../../../../PrecisionToolbox/index.html">Precision Toolbox</a>
-  <a href="../../../../../scopy/index.html">Scopy</a>
-  <a href="../../../../../doctools/index.html">Doctools</a>
 </root>
 
   </div>
@@ -125,13 +116,13 @@
 <li><a class="reference internal" href="#general-tips-for-using-the-ad-gmsl522-sl-board">General Tips for Using the AD-GMSL522-SL Board</a></li>
 <li><a class="reference internal" href="#streaming-video-data-via-generic-sensor-driver">Streaming Video Data via “Generic Sensor Driver”</a></li>
 <li><a class="reference internal" href="#loopback-testing-and-exercises">Loopback Testing and Exercises</a><ul>
-<li><a class="reference internal" href="#looping-back-the-on-board-max96717-to-the-on-board-max96724-streaming-a-checkerboard-pattern-from-the-max96717">Looping back the On-Board MAX96717 to the On-Board MAX96724 (streaming a checkerboard pattern from the MAX96717)</a></li>
+<li><a class="reference internal" href="#looping-back-the-onboard-max96717-to-the-onboard-max96724-streaming-a-checkerboard-pattern-from-the-max96717">Looping back the Onboard MAX96717 to the Onboard MAX96724 (streaming a checkerboard pattern from the MAX96717)</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#debugging-csi-input-to-ad-gmsl522-sl-board">Debugging CSI Input to AD-GMSL522-SL Board</a></li>
 <li><a class="reference internal" href="#other-helpful-software-and-improvements">Other Helpful Software and Improvements</a><ul>
 <li><a class="reference internal" href="#viewing-ad-gmsl522-sl-remotely-using-nomachine">Viewing AD-GMSL522-SL Remotely Using NoMachine</a></li>
-<li><a class="reference internal" href="#booting-from-nvme">Booting From NVMe</a></li>
+<li><a class="reference internal" href="#booting-from-nvme">Booting from NVMe</a></li>
 <li><a class="reference internal" href="#booting-from-sd-card">Booting From SD Card</a></li>
 <li><a class="reference internal" href="#restarting-the-fan-service">Restarting the Fan Service</a></li>
 </ul>
@@ -166,15 +157,6 @@ Content on this topic
 <div class="repotoc-tree">
   <root>
   <a href="../../../../index.html" class="current">System Level</a>
-  <a href="../../../../../hdl/index.html">HDL</a>
-  <a href="../../../../../testbenches/index.html">HDL Testbenches</a>
-  <a href="../../../../../pyadi-iio/index.html">Hardware Python Interfaces</a>
-  <a href="../../../../../libiio/index.html">libiio</a>
-  <a href="../../../../../no-OS/index.html">no-OS</a>
-  <a href="../../../../../precision-converters-firmware/index.html">Precision Converters Firmware</a>
-  <a href="../../../../../PrecisionToolbox/index.html">Precision Toolbox</a>
-  <a href="../../../../../scopy/index.html">Scopy</a>
-  <a href="../../../../../doctools/index.html">Doctools</a>
 </root>
 
 </div>
@@ -328,7 +310,7 @@ Content on this topic
 </li>
 <li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13" id="toctree-collapse-13" checked=""/><div class="collapse"><a class="reference internal" href="../../index.html">Reference Designs</a><label for="toctree-collapse-13"><div class="icon"></div></label></div><ul class="current">
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-1" id="toctree-collapse-13-1"/><div class="collapse"><a class="reference internal" href="../../ad-apard32690-sl/index.html">AD-APARD32690-SL</a><label for="toctree-collapse-13-1"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/hardware-and-software-guide/index.html">Hardware &amp; Software Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-2" id="toctree-collapse-13-2"/><div class="collapse"><a class="reference internal" href="../../ad-bmse2e3w-sl/index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-13-2"><div class="icon"></div></label></div><ul>
@@ -353,19 +335,19 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7" id="toctree-collapse-13-7"/><div class="collapse"><a class="reference internal" href="../../ad-gmslcamrpi-adp/index.html">AD-GMSLCAMRPI-ADP#</a><label for="toctree-collapse-13-7"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/index.html">Using with AMD Kria</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/nvidia-jetson/index.html">Using with Nvidia Jetson Orin Nano</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/raspberry-pi-user-guide/index.html">Raspberry Pi User Guide</a></li>
+<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7-1" id="toctree-collapse-13-7-1"/><div class="collapse"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/index.html">Using with AMD Kria</a><label for="toctree-collapse-13-7-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/hdl-reference-design/index.html">GMSL HDL Reference Design</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-8" id="toctree-collapse-13-8"/><div class="collapse"><a class="reference internal" href="../../ad-gmslcamrpi-adp/index.html#id1">AD-GMSLCAMRPI-ADP</a><label for="toctree-collapse-13-8"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/index.html">Using with AMD Kria</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/nvidia-jetson/index.html">Using with Nvidia Jetson Orin Nano</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/raspberry-pi-user-guide/index.html">Raspberry Pi User Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/raspberry-pi-user-guide/index.html">Using with Raspberry Pi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../eval-cn0577-fmcz/index.html">EVAL-CN0577-FMCZ</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-8" id="toctree-collapse-13-8"/><div class="collapse"><a class="reference internal" href="../../eval-cn0577-fmcz/index.html">EVAL-CN0577-FMCZ</a><label for="toctree-collapse-13-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../eval-cn0577-fmcz/HDL-reference-design/index.html">HDL Reference Design</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-9" id="toctree-collapse-13-9"/><div class="collapse"><a class="reference internal" href="../../eval-isomax/index.html">EVAL-ISOMAX</a><label for="toctree-collapse-13-9"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-isomax/hardware_guide/index.html">Hardware User Guide</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../eval-isomax/software_guide/index.html">Software User Guide</a></li>
@@ -525,8 +507,13 @@ and do not need to be powered internally. This is important to note because it
 means that another voltage source should not be connected to these FAKRA
 connectors, otherwise damage could be caused to either the AD-GMSL522-SL
 board, or the user’s module.</p>
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../../../../_images/samtec_connector_image.png"><img alt="../../../../_images/samtec_connector_image.png" src="../../../../_images/samtec_connector_image.png" style="width: 600px;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Figure 1 </span><span class="caption-text">High-speed FAKRA Connectors</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>The MAX96724 has its Port B CSI-2 DPHY bus connected to the input of the Jetson
 SoM. The second way that a user can send video to the Jetson SoM is through the
 SAMTEC connector on the bottom of the board. Any GMSL2 CSI-2 DPHY deserializer
@@ -677,13 +664,24 @@ voltage is measured. Because the internal resistor of the potentiometer is
 effect and can therefore be ignored. With this in mind, it can be stated that
 the voltage see on the configuration pins of the SERDES is almost exactly the
 voltage set by the programming of the potentiometer between 0 and 255. i.e.,
-the voltage on the configuration pin can be summarized by this equation:
-CFG(V)=VDDIO*ProgrammedValue Where ProgrammedValue is a hex value between 0
-and 255 and is set per device in the vr_config file. A snippet of the
-configuration file is shown below. Additionally, there are comments in the
+the voltage on the configuration pin can be summarized by this equation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[CFG(V)=VDDIO*ProgrammedValue\]</div>
+</div>
+<p>Where: ProgrammedValue is a hex value between 0 and 255 and is set per device in the vr_config file.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>A snippet of the configuration file is shown below. Additionally, there are comments in the
 configuration file to give example hex values to set for different
 configuration profiles at the bottom of the file.</p>
+<figure class="align-default" id="id2">
 <img alt="../../../../_images/vr_config.png" src="../../../../_images/vr_config.png" />
+<figcaption>
+<p><span class="caption-number">Figure 2 </span><span class="caption-text">Pin Voltages Configuration</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="updating-changing-device-tree-blobs-boot-modes">
 <h3>Updating/Changing Device Tree Blobs (boot modes)<a class="headerlink" href="#updating-changing-device-tree-blobs-boot-modes" title="Link to this heading"></a></h3>
@@ -734,8 +732,13 @@ Open a terminal and run the following command:</p>
 </pre></div>
 </div>
 <div class="clear-left"></div></div></div><p>If the board and SERDES are properly configured, you should see the following:</p>
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../../../../_images/i2cdetect.jpg"><img alt="../../../../_images/i2cdetect.jpg" src="../../../../_images/i2cdetect.jpg" style="width: 600px;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Figure 3 </span><span class="caption-text">Verifying SERDES Configuration</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 <section id="general-tips-for-using-the-ad-gmsl522-sl-board">
@@ -846,7 +849,12 @@ will override what was done in the previous step.</p></li>
 </ul>
 </li>
 </ol>
+<figure class="align-default" id="id4">
 <img alt="../../../../_images/better_v4l2_thing.jpg" src="../../../../_images/better_v4l2_thing.jpg" />
+<figcaption>
+<p><span class="caption-number">Figure 4 </span><span class="caption-text">Video Viewer Play Button</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="loopback-testing-and-exercises">
 <h2>Loopback Testing and Exercises<a class="headerlink" href="#loopback-testing-and-exercises" title="Link to this heading"></a></h2>
@@ -857,9 +865,14 @@ external display is not necessary. An ethernet is not explicitly needed for this
 exercise unless a connection to the internet, or an intranet for use of
 NoMachine or another VNC. It is important to have a coax cable connected between
 the MAX96717 output and the MAX96724 “A” input.</p>
+<figure class="align-default" id="id5">
 <img alt="../../../../_images/viper_block_diagram_using_loopback_section.png" src="../../../../_images/viper_block_diagram_using_loopback_section.png" />
-<section id="looping-back-the-on-board-max96717-to-the-on-board-max96724-streaming-a-checkerboard-pattern-from-the-max96717">
-<h3>Looping back the On-Board MAX96717 to the On-Board MAX96724 (streaming a checkerboard pattern from the MAX96717)<a class="headerlink" href="#looping-back-the-on-board-max96717-to-the-on-board-max96724-streaming-a-checkerboard-pattern-from-the-max96717" title="Link to this heading"></a></h3>
+<figcaption>
+<p><span class="caption-number">Figure 5 </span><span class="caption-text">Loopback Testing Setup</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="looping-back-the-onboard-max96717-to-the-onboard-max96724-streaming-a-checkerboard-pattern-from-the-max96717">
+<h3>Looping back the Onboard MAX96717 to the Onboard MAX96724 (streaming a checkerboard pattern from the MAX96717)<a class="headerlink" href="#looping-back-the-onboard-max96717-to-the-onboard-max96724-streaming-a-checkerboard-pattern-from-the-max96717" title="Link to this heading"></a></h3>
 <p>In this exercise, the functionality of both the MAX96717 and the MAX96724 on the
 AD-GMSL522-SL board will be exercised. The MAX96717 will uses its internal
 pattern generator functionality to build a checkboard pattern and then send that
@@ -885,7 +898,12 @@ board:</p>
 or not you are using NoMachine or some other remote-viewing software, your
 setup may differ. The critical part is that there is a COAX cable connected
 between the MAX96717 output, and the MAX96724 input “A”.</p>
+<figure class="align-default" id="id6">
 <img alt="../../../../_images/viper_pattern_generator_setup.png" src="../../../../_images/viper_pattern_generator_setup.png" />
+<figcaption>
+<p><span class="caption-number">Figure 6 </span><span class="caption-text">Pattern Generator Test Setup</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic">
 <li><p>On the AD-GMSL522-SL board, start the GMSL server:</p>
 <div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
@@ -914,7 +932,12 @@ need this step to get to the next step)</p></li>
 <li><p>Use that script to program the SERDES using the Load (.CPP) function the GMSL GUI.</p></li>
 <li><p>Now, open the “Video Timing and Pattern Generator” Tool in the GUI</p></li>
 <li><p>Set the parameters of the tool to match what is shown below:</p>
+<figure class="align-default" id="id7">
 <img alt="../../../../_images/viper_video_pattern_generator.png" src="../../../../_images/viper_video_pattern_generator.png" />
+<figcaption>
+<p><span class="caption-number">Figure 7 </span><span class="caption-text">Video Pattern Generator Settings</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </li>
 <li><p>Click the “Start Video Generation” button at the bottom of the window to start the generator.</p></li>
 </ol>
@@ -932,8 +955,6 @@ toggling, you know data is outputting the deserializer.</p>
 <p>At this point, a black and white checkboard should be shown on the display.
 Because the pattern generator builds a static image, it will look like the frame
 is frozen. Your screen should look similar to this:</p>
-<a class="reference internal image-reference" href="../../../../_images/gmsl_gui_pattern_generator_output_showing.png"><img alt="../../../../_images/gmsl_gui_pattern_generator_output_showing.png" src="../../../../_images/gmsl_gui_pattern_generator_output_showing.png" style="width: 600px;" />
-</a>
 </section>
 </section>
 <section id="debugging-csi-input-to-ad-gmsl522-sl-board">
@@ -954,7 +975,7 @@ file must be done as a super user.</p>
 </pre></div>
 </div>
 <div class="clear-left"></div></div></div></li>
-<li><p>Create a shell script with the following contents (e.g. (vim enable_tracing.sh):</p>
+<li><p>Create a shell script with the following contents (e.g., (vim enable_tracing.sh):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/sh</span>
 
 sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/kernel/debug/tracing/tracing_on<span class="w"> </span>sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">30720</span><span class="w"> </span>&gt;
@@ -1002,11 +1023,21 @@ sudo<span class="w"> </span>cat<span class="w"> </span>/sys/kernel/debug/tracing
 <li><p>View the logs</p></li>
 </ol>
 <p>The error codes can be found in the logs. Here is one example:</p>
+<figure class="align-default" id="id8">
 <img alt="../../../../_images/viper_debugging_csi_shortframe.png" src="../../../../_images/viper_debugging_csi_shortframe.png" />
+<figcaption>
+<p><span class="caption-number">Figure 8 </span><span class="caption-text">CSI Input Error Log Example</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>Additionally, the Orin Technical Reference Manual (TRM) can be found on NVIDIA’s
 collateral site to get more information on the errors. This is an excerpt from
 the TRM:</p>
+<figure class="align-default" id="id9">
 <img alt="../../../../_images/viper_debugging_csi_orin_trm.png" src="../../../../_images/viper_debugging_csi_orin_trm.png" />
+<figcaption>
+<p><span class="caption-number">Figure 9 </span><span class="caption-text">CSI Input Error Information</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p>More info on this technique and what the trace is saying can be found here:
 <a class="reference external" href="https://elinux.org/Jetson/l4t/Camera_BringUp">https://elinux.org/Jetson/l4t/Camera_BringUp</a></p>
 </section>
@@ -1020,12 +1051,12 @@ of viewing video data requires low latency and high-resolution video. Compared
 to other remote desktop viewers, NoMachine has much higher quality video
 streaming. To install NoMachine on your AD-GMSL522-SL Board and Host PC, follow
 this tutorial from Jetsonhacks: <a class="reference external" href="https://jetsonhacks.com/2023/12/03/nomachine-jetson-remote-desktop/">https://jetsonhacks.com/2023/12/03/nomachine-jetson-remote-desktop/</a>
-Or view their own documentation at: <a class="reference external" href="https://www.nomachine.com/">https://www.nomachine.com/</a></p>
+or view their own documentation at: <a class="reference external" href="https://www.nomachine.com/">https://www.nomachine.com/</a></p>
 </section>
 <section id="booting-from-nvme">
-<h3>Booting From NVMe<a class="headerlink" href="#booting-from-nvme" title="Link to this heading"></a></h3>
-<p>The default memory module on the Jetson Xavier is only 16GB large. Given the
-fact that the AD-GMSL522-SL GMSL kernel is already ~14GB large, there is not
+<h3>Booting from NVMe<a class="headerlink" href="#booting-from-nvme" title="Link to this heading"></a></h3>
+<p>The default memory module on the Jetson Xavier is only 16 GB large. Given the
+fact that the AD-GMSL522-SL GMSL kernel is already ~14 GB large, there is not
 much space left to do anything useful. One way to remedy this situation is to
 buy and use an NVMe. NVMe is typically much faster than the internal eMMC of the
 Xavier NX so the upgrade is not just space, but speed as well. To get this
@@ -1072,8 +1103,13 @@ See <a class="reference internal" href="../hardware-guide/index.html#ad-gmsl522-
 </div>
 <section id="block-diagram">
 <h3>Block Diagram<a class="headerlink" href="#block-diagram" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../../../../_images/ad-gmsl522-sl_block_diagram2.png"><img alt="../../../../_images/ad-gmsl522-sl_block_diagram2.png" src="../../../../_images/ad-gmsl522-sl_block_diagram2.png" style="width: 600px;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Figure 10 </span><span class="caption-text">AD-GMSL522-SL Block Diagram</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="i2c">
 <h3>I2C<a class="headerlink" href="#i2c" title="Link to this heading"></a></h3>
