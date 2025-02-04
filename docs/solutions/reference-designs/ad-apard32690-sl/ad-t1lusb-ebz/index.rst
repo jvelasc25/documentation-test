@@ -6,7 +6,7 @@ Overview
 
 .. figure:: ad-t1lusb2.0-ebz_angle-web.png
     :align: left
-    :width: 200 px
+    :width: 300 px
 
     AD-T1LUSB2.0-EBZ Interface Board
 
@@ -130,14 +130,14 @@ In this way, we can confirm that the connection between a computer and the
 Design and Integration Files
 ----------------------------------
 
-.. admonition::Download 
+.. admonition:: Download 
 
-:download:`AD-T1LUSB2.0-EBZ Design Support Package <AD-T1LUSB2.0-EBZ-Design-Support-Package.zip>`
+ :download:`AD-T1LUSB2.0-EBZ Design Support Package <AD-T1LUSB2.0-EBZ-Design-Support-Package.zip>`
 
-- Schematic
-- PCB Layout
-- Bill of Materials
-- Allegro Project
+ - Schematic
+ - PCB Layout
+ - Bill of Materials
+ - Allegro Project
 
 Support
 ----------
@@ -145,6 +145,5 @@ Support
 Analog Devices will provide **limited** online
 support for anyone using the reference design with Analog Devices components via
 the :ez:`EngineerZone Reference Designs <ez/reference-designs>` forum.
-
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
