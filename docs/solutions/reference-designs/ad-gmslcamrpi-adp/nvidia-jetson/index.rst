@@ -22,33 +22,39 @@ Required Hardware
 - 22 pin same-side ribbon cable, P/N: MP-FFCA05222002A or similar
 - FAKRA Jack to FAKRA Jack coaxial cable
 
-
-
 Hardware Changes
 ----------------
 
 **GMSL Deserializer Evaluation Kit**
 
-- Flip the SW5 switches to the ON position - enables I2C communication over the CSI bus
-     .. image:: gmsl_deserializer_sw5.jpg
+- Flip the SW5 switches to the ON position to enable I2C communication over the CSI bus
+     .. figure:: gmsl_deserializer_sw5.jpg
         :width: 300 px
 
+        SW5 Switch for Enabling I2C
 
 - Bridge R88 - provides VDDIO to the adapter
-     .. image:: deserializer_resistors.jpg
+     .. figure:: deserializer_resistors.jpg
         :width: 300 px
+
+        R88 for VDDIO Provision
 
 **GMSL Serializer Evaluation Kit**
 
-- Place a jumper on the J10 connector - enables power over the coaxial cable
-     .. image:: gmsl_serializer_j10.jpg
+- Place a jumper on the J10 connector to enable power over the coaxial cable.
+     .. figure:: gmsl_serializer_j10.jpg
         :width: 400 px
+
+        J10 for Power over Coax
 
 - Bridge R70 - provides 12V to the adapter
 - Bridge R80 - connects MFP2 to the adapter for IMX219
 - Bridge R66 - provides VDDIO to the adapter
-     .. image:: serializer_resistors.jpg
+
+     .. figure:: serializer_resistors.jpg
         :width: 400 px
+
+        Serializer Resistors
 
 |
 
@@ -56,18 +62,19 @@ Hardware Changes
 
 - Configure the switches on the GMSL Serializer and the GMSL Deserializer adapters for **CAM1**.
 
-**Serializer adapter**           
+**Serializer Adapter**           
 
-.. image:: ser_interposer.jpg
+.. figure:: ser_interposer.jpg
     :width: 400 px
+
+    Serializer Adapter Camera Switches 
    
+**Deserializer Adapter**
 
-**Deserializer adapter**
-
-.. image:: deser_interposer.jpg
+.. figure:: deser_interposer.jpg
     :width: 400 px
 
-
+    Deserializer Adapter Camera Switches 
 
 System Setup
 ------------
@@ -87,26 +94,30 @@ System Setup
 #. Flip the power switch labeled S4 to the ON position on the GMSL Deserializer EVK.
 #. Connect the power supply to the Nvidia Orin Nano Developer Kit.
 
-.. image:: nvidia_jetson_orin_system.jpg
+.. figure:: nvidia_jetson_orin_system.jpg
     :width: 600 px
 
-.. image:: jetson_orin_nano_rpi_camera_connection.jpg
+    Full GMSL System Setup with Jetson Orin Nano
+
+.. figure:: jetson_orin_nano_rpi_camera_connection.jpg
     :width: 600 px
+
+    Raspbery Pi Camera Connection
 
 |
 
 Running the Evaluation Application
 ----------------------------------
 
-Once Linux boots you’ll see on the DP monitor the Linux desktop and a shortcut
-named **run_demo.sh**. Double clicking on the icon will start the evaluation
-application. The evaluation application GUI will be displayed like in the
-picture bellow.
+Once Linux boots, you’ll see on the DP monitor the Linux desktop and a shortcut
+named **run_demo.sh**. Double-clicking on the icon will start the evaluation
+application. The evaluation application GUI will be displayed like in the figure below.
 
-.. image:: nvidia_screen1.png
+.. figure:: nvidia_screen1.png
 
+    Evaluation Application GUI
 
-Power off sequence
+Power off Sequence
 ~~~~~~~~~~~~~~~~~~
 
 - Open a terminal and type **sudo poweroff**. This will safely power off the Nvidia Orin Nano Developer Kit and ensure that the SD card is properly unmounted.
@@ -115,13 +126,10 @@ Power off sequence
 - Flip the power switch labeled S4 to the OFF position on the GMSL Deserializer Evaluation Kit.
 - Remove the power supply from the GMSL Deserializer Evaluation Kit.
 
-
 Getting the Software
 --------------------
 
 The GMSL Linux kernel drivers, the complete Linux distributions for the
 supported processing platforms, and software user guides can be found on the
-`Analog Devices GMSL github repository <https://github.com/analogdevicesinc/gmsl>`__.
-
-
+`Analog Devices GMSL GitHub repository <https://github.com/analogdevicesinc/gmsl>`__.
 

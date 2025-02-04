@@ -5,9 +5,11 @@ AD-GMSL-D-E-ADP#
 Overview
 --------
 
-.. image:: ad-gmsl-d-e-adp_angle.jpg
+.. figure:: ad-gmsl-d-e-adp_angle.jpg
     :width: 400 px
     :align: left
+
+    AD-GMSL-D-E-ADP# GMSL Adapter Board
 
 The **AD-GMSL-D-E-ADP# GMSL oLDI/LVDS to HDMI adapter** converts oLDI/LVDS
 signals from GMSL Deserializers to standard HDMI 2.0 output. This adapter is
@@ -25,6 +27,7 @@ the GMSL I2S signals (from the forward channel) could be used as inputs. Like
 the video setup, the adapter automatically detects and adds the I2S audio data
 into the HDMI signals without the need to program the adapter itself.
 
+|
 
 Features
 -----------
@@ -34,21 +37,19 @@ Features
 - Designed to fit all GMSL oLDI Deserializers Evaluation Boards using the equipped Samtec board-to-board connectors
 - Includes inputs for GMSL I2S signals
 
-
 Applications 
 ----------------------
 
 - High-resolution display systems
 - Advanced Driver Assistance Systems (ADAS)
 
-
 Block Diagram
 ---------------
 
-.. image:: oldi_to_hdmi_adapter_block_diagram.png
+.. figure:: oldi_to_hdmi_adapter_block_diagram.png
     :width: 500 px
 
-
+    AD-GMSL-D-E-ADP# Simplified Block Diagram
 
 System Setup
 --------------
@@ -65,12 +66,13 @@ Equipment Needed
 - Host PC or laptop with HDMI display
 - Logic Analyzer (to be used in UART monitoring only)
 
-
 Adapter Setup
 -------------------
 
-.. image:: samtec_connectors.png
+.. figure:: samtec_connectors.png
     :width: 600 px
+
+    Standard GMSL oLDI Deserializer Connectors
 
 The **AD-GMSL-D-E-ADP# GMSL adapter** is designed to fit all GMSL oLDI
 Deserializers Evaluation boards using the equipped Samtec board-to-board
@@ -87,8 +89,10 @@ The installation steps are as follows:
    **This includes the GMSL Link, USB, oLDI Screen, and Power.**
 #. With the unconnected EvKit, install standoff screws and nuts.
    
-     .. image:: installing_standoff_screws.png
+     .. figure:: installing_standoff_screws.png
         :width: 400 px
+
+        Connecting Standoff Screws
 
 #. Connect the **AD-GMSL-D-E-ADP# GMSL adapter** to the Deserializer (EvKit)
    through the Samtec board-to-board connector.
@@ -97,36 +101,50 @@ The installation steps are as follows:
 
      .. important:: Do not overtighten the screws as this may cause the EvKit PCB to bend.
      
-     .. image:: attaching_ev_kit_to_the_adapter.png
+     .. figure:: attaching_ev_kit_to_the_adapter.png
         :width: 400 px
+
+        Attaching the Deserializer to the AD-GMSL-D-E-ADP#
 
 #. Connect the GMSL cable. 
-      .. image:: connecting_gmsl_cable.png
+      .. figure:: connecting_gmsl_cable.png
         :width: 400 px 
 
+        Connecting the GMSL Cable
+
 #. Connect the micro-USB to USB cable. 
-     .. image:: connecting_usb_cable.png
+     .. figure:: connecting_usb_cable.png
         :width: 400 px
+
+        Connecting the USB Cable
 
 #. Connect one end of the HDMI cable to **AD-GMSL-D-E-ADP# GMSL adapter** and
    then the other end to the HDMI display monitor.    
-     .. image:: connecting_hdmi_cable.png
+     .. figure:: connecting_hdmi_cable.png
         :width: 400 px
-      
+
+        Connecting the HDMI Cable
+
 #. Connect the 12 V power adapter cable. 
-     .. image:: connecting_the_power_cable.png
+     .. figure:: connecting_the_power_cable.png
         :width: 500 px
 
+        Connecting the Power Cable
+
 #. Power ON the EvKit by sliding the power switch as shown below.
-     .. image:: power_switch.png
+     .. figure:: power_switch.png
         :width: 500 px
+
+        Deserializer Power Switch
 
 #. Confirm if GMSL link has been established. The Lock LEDs on the EvKits light
    up, indicating that links are set up properly. Also, the Power LED on the
    **AD-GMSL-D-E-ADP# GMSL adapter** will light up as an indication that boards
    are properly supplied with required power. 
-     .. image:: leds_buttons.png
+     .. figure:: leds_buttons.png
         :width: 600 px
+
+        GMSL Link LED Indicators
 
 #. Proceed to Configuration after the Link Lock is established.
 
@@ -166,8 +184,10 @@ Follow below procedure for audio hardware setup:
 #. Power OFF the board Deserializer (EvKit) and disconnect the 12 V power
    supply.
 #. Jump the following signals on **J6**: SCK to SCK, SD to SPDIF, and WS to WS.
-      .. image:: j6_signals.png
+      .. figure:: j6_signals.png
         :width: 400 px
+
+        J6 Signals
 
 #. Reinstall the **AD-GMSL-D-E-ADP# GMSL adapter** and apply power to the Deserializer.
 #. Perform normal video setup, as described in the *Deserializer Configuration* section.
@@ -188,8 +208,10 @@ This requires connections from two pins on the adapter to a logic analyzer.
    up the UART connections.
 #. Connect the logic analyzer to **Pin GP4 & GND** of the **AD-GMSL-D-E-ADP# GMSL adapter**.
 #. Below example shows the settings used for the SALEAE Logic Analyzer.
-     .. image:: async_serial_protocol_analyzer_settings.png
+     .. figure:: async_serial_protocol_analyzer_settings.png
        :width: 600 px 
+
+       Async Serial Protocol Analyzer Settings
 
 #. After configuring the Async Serial protocol analyzer using the above
    settings, start the data capture.
@@ -198,8 +220,9 @@ This requires connections from two pins on the adapter to a logic analyzer.
 #. Set up the Deserializer based on the procedure described in the *Deserializer Configuration* section.
 #. The terminal stream should display a plain text readout with the following
    information:
+     .. figure:: terminal_stream_readout.png
 
-     .. image:: terminal_stream_readout.png
+        Sample Readout in Terminal
 
 .. tip:: 
     If no video is flowing, the UART output should only
