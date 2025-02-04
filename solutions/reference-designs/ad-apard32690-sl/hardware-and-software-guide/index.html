@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Using with Raspberry Pi &#8212; System Level Documentation  documentation</title>
+    <title>Hardware &amp; Software Guide &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=2acfe7ed" />
     <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -15,8 +15,8 @@
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="EVAL-CN0575-RPIZ" href="../../eval-cn0575-rpiz/index.html" />
-    <link rel="prev" title="Using with Nvidia Jetson Orin Nano" href="../nvidia-jetson/index.html" />
+    <link rel="next" title="AD-BMSE2E3W-SL" href="../../ad-bmse2e3w-sl/index.html" />
+    <link rel="prev" title="AD-T1LUSB2.0-EBZ" href="../ad-t1lusb-ebz/index.html" />
    
   
   <meta name="repository" content="documentation">
@@ -88,21 +88,17 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">Using with Raspberry Pi</a><ul>
+<li><a class="reference internal" href="#">Hardware &amp; Software Guide</a><ul>
 <li><a class="reference internal" href="#required-hardware">Required Hardware</a></li>
-<li><a class="reference internal" href="#board-modifications">Board Modifications</a></li>
-<li><a class="reference internal" href="#system-setup">System Setup</a><ul>
-<li><a class="reference internal" href="#max96717-serializer-ev-kit-configuration">MAX96717 Serializer EV Kit Configuration</a></li>
-<li><a class="reference internal" href="#max96724-deserializer-ev-kit-configuration">MAX96724 Deserializer EV Kit Configuration</a></li>
-<li><a class="reference internal" href="#raspberry-pi-4-configuration">Raspberry Pi 4 Configuration</a></li>
+<li><a class="reference internal" href="#ad-apard32690-sl-board-description">AD-APARD32690-SL Board Description</a></li>
+<li><a class="reference internal" href="#system-setup">System Setup</a></li>
+<li><a class="reference internal" href="#updating-the-ad-apard32690-sl-firmware">Updating the AD-APARD32690-SL firmware</a><ul>
+<li><a class="reference internal" href="#setting-up-the-max32625pico">Setting up the MAX32625PICO</a></li>
+<li><a class="reference internal" href="#programming-the-ad-apard32690-sl">Programming the AD-APARD32690-SL</a></li>
+<li><a class="reference internal" href="#ad-apard32690-sl-software-stack">AD-APARD32690-SL Software Stack</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#running-the-evaluation-application">Running the Evaluation Application</a><ul>
-<li><a class="reference internal" href="#power-off-sequence">Power-off Sequence</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#getting-the-software">Getting the Software</a></li>
-<li><a class="reference internal" href="#tips-for-troubleshooting">Tips for Troubleshooting</a></li>
+<li><a class="reference internal" href="#help-and-support">Help and Support</a></li>
 </ul>
 </li>
 </ul>
@@ -278,9 +274,9 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13" id="toctree-collapse-13" checked=""/><div class="collapse"><a class="reference internal" href="../../index.html">Reference Designs</a><label for="toctree-collapse-13"><div class="icon"></div></label></div><ul class="current">
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-1" id="toctree-collapse-13-1"/><div class="collapse"><a class="reference internal" href="../../ad-apard32690-sl/index.html">AD-APARD32690-SL</a><label for="toctree-collapse-13-1"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/hardware-and-software-guide/index.html">Hardware &amp; Software Guide</a></li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-1" id="toctree-collapse-13-1" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">AD-APARD32690-SL</a><label for="toctree-collapse-13-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Hardware &amp; Software Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-2" id="toctree-collapse-13-2"/><div class="collapse"><a class="reference internal" href="../../ad-bmse2e3w-sl/index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-13-2"><div class="icon"></div></label></div><ul>
@@ -304,13 +300,13 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../ad-gmsl522-sl/software-guide/index.html">Software Guide</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7" id="toctree-collapse-13-7" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">AD-GMSLCAMRPI-ADP#</a><label for="toctree-collapse-13-7"><div class="icon"></div></label></div><ul class="current">
-<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7-1" id="toctree-collapse-13-7-1"/><div class="collapse"><a class="reference internal" href="../amd-kria/index.html">Using with AMD Kria</a><label for="toctree-collapse-13-7-1"><div class="icon"></div></label></div><ul>
-<li class="toctree-l4"><a class="reference internal" href="../amd-kria/hdl-reference-design/index.html">GMSL HDL Reference Design</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7" id="toctree-collapse-13-7"/><div class="collapse"><a class="reference internal" href="../../ad-gmslcamrpi-adp/index.html">AD-GMSLCAMRPI-ADP#</a><label for="toctree-collapse-13-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-13-7-1" id="toctree-collapse-13-7-1"/><div class="collapse"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/index.html">Using with AMD Kria</a><label for="toctree-collapse-13-7-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../ad-gmslcamrpi-adp/amd-kria/hdl-reference-design/index.html">GMSL HDL Reference Design</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../nvidia-jetson/index.html">Using with Nvidia Jetson Orin Nano</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Using with Raspberry Pi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/nvidia-jetson/index.html">Using with Nvidia Jetson Orin Nano</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/raspberry-pi-user-guide/index.html">Using with Raspberry Pi</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
@@ -371,411 +367,93 @@ Content on this topic
         <div class="bodywrapper" id="top-anchor">
           <div class="body" role="main">
             
-  <section id="using-with-raspberry-pi">
-<span id="ad-gmslcamrpi-adp-raspberry-pi-user-guide"></span><h1>Using with Raspberry Pi<a class="headerlink" href="#using-with-raspberry-pi" title="Link to this heading"></a></h1>
+  <section id="hardware-software-guide">
+<h1>Hardware &amp; Software Guide<a class="headerlink" href="#hardware-software-guide" title="Link to this heading"></a></h1>
 <section id="required-hardware">
 <h2>Required Hardware<a class="headerlink" href="#required-hardware" title="Link to this heading"></a></h2>
-<p><strong>Development Kits</strong></p>
 <ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/ad-gmslcamrpi-adp.html">AD-GMSLCAMRPI-ADP# GMSL EV Kit Adapter Board</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96724.html">MAX96724 GMSL Deserializer Evaluation Kit</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/en/products/max96717.html">MAX96717 GMSL Serializer Evaluation Kit</a> or <em>GMSL camera</em></p></li>
-<li><p><a class="reference external" href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b">Raspberry Pi 4 Model B</a> <em>(2GB of RAM or more preferred)</em></p></li>
+<li><p><strong>Development kit</strong>: <a class="icon adi reference external" href="https://www.analog.com/AD-APARD32690-SL">AD-APARD32690-SL Microcontroller Board</a></p></li>
+<li><p><strong>Power supplies</strong>: 5V to 28V at 2A external power supply or 5V USB-C power supply</p></li>
+<li><p><strong>Programmer</strong>: <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO">MAX32625PICO</a> or any other similar programmer supporting the SWD interface</p></li>
 </ul>
-<p><strong>Supported Image Sensors &amp; Cameras</strong></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.raspberrypi.com/products/camera-module-v2/">IMX219 Raspberry Pi Camera Module 2</a></p></li>
-</ul>
-<p><strong>Cables</strong></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do not use the 15-pin ribbon cable included with the Raspberry Pi camera since that is an opposite sided cable.</p>
-</div>
-<ul class="simple">
-<li><p>15-Pin Type A (<strong>same side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA10152003A or <a class="reference external" href="https://www.amazon.com/dp/B07RVD2MZV">similar</a></p></li>
-<li><p>22-Pin Type B (<strong>opposite side</strong>) Flexible Ribbon Cable, P/N: MP-FFCA05222002B or <a class="reference external" href="https://www.amazon.com/dp/B07S1BSPYD">similar</a></p></li>
-<li><p>FAKRA Jack to FAKRA Jack coaxial cable, provided in EV kits</p></li>
-</ul>
-<figure class="align-default" id="id2">
-<img alt="../../../../_images/adaptor_block_diagram.png" src="../../../../_images/adaptor_block_diagram.png" />
-<figcaption>
-<p><span class="caption-number">Figure 1 </span><span class="caption-text">GMSL Signal Chain</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
 </section>
-<section id="board-modifications">
-<h2>Board Modifications<a class="headerlink" href="#board-modifications" title="Link to this heading"></a></h2>
-<p>Using the procedure to <a class="reference external" href="https://wiki.analog.com/products/gmsl/gui/tools/set_cfg_pin_levels">Set CFG Pin Levels</a>, configure the SerDess
-pair as follows:</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><strong>Pin</strong></p></td>
-<td><p><strong>MAX96717</strong></p></td>
-<td><p><strong>MAX96724</strong></p></td>
-</tr>
-<tr class="row-even"><td><p>CFG0</p></td>
-<td><p><strong>0</strong> – I2C, ROR, 0x80</p></td>
-<td><p><strong>0</strong> – I2C, 0x4E</p></td>
-</tr>
-<tr class="row-odd"><td><p>CFG1</p></td>
-<td><p><strong>7</strong> – Coax, 6 Gbps, Pixel</p></td>
-<td><p><strong>0</strong> – Coax, GMSL2, 6Gbps</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>It is required to set the CFG pins to the indicated levels for this setup.</p>
-</div>
-<p>For more information about the default CFG configuration of each evaluation
-board, please visit the respective datasheet documentation:</p>
-<ul class="simple">
-<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96717ev.pdf">MAX98717EVKIT Data Sheet</a></p></li>
-<li><p><a class="icon adi reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/max96724-bak-evk-max96724r-bak-evk.pdf">MAX98724EVKIT Data Sheet</a></p></li>
-</ul>
-<p><strong>GMSL Deserializer Evaluation Kit</strong></p>
-<ul>
-<li><p>Slide the <strong>SW5</strong> switches to the ON position to enable I2C communication over the CSI bus.</p></li>
-<li><p>Remove the <strong>J18</strong> and <strong>J19</strong> jumpers to allow the RPi to become the Main host controller for the I2C lines.</p></li>
-<li><p>Make sure the <strong>J3</strong> is set as default <strong>2-3</strong> position to enable POC.</p>
-<blockquote>
-<div><figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../../../../_images/gmsl_deserializer_sw52.jpg"><img alt="../../../../_images/gmsl_deserializer_sw52.jpg" src="../../../../_images/gmsl_deserializer_sw52.jpg" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 2 </span><span class="caption-text">SW5 Switch for Enabling I2C</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</div></blockquote>
-</li>
-<li><p>Bridge <strong>R88</strong> - provides VDDIO to the adapter</p>
-<blockquote>
-<div><figure class="align-default" id="id4">
-<a class="reference internal image-reference" href="../../../../_images/deserializer_resistors2.jpg"><img alt="../../../../_images/deserializer_resistors2.jpg" src="../../../../_images/deserializer_resistors2.jpg" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 3 </span><span class="caption-text">R88 for VDDIO Provision</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</div></blockquote>
-</li>
-</ul>
-<p><strong>GMSL Serializer Evaluation Kit</strong></p>
-<ul>
-<li><p>Place a jumper on the <strong>J10</strong> connector to enable power over the coaxial cable.</p>
-<figure class="align-default" id="id5">
-<a class="reference internal image-reference" href="../../../../_images/serializer_mods_j10.png"><img alt="../../../../_images/serializer_mods_j10.png" src="../../../../_images/serializer_mods_j10.png" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 4 </span><span class="caption-text">J10 for Power over Coax</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</li>
-<li><p>Bridge <strong>R70</strong> - provides 12V to the adapter</p></li>
-<li><p>Bridge <strong>R80</strong> - connects MFP2 to the adapter for IMX219</p></li>
-<li><p>Bridge <strong>R66</strong> - provides VDDIO to the adapter</p>
-<figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../../../../_images/serializer_mods_samtec_res.png"><img alt="../../../../_images/serializer_mods_samtec_res.png" src="../../../../_images/serializer_mods_samtec_res.png" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 5 </span><span class="caption-text">Serializer Resistors</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</li>
-</ul>
-<p><strong>AD-GMSLCAMRPI-ADP# Adapter</strong></p>
-<ul class="simple">
-<li><p>Configure the switch <strong>S2</strong> on the GMSL Serializer adapter for CAM1 on
-connector <strong>P9</strong>.</p></li>
-<li><p>Configure the switch <strong>S1</strong> on the GMSL Deserializer adapter for CAM2 on
-connector <strong>P6</strong> and slide switch <strong>S3</strong> towards connector <strong>P6</strong>.</p></li>
-</ul>
-<p><strong>Serializer Adapter</strong></p>
-<figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../../../../_images/serializer_interposer_cfg.png"><img alt="../../../../_images/serializer_interposer_cfg.png" src="../../../../_images/serializer_interposer_cfg.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 6 </span><span class="caption-text">Serializer Adapter Camera Switches</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p><strong>Deserializer Adapter</strong></p>
-<figure class="align-default" id="id8">
-<a class="reference internal image-reference" href="../../../../_images/deserializer_interposer_cfg.png"><img alt="../../../../_images/deserializer_interposer_cfg.png" src="../../../../_images/deserializer_interposer_cfg.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 7 </span><span class="caption-text">Deserializer Adapter Camera Switches</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<section id="ad-apard32690-sl-board-description">
+<h2>AD-APARD32690-SL Board Description<a class="headerlink" href="#ad-apard32690-sl-board-description" title="Link to this heading"></a></h2>
+<img alt="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/apard32690_hw_components.png" src="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/apard32690_hw_components.png" />
 </section>
 <section id="system-setup">
 <h2>System Setup<a class="headerlink" href="#system-setup" title="Link to this heading"></a></h2>
-<section id="max96717-serializer-ev-kit-configuration">
-<h3>MAX96717 Serializer EV Kit Configuration<a class="headerlink" href="#max96717-serializer-ev-kit-configuration" title="Link to this heading"></a></h3>
-<p>For the following setup, please ensure ribbon cables and boards are oriented to
-match the diagrams.</p>
-<p>Connect the 15-pin ribbon cable to the camera board.</p>
-<figure class="align-default" id="id9">
-<a class="reference internal image-reference" href="../../../../_images/step0.png"><img alt="../../../../_images/step0.png" src="../../../../_images/step0.png" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 8 </span><span class="caption-text">Connect the 15-pin Ribbon Cable to Camera Board</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Connect the other end of the 15-pin ribbon cable into the 15- to 22-pin adapter
-board.</p>
-<figure class="align-default" id="id10">
-<a class="reference internal image-reference" href="../../../../_images/step1.png"><img alt="../../../../_images/step1.png" src="../../../../_images/step1.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 9 </span><span class="caption-text">Connect the 15-pin Ribbon Cable to the GMSL Adapter Board (opposite side)</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>On the other side of the 15- to 22-pin adapter board, connect the 22-pin ribbon
-cable.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This is an opposite sided flex cable, please ensure it matches the orientation in the picture.</p>
-</div>
-<figure class="align-default" id="id11">
-<a class="reference internal image-reference" href="../../../../_images/step2.png"><img alt="../../../../_images/step2.png" src="../../../../_images/step2.png" style="width: 350px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 10 </span><span class="caption-text">Connect the 22-pin Ribbon Cable to the GMSL Adapter Board</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Connect the other end of the 22-pin ribbon cable into the EV Kit adapter board
-<strong>P9</strong> connector.</p>
-<figure class="align-default" id="id12">
-<a class="reference internal image-reference" href="../../../../_images/step3.png"><img alt="../../../../_images/step3.png" src="../../../../_images/step3.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 11 </span><span class="caption-text">Connect the 22-pin Ribbon Cable to the EV Kit Adapter Board (opposite side)</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Lastly, connect the EV kit adapter board to the MAX96717 EV Kit.</p>
-<figure class="align-default" id="id13">
-<a class="reference internal image-reference" href="../../../../_images/step4.png"><img alt="../../../../_images/step4.png" src="../../../../_images/step4.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 12 </span><span class="caption-text">Connect the EV Kit Adapter Board to the MAX96717 Serializer EV Kit</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="max96724-deserializer-ev-kit-configuration">
-<h3>MAX96724 Deserializer EV Kit Configuration<a class="headerlink" href="#max96724-deserializer-ev-kit-configuration" title="Link to this heading"></a></h3>
-<p>Starting with the Raspberry Pi 4B, connect the 15-pin ribbon cable to the CSI
-input connector.</p>
-<figure class="align-default" id="id14">
-<a class="reference internal image-reference" href="../../../../_images/step5.png"><img alt="../../../../_images/step5.png" src="../../../../_images/step5.png" style="width: 200px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 13 </span><span class="caption-text">Connect the 15-pin Ribbon Cable to the Raspberry Pi</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Connect the other end of the 15-pin ribbon cable into the 15- to 22-pin adapter
-board.</p>
-<figure class="align-default" id="id15">
-<a class="reference internal image-reference" href="../../../../_images/step6.png"><img alt="../../../../_images/step6.png" src="../../../../_images/step6.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 14 </span><span class="caption-text">Connect the 15-pin ribbon cable into the GMSL Adapter Board (opposite side)</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>On the other side of the 15-to-22 pin adapter board, connect the 22-pin ribbon
-cable. <strong>Note:</strong> This is an opposite sided flex cable, please ensure it matches
-the orientation in the picture.</p>
-<figure class="align-default" id="id16">
-<a class="reference internal image-reference" href="../../../../_images/step7.png"><img alt="../../../../_images/step7.png" src="../../../../_images/step7.png" style="width: 350px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 15 </span><span class="caption-text">Connect the 22-pin Ribbon Cable to the GMSL Adapter Board</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Connect the other end of the 22-pin ribbon cable into the EV kit adapter board
-<strong>P8</strong> connector.</p>
-<figure class="align-default" id="id17">
-<a class="reference internal image-reference" href="../../../../_images/step8.png"><img alt="../../../../_images/step8.png" src="../../../../_images/step8.png" style="width: 400px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 16 </span><span class="caption-text">Connect the 22-pin Ribbon Cable to the EV Kit Adapter Board</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Lastly, connect the EV kit adapter board to the MAX96724 EV kit.</p>
-<figure class="align-default" id="id18">
-<a class="reference internal image-reference" href="../../../../_images/step9.png"><img alt="../../../../_images/step9.png" src="../../../../_images/step9.png" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 17 </span><span class="caption-text">Connect the EV Kit Adapter Board to the MAX96724 Deserializer EV Kit</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>With both sides of the SerDes devices connected up, the last step it to connect
-the two sides together with the coax cable. The MAX96717 serializer only has one
-connection. The MAX96724 deserializer has 4 inputs so connect the coax cable to
-link A (INA) on <strong>J7</strong>.</p>
-<figure class="align-default" id="id19">
-<a class="reference internal image-reference" href="../../../../_images/gmsl_full_system_config.png"><img alt="../../../../_images/gmsl_full_system_config.png" src="../../../../_images/gmsl_full_system_config.png" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 18 </span><span class="caption-text">Full GMSL System Setup</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Connect power to the 12V barrel jack <strong>J1</strong> of the MAX96724 deserializer. If
-utilizing the GMSL GUI, also connect the micro USB cable to <strong>J6</strong> of the
-MAX96724 deserializer EV kit.</p>
-</section>
-<section id="raspberry-pi-4-configuration">
-<h3>Raspberry Pi 4 Configuration<a class="headerlink" href="#raspberry-pi-4-configuration" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p>Connect the USB-C power supply to the Raspberry Pi 4 connector.</p></li>
-<li><p>Connect the HDMI cable from the monitor to the Raspberry Pi micro HDMI connector.</p></li>
-<li><p>Write the Raspberry Pi latest SD card image on a 8 GB (or more) SD card.</p></li>
-<li><p>Plug the SD card into the Raspberry Pi 4 SD card slot.</p></li>
-<li><p>Connect a USB mouse and keyboard to the Raspberry Pi 4.
-It’s possible to use either a mouse &amp; keyboard combo or a separate mouse and keyboard.</p></li>
+<li><p>Connect the AD-APARD32690-SL to the
+<a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/ad-t1lusb-ebz">AD-T1LUSB2.0-EBZ</a>
+using the single pair Ethernet cable.</p></li>
+<li><p>Connect the AD-T1LUSB2.0-EBZ to your PC using an USB cable.</p></li>
+<li><p>Connect the MAX32625PICO programmer, or any programmer supporting the SWD
+interface, to the AD-APARD32690-SL.</p></li>
+<li><p>Connect the power supply to the AD-APARD32690-SL.</p></li>
 </ul>
+<a class="reference internal image-reference" href="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/apard32690_system_setup.jpg"><img alt="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/apard32690_system_setup.jpg" src="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/apard32690_system_setup.jpg" style="width: 600px;" />
+</a>
 </section>
-</section>
-<section id="running-the-evaluation-application">
-<h2>Running the Evaluation Application<a class="headerlink" href="#running-the-evaluation-application" title="Link to this heading"></a></h2>
-<p>Once Linux boots, you’ll see on the HDMI monitor the Linux desktop and on the top
-left corner a shortcut to the script named <strong>video_cfg.sh</strong>. Double-clicking on
-the icon will start the media-ctl configuration script to connect to the V4L2
-media pipeline. It may not appear that anything happens but the script runs in
-background without any pop-ups.</p>
-<figure class="align-default" id="id20">
-<img alt="../../../../_images/rpi_video_cfg.png" src="../../../../_images/rpi_video_cfg.png" />
-<figcaption>
-<p><span class="caption-number">Figure 19 </span><span class="caption-text">Raspberry Pi Video Configuration Script</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>After the script runs, double-click on the Qt V4L2 test Utility icon to start
-the video capture application. A window will open then press the green play
-button to start video capturing.</p>
-<figure class="align-default" id="id21">
-<img alt="../../../../_images/rpi_qv4l2.png" src="../../../../_images/rpi_qv4l2.png" />
-<figcaption>
-<p><span class="caption-number">Figure 20 </span><span class="caption-text">Video Capture Button</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>The capture window will look like below.</p>
-<figure class="align-default" id="id22">
-<img alt="../../../../_images/rpi_running_qv4l2.png" src="../../../../_images/rpi_running_qv4l2.png" />
-<figcaption>
-<p><span class="caption-number">Figure 21 </span><span class="caption-text">Sample Video Capture</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Some displays may have vertical/horizontal lines.
-This is typically an artifact caused on HDMI monitors and unrelated to the
-evaluation setup.</p>
-</div>
-<section id="power-off-sequence">
-<h3>Power-off Sequence<a class="headerlink" href="#power-off-sequence" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Open a terminal and type <strong>sudo poweroff</strong>. This will safely power off the Raspberry Pi 4 and ensure that the SD card is properly unmounted.</p></li>
-<li><p>Remove the power supply from the Raspberry Pi 4.</p></li>
-<li><p>Remove the power supply from the MAX96724 EV kit.</p></li>
-</ul>
-</section>
-</section>
-<section id="getting-the-software">
-<h2>Getting the Software<a class="headerlink" href="#getting-the-software" title="Link to this heading"></a></h2>
-<p>The GMSL Linux kernel drivers, the complete Linux distributions for the
-supported processing platforms, and software user guides can be found on the
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/gmsl/tree/main/">Analog Devices GMSL GitHub repository</a>.</p>
-</section>
-<section id="tips-for-troubleshooting">
-<h2>Tips for Troubleshooting<a class="headerlink" href="#tips-for-troubleshooting" title="Link to this heading"></a></h2>
-<p>There are a few key commands in the Linux environment that can help identify if
-the expected connections and communications have been made.</p>
-<ol class="arabic">
-<li><p>In the Linux environment, you can check to see if the Rpi I2C is detecting
-the GMSL boards by sending a I2C detect command <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> as follows:</p>
-<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>i2cdetect<span class="w"> </span>-y<span class="w"> </span><span class="m">10</span>
-</pre></div>
-</div>
-<div class="clear-left"></div></div></div><p>The Result should look as follows in the terminal:</p>
-<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>user@kuiper-gmsl:~$
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>i2cdetect<span class="w"> </span>-y<span class="w"> </span><span class="m">10</span>
-</pre></div>
-</div>
-<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>[sudo] password for analog:
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:                         -- -- -- -- -- -- -- --
-10: UU -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-20: -- -- -- -- -- -- -- UU -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-60: -- -- -- -- 64 -- -- -- -- -- -- -- -- -- -- --
-70: -- -- -- -- -- -- -- --
-</pre></div>
-</div>
-<div class="clear-left"></div></div></div></li>
-<li><p>You can also confirm that the video for Linux application is detecting the
-camera and GMSL devices by using the following command:</p>
-<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>v4l2-ctl<span class="w"> </span>--list-devices
-</pre></div>
-</div>
-<div class="clear-left"></div></div></div><p>The response should look like the following:</p>
-<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>v4l2-ctl<span class="w"> </span>--list-devices
-</pre></div>
-</div>
-<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>bcm2835-codec-decode (platform:bcm2835-codec):
-    /dev/video10
-    /dev/video11
-    /dev/video12
-    /dev/video18
-    /dev/video31
-    /dev/media2
-
-bcm2835-isp (platform:bcm2835-isp):
-    /dev/video13
-    /dev/video14
-    /dev/video15
-    /dev/video16
-    /dev/video20
-    /dev/video21
-    /dev/video22
-    /dev/video23
-    /dev/media1
-    /dev/media3
-
-unicam (platform:fe801000.csi):
-    /dev/video0
-    /dev/video1
-    /dev/media4
-
-rpivid (platform:rpivid):
-    /dev/video19
-    /dev/media0
-</pre></div>
-</div>
-<div class="clear-left"></div></div></div><p>The key is to identify the <strong>unicam</strong> output, which correspond to the Raspberry Pi
-camera setup.</p>
+<section id="updating-the-ad-apard32690-sl-firmware">
+<h2>Updating the AD-APARD32690-SL firmware<a class="headerlink" href="#updating-the-ad-apard32690-sl-firmware" title="Link to this heading"></a></h2>
+<section id="setting-up-the-max32625pico">
+<h3>Setting up the MAX32625PICO<a class="headerlink" href="#setting-up-the-max32625pico" title="Link to this heading"></a></h3>
+<p>To update the board’s firmware, a new bootloader has to be flashed on the
+MAX32625PICO.</p>
+<ul>
+<li><p>Download the firmware image:
+<a class="reference external" href="https://github.com/MaximIntegrated/max32625pico-firmware-images/raw/master/bin/max32625_max32650fthr_if_crc_swd_v1.0.6.bin">MAX32625PICO firmware</a></p></li>
+<li><p>Set the MAX32625PICO in MAINTENANCE mode:</p>
+<ul>
+<li><p>Disconnect the MAX32625PICO from the PC and the AD-SWIOT1L-SL board.</p></li>
+<li><p>Plug the micro USB cable only in the MAX32625PICO.</p></li>
+<li><p>Keep the button on the MAX32625PICO pressed.</p></li>
+<li><p>Plug the micro USB cable into the PC.</p></li>
+<li><p>Once you see the MAINTENANCE drive being mounted, you may release the button.</p>
+<a class="reference internal image-reference" href="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/picture2.jpg"><img alt="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/picture2.jpg" src="solutions/reference-designs/ad-apard32690-sl/hardware-and-software-guide/picture2.jpg" style="width: 200px;" />
+</a>
 </li>
-</ol>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="f1" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>More information about these commands found at <a class="reference external" href="https://www.mankier.com/8/i2cdetect">mankier.com/8/i2cdetect</a>.</p>
-</aside>
-</aside>
-<hr class="docutils" />
+</ul>
+</li>
+<li><p>Drag and drop (to the MAINTENANCE drive) the firmware image you previously downloaded.</p></li>
+<li><p>After a few seconds, the MAINTENANCE drive will disappear and will be replaced
+by a drive named DAPLINK. Once this is done, the process is complete, and the
+MAX32625PICO may be used to flash the firmware of the AD-SWIOT1L-SL board.</p></li>
+</ul>
+</section>
+<section id="programming-the-ad-apard32690-sl">
+<h3>Programming the AD-APARD32690-SL<a class="headerlink" href="#programming-the-ad-apard32690-sl" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Connect the MAX32625PICO to the PC using the micro USB cable.</p></li>
+<li><p>Connect the MAX32625PICO to the AD-APARD32690-SL board using the 10-pin ribbon
+cable.</p></li>
+<li><p>Connect the power supply to the AD-APARD32690-SL. Make sure the board is
+powered up for the next steps.</p></li>
+<li><p>A DAPLINK drive should appear as mounted on your PC.</p></li>
+<li><p>Drag and drop the new firmware image into the DAPLINK drive. After a few
+seconds, the drive will be remounted.</p></li>
+<li><p>Check the DAPLINK directory and make sure there is no FAIL.TXT file. In case
+there is, repeat the drag and drop step. Otherwise, you may disconnect the
+MAX32625PICO from the AD-APARD32690-SL, since the firmware update is complete.</p></li>
+</ul>
+</section>
+<section id="ad-apard32690-sl-software-stack">
+<h3>AD-APARD32690-SL Software Stack<a class="headerlink" href="#ad-apard32690-sl-software-stack" title="Link to this heading"></a></h3>
+<p>The system is accompanied by an open-source software stack and associated
+collateral, enabling a complete experience from evaluation and prototyping all
+the way to production firmware and applications development.</p>
+<p>The <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/projects/apard32690">AD-APARD32690-SL firmware</a>
+is based on Analog Devices’ open-source no-OS framework, which includes all the
+tools required for embedded code development and debugging as well as libraries
+enabling host-side connectivity for system configuration and data transfer over
+the UART or the 10BASE-T1L interfaces. The firmware source code and related
+documentation can be found on the Analog Devices GitHub at the link above.</p>
+</section>
+</section>
+<section id="help-and-support">
+<h2>Help and Support<a class="headerlink" href="#help-and-support" title="Link to this heading"></a></h2>
+<p>For questions and more information, please visit the <a class="icon ez reference external" href="https://ez.analog.com/">EngineerZone</a>.</p>
 </section>
 </section>
 
@@ -783,8 +461,8 @@ camera setup.</p>
           </div>
               <div class="related">
                 &nbsp;
-    <a href="../nvidia-jetson/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Using with Nvidia Jetson Orin Nano</a>
-    <a href="../../eval-cn0575-rpiz/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">EVAL-CN0575-RPIZ</a>
+    <a href="../ad-t1lusb-ebz/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">AD-T1LUSB2.0-EBZ</a>
+    <a href="../../ad-bmse2e3w-sl/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">AD-BMSE2E3W-SL</a>
               </div>
           
         </div>
