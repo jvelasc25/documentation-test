@@ -8,7 +8,6 @@ Required Hardware
 - **Power supplies**: 5V to 28V at 2A external power supply or 5V USB-C power supply
 - **Programmer**: :adi:`MAX32625PICO` or any other similar programmer supporting the SWD interface
 
-
 AD-APARD32690-SL Board Description
 ----------------------------------
 
