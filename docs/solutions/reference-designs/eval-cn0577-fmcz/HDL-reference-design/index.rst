@@ -54,9 +54,10 @@ core, alongside with a clk_gate signal.
 Block Diagram
 ~~~~~~~~~~~~~
 
-.. image:: cn0577_block_diagram.png
+.. figure:: cn0577_block_diagram.png
     :width: 600 px
 
+    CN0577 HDL Block Diagram
 
 Parameters
 ~~~~~~~~~~

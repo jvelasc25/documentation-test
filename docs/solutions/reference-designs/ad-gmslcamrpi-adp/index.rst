@@ -3,11 +3,12 @@ AD-GMSLCAMRPI-ADP#
 ====================
 
 Seamlessly insert GMSL into the signal chain and create a full GMSL Camera
-System with off the shelf parts.
+System with off-the-shelf parts.
 
-.. image:: signal_chain.png
+.. figure:: signal_chain.png
     :width: 600 px
 
+    GMSL Signal Chain
 
 Overview
 --------
@@ -23,18 +24,21 @@ routed to each other. The 15-pin connectors support 2 MIPI lanes, while the
 22-pin connectors support 4 MIPI lanes.
 - A **GMSL Serializer EVK Adapter** with two 22-pin ribbon cable connectors, for
 connecting cameras to the GMSL serializers. A USB Type-A connector is
-available to supply 5V @ 4A to another system
+available to supply 5V at 4A to another system.
 - A **GMSL Deserializer EVK Adapter** with two 22-pin ribbon cable connectors,
-for connecting to Raspberry Pi, Nividia or Xilinx development platforms, or
+for connecting to Raspberry Pi, Nvidia or Xilinx development platforms, or
 any other processing platform supporting the 15-pin or 22-pin ribbon cable
-connectors
+connectors.
 
-.. image:: block_diagram.png
+.. figure:: block_diagram.png
     :width: 600 px
 
-.. image:: wikigmsladptop.png
+    AD-GMSLCAMRPI-ADP# Simplified Block Diagram
+
+.. figure:: wikigmsladptop.png
     :width: 600 px
 
+    AD-GMSLCAMRPI-ADP# GMSL Boards
 
 Specifications
 --------------
@@ -44,16 +48,11 @@ Specifications
 
 .. Warning:: Do not use the 15-pin ribbon cable included with the Raspberry Pi camera since that is an opposite sided cable.
 
-
-.. admonition:: Download
-
   **Hardware Design Files**
 
- - `Schematics <02_075922a_top.pdf>`_
- - `Layout <08_075922a.zip>`_
- - `High level BOM <05-075922-01-a.zip>`_
-
-
+ - :download:`Schematics <02_075922a_top.pdf>`
+ - :download:`Layout <08_075922a.zip>`
+ - :download:`High level BOM <05-075922-01-a.zip>`
 
 
 GMSL EV Kit Compatibility
@@ -64,22 +63,22 @@ but the MFP connections can vary.
 
 Refer to the :dokuwiki:`Serializer and Deserializer EV Kit Compatibility Guide <resources/eval/user-guides/ad-gmslcamrpi-adp/comp_guide>` to see the connections across EV kits.
 
-
-
 Camera Connections
 ------------------
 
-Connect RPi 15-pin cameras to GMSL Serializer EV Kit’s with the 15-pin to 22-Pin
+Connect RPi 15-pin cameras to GMSL Serializer EV Kit’s with the 15-pin to 22-pin
 adapter. Or use a 15-pin to 22-Pin Adapter Cable.
 
-.. image:: wikigmslcamadpser.png
+.. figure:: wikigmslcamadpser.png
     :width: 500 px
 
+    Connecting RPi Camera directly via Adapter
 
-.. image:: wikigmsl15adp22ser.png
+
+.. figure:: wikigmsl15adp22ser.png
     :width: 500 px
 
-
+    Connecting RPi Camera using Adapter Cables
 
 --------------
 
@@ -93,9 +92,12 @@ to connect to an Raspberry Pi.
 .. image:: wikigmsladpdesjeto.png
     :width: 500 px
 
+    SoC Connection to Jetson Orin Development Kit
+
 .. image:: wikigmsladpdesrpi4.png
     :width: 500 px
 
+    SoC Connection to Raspberry Pi
 
 
 Example Configurations
@@ -131,9 +133,6 @@ Engineer Zone**.
 - :ez:`EngineerZone FPGA Reference Designs <community/fpga>`
 
 
-
-----------------------------------------------------------------------------------------------------------
-
 Up Next...
 
 
@@ -143,4 +142,6 @@ Up Next...
    :glob:
 
    */index
+
+----------------------------------------------------------------------------------------------------------
 

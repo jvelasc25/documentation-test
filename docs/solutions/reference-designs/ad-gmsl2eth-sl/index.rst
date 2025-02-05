@@ -4,9 +4,10 @@ AD-GMSL2ETH-SL
 Introduction
 ------------
 
-.. image:: ad-gmsl2eth-sl.jpg
+.. figure:: ad-gmsl2eth-sl.jpg
     :width: 400 px
 
+    AD-GMSL2ETH-SL GMSL Board
 
 The **AD-GMSL2ETH-SL** is an edge compute platform enabling low latency data
 transfer from eight :adi:`Gigabit Multimedia Serial Link™ (GMSL) <en/product-category/gigabit-multimedia-serial-link.html>`
@@ -24,6 +25,8 @@ is critical. Some of the main features and benefits include:
 
 .. image:: ad-gmsl2eth-sl-block-diagram.png
     :width: 800 px
+
+    AD-GMSL2ETH-SL Simplified Block Diagram
 
 |
 
@@ -102,19 +105,25 @@ System Setup
 In order to boot using SD card, you will need to set the boot mode’s switches to
 the corresponding position, as indicated in the following image:
 
-.. image:: img_1242_1_.jpg
+.. figure:: img_1242_1_.jpg
     :width: 400 px
+
+    Boot Mode Switches Position
 
 Connect the Quad-based mini-Fakra cables to the corresponding connectors on the
 board. These will connect the cameras to the corresponding deserializers.
 
-.. image:: img_1247_1_.jpg
+.. figure:: img_1247_1_.jpg
     :width: 400 px
+
+    Connecting the Fakra Cables
 
 Connect a SFP+ cable to the corresponding SFP port on the board.
 
-.. image:: img_1244_1_.jpg
+.. figure:: img_1244_1_.jpg
     :width: 400 px
+
+    Connecting the SFP Cable
 
 Finally, you will need to connect an USB/micro-USB cable to the micro-USB port
 located on the board. After that, you will be able to connect to the first USB
@@ -224,7 +233,9 @@ Now open 4 instances of Gstreamer for each port(5004-5007).
 
 
 
-.. image:: img_1252_1_.jpg
+.. figure:: img_1252_1_.jpg
+
+    Gstreamer Video Display for Single Deserializer (4 Cameras)
 
 |    
 
