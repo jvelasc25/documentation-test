@@ -14,7 +14,7 @@ Overview
     AD-T1LUSB2.0-EBZ Interface Board
 
 The :adi:`AD-T1LUSB2.0-EBZ </resources/evaluation-hardware-and-software/evaluation-boards-kits/ad-t1lusb20-ebz.html>` board is an interface between USB 2.0 and a 10BASE-T1L
-interface.
+
 
 The current hardware configuration provides a straightforward architecture with
 a USB Ethernet Controller and MAC
