@@ -1,6 +1,9 @@
 AD-GMSL2ETH-SL
 =================
 
+FPGA-based 8x GMSL to 10 Gb Ethernet Adapter 
+""""""""""""""""""""""""""""""""""""""""""""""""
+
 Introduction
 ------------
 

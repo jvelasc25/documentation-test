@@ -196,7 +196,7 @@ Protocol (SCCP) transaction, before the power (24 V) is turned on.
      :width: 600 px
      :align: left
 
-      External Power Supply (24 V)
+     External Power Supply
 
   .. figure:: swiot1l_power_up_section_1_1.jpg
      :width: 600 px
@@ -423,11 +423,11 @@ example, all channels are sourcing 25 mA.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 .. figure:: max14906_max_power.jpg
-    :width: 400 px
+     :width: 400 px
 
-    MAX14906 Maximum Temperature
+     MAX14906 Maximum Temperature
 
- The maximum temperature of the
+The maximum temperature of the
 :adi:`MAX14906` circuitry when is operating at maximum power.
 
 This is the situation when all channels are using the

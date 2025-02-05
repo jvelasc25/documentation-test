@@ -3,6 +3,9 @@
 EVAL-CN0577-FMCZ
 ================
 
+Analog Front End and Digital Interface for Serial LVDS SAR ADCs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Overview
 --------
 

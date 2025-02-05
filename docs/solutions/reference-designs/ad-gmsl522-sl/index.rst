@@ -1,6 +1,9 @@
 AD-GMSL522-SL
 =============
 
+GMSL Carrier Board
+""""""""""""""""""""""
+
 Overview
 --------
 .. figure:: ad-viper-sl_angle.jpg

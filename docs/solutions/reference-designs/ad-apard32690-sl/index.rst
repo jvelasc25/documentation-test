@@ -2,6 +2,9 @@
 AD-APARD32690-SL 
 ================
 
+Arduino Form-factor Development Platform Based on MAX32690 ARM Cortex-M4 Microcontroller
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 Introduction
 ------------
 
