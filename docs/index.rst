@@ -1,5 +1,5 @@
 System Level Documentation
-===============================================================================
+==========================
 
 .. attention::
 
@@ -19,10 +19,9 @@ Contents
 .. toctree::
    :caption: Kuiper & Linux Kernel
    :maxdepth: 2
+   :glob:
 
-   linux/kuiper/index
-   linux/drivers/index
-   linux/kernel/index
+   linux/*/index
 
 .. toctree::
    :caption: Software
@@ -35,15 +34,16 @@ Contents
    :caption: Evaluation Boards
    :maxdepth: 2
    :glob:
+   :glob:
 
    eval/*/index
 
 .. toctree::
    :caption: Apps & Solutions
    :maxdepth: 4
+   :glob:
 
-   solutions/application-software/index
-   solutions/reference-designs/index
+   solutions/*/index
 
 .. toctree::
    :caption: University Program
@@ -54,16 +54,13 @@ Contents
 .. toctree::
    :caption: Learning
    :maxdepth: 4
-   
-   ./learning/index
+
+   learning/index
 
 .. toctree::
    :caption: Contributing and Guidelines
    :maxdepth: 4
+   :glob:
 
-   contributing/forking_publishing
-   contributing/creating_new_pages
-   contributing/docs_guidelines
+   contributing/*
 
-
-   
