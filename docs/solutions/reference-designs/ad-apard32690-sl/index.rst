@@ -153,7 +153,7 @@ enabling host-side connectivity for system configuration and data transfer over
 the UART or the 10BASE-T1L interfaces. The firmware source code and related
 documentation can be found on the Analog Devices GitHub at the link above.
 
-Up Next: USB2.0 and 10BASE-T1L Interface Board
+Up Next:
 --------------------------------------------------
 
 .. toctree::
@@ -166,4 +166,3 @@ Help and Support
 ----------------
 
 For questions and more information, please visit the :ez:`/`.
-
