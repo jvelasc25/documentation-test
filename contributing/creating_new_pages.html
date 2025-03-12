@@ -7,11 +7,11 @@
 
     <title>Creating new pages &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=9cb8e28d" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=3d3703ae" />
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script defer="" src="../_static/app.umd.js?v=8d0ced9f"></script>
+    <script defer="" src="../_static/app.umd.js?v=dcfbb431"></script>
     <link rel="icon" href="../_static/icon.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -89,15 +89,16 @@
         <nav>
           <ul>
 <li><a class="reference internal" href="#">Creating new pages</a><ul>
-<li><a class="reference internal" href="#content-templates-and-guidelines">Content templates and guidelines</a><ul>
-<li><a class="reference internal" href="#documentation-structure">Documentation structure</a></li>
+<li><a class="reference internal" href="#documentation-structure">Documentation structure</a><ul>
+<li><a class="reference internal" href="#use-case-for-the-structure">Use case for the structure</a></li>
+<li><a class="reference internal" href="#content-templates-and-guidelines">Content templates and guidelines</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#use-case-for-the-structure">Use case for the structure</a><ul>
-<li><a class="reference internal" href="#adding-content">Adding content</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#adding-content">Adding content</a><ul>
+<li><a class="reference internal" href="#adding-images-and-other-binary-files">Adding images and other binary files</a></li>
 <li><a class="reference internal" href="#importing-from-dokuwiki">Importing from DokuWiki</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -273,6 +274,7 @@ Content on this topic
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12" id="toctree-collapse-12"/><div class="collapse"><a class="reference internal" href="../solutions/reference-designs/index.html">Reference Designs</a><label for="toctree-collapse-12"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-1" id="toctree-collapse-12-1"/><div class="collapse"><a class="reference internal" href="../solutions/reference-designs/ad-apard32690-sl/index.html">AD-APARD32690-SL</a><label for="toctree-collapse-12-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l3"><a class="reference internal" href="../solutions/reference-designs/ad-apard32690-sl/ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../solutions/reference-designs/ad-apard32690-sl/nina-w102/index.html">NINA-W102 Networking Support</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-2" id="toctree-collapse-12-2"/><div class="collapse"><a class="reference internal" href="../solutions/reference-designs/ad-bmse2e3w-sl/index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-12-2"><div class="icon"></div></label></div><ul>
@@ -368,16 +370,8 @@ Content on this topic
 <p>The first step on adding new content is to understand the
 <a class="reference internal" href="#creating-new-pages-documentation-structure"><span class="std std-ref">Documentation structure</span></a>.
 Then, proceed with <a class="reference internal" href="#creating-new-pages-adding-content"><span class="std std-ref">Adding content</span></a>.</p>
-<section id="content-templates-and-guidelines">
-<span id="creating-new-pages-template"></span><h2>Content templates and guidelines<a class="headerlink" href="#content-templates-and-guidelines" title="Link to this heading"></a></h2>
-<p>Templates and guidelines for specific types of content are available:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="template/eval.html">Evaluation Boards</a></li>
-</ul>
-</div>
 <section id="documentation-structure">
-<span id="creating-new-pages-documentation-structure"></span><h3>Documentation structure<a class="headerlink" href="#documentation-structure" title="Link to this heading"></a></h3>
+<span id="creating-new-pages-documentation-structure"></span><h2>Documentation structure<a class="headerlink" href="#documentation-structure" title="Link to this heading"></a></h2>
 <p><a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/">This</a> repository hosts any type of content that is not
 version controlled with a particular source code, or in other words,
 “don’t deserve their own repository”.</p>
@@ -412,10 +406,8 @@ we have:</p>
 <p><em>Glob</em> is used to match any document that matches the pattern and avoids simple
 but annoying merge conflicts of contributors adding pages to the same toctree
 at the same time.</p>
-</section>
-</section>
 <section id="use-case-for-the-structure">
-<h2>Use case for the structure<a class="headerlink" href="#use-case-for-the-structure" title="Link to this heading"></a></h2>
+<h3>Use case for the structure<a class="headerlink" href="#use-case-for-the-structure" title="Link to this heading"></a></h3>
 <p>This structure enables to concatenate other documentations (“volumes”) to this
 one, allowing to generate an aggregated monolithic output, for example.</p>
 <p>Suppose we have a repository called <code class="docutils literal notranslate"><span class="pre">my-repo</span></code> with the following toctree:</p>
@@ -438,8 +430,19 @@ It is particular useful to avoid merge conflict scenarios.</p>
 </pre></div>
 </div>
 <p>And copy <code class="docutils literal notranslate"><span class="pre">my-repo/docs</span></code> as <code class="docutils literal notranslate"><span class="pre">documentation/docs/my-repo</span></code> (mostly).</p>
+</section>
+<section id="content-templates-and-guidelines">
+<span id="creating-new-pages-template"></span><h3>Content templates and guidelines<a class="headerlink" href="#content-templates-and-guidelines" title="Link to this heading"></a></h3>
+<p>Templates and guidelines for specific types of content are available:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="template/eval.html">Evaluation Boards</a></li>
+</ul>
+</div>
+</section>
+</section>
 <section id="adding-content">
-<span id="creating-new-pages-adding-content"></span><h3>Adding content<a class="headerlink" href="#adding-content" title="Link to this heading"></a></h3>
+<span id="creating-new-pages-adding-content"></span><h2>Adding content<a class="headerlink" href="#adding-content" title="Link to this heading"></a></h2>
 <p>The documentation is highly hierarchical and contextual, that means a page
 about “Peeling Blue Bananas” should be located at
 <code class="docutils literal notranslate"><span class="pre">fruits/banana/blue/peeling.rst</span></code>
@@ -556,10 +559,24 @@ Just rebuild the whole doc with <code class="docutils literal notranslate"><span
 <p>Even better than having to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> at every edit, you can leverage
 <a class="reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#author-mode" title="(in Doctools vmain)"><span>Why was Author Mode renamed to Serve?</span></a> to have a live-updating instance of the doc,
 you just need to save the file and the build will be triggered automatically.</p>
-</section>
+<section id="adding-images-and-other-binary-files">
+<h3>Adding images and other binary files<a class="headerlink" href="#adding-images-and-other-binary-files" title="Link to this heading"></a></h3>
+<p>As described in <a class="reference internal" href="forking_publishing.html#forking-publishing"><span class="std std-ref">Forking and publishing</span></a>, this repository leverages
+<a class="reference external" href="https://git-lfs.com/">git-lfs</a> to keep clone time low and storage space
+in check.
+It also recommends setting <code class="docutils literal notranslate"><span class="pre">--skip-smudge</span></code> globally and let <a class="reference external" href="https://analogdevicesinc.github.io/doctools/cli.html#serve" title="(in Doctools vmain)"><span>Serve</span></a>
+manage them for you.</p>
+<p>When adding images and other binary files, if the extension matches the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes">.gitattributes</a>
+file, git lfs will automatically create a symbolic link and upload to the remote with
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">push</span> <span class="pre">public</span> <span class="pre">--all</span></code>.</p>
+<p>Please remember that repository write permission is required for pushing git lfs artifacts,
+so if you are working on a fork, push them to your fork, and a reviewer can fetch and push to public/origin
+accordingly.</p>
+<p>Finally, if you are adding a binary type not in the <a class="icon git reference external" href="https://github.com/analogdevicesinc/documentation/tree/main/.gitattributes">.gitattributes</a> file, please add it
+to it also, this way we can keep the repository lean and efficient long-term.</p>
 </section>
 <section id="importing-from-dokuwiki">
-<span id="importing-dokuwiki"></span><h2>Importing from DokuWiki<a class="headerlink" href="#importing-from-dokuwiki" title="Link to this heading"></a></h2>
+<span id="importing-dokuwiki"></span><h3>Importing from DokuWiki<a class="headerlink" href="#importing-from-dokuwiki" title="Link to this heading"></a></h3>
 <p>To import content from dokuwiki, a script is available to help on this task:
 <a class="reference external" href="https://gist.github.com/gastmaier/9d9c8281dc3c8551991a857cdb2692cc">DokuWiki to Sphinx (bash.sh)</a>.</p>
 <p>It requires you have <code class="docutils literal notranslate"><span class="pre">pandoc</span></code> and <code class="docutils literal notranslate"><span class="pre">sed</span></code> installed:</p>
@@ -600,6 +617,7 @@ software/libiio/index.rst:270::dokuwiki:`here &lt;resources/t ...
 </pre></div>
 </div>
 <div class="clear-left"></div></div></div></section>
+</section>
 </section>
 
 

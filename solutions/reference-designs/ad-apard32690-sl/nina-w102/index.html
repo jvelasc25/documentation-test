@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Software User Guide &#8212; System Level Documentation  documentation</title>
+    <title>NINA-W102 Networking Support &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8e8a900e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/app.min.css?v=3d3703ae" />
     <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
@@ -15,8 +15,8 @@
     <link rel="icon" href="../../../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="EVAL-CN0575-RPIZ" href="../../eval-cn0575-rpiz/index.html" />
-    <link rel="prev" title="Hardware User Guide" href="../hardware-guide/index.html" />
+    <link rel="next" title="AD-BMSE2E3W-SL" href="../../ad-bmse2e3w-sl/index.html" />
+    <link rel="prev" title="AD-T1LUSB2.0-EBZ" href="../ad-t1lusb-ebz/index.html" />
    
   
   <meta name="repository" content="documentation">
@@ -88,16 +88,19 @@
         </div>
         <nav>
           <ul>
-<li><a class="reference internal" href="#">Software User Guide</a><ul>
-<li><a class="reference internal" href="#hardware-setup">Hardware Setup</a><ul>
-<li><a class="reference internal" href="#required-hardware">Required Hardware</a></li>
+<li><a class="reference internal" href="#">NINA-W102 Networking Support</a><ul>
+<li><a class="reference internal" href="#wifi">WiFi</a></li>
+<li><a class="reference internal" href="#pre-built-firmware-for-esp-nina-w102">Pre-Built Firmware for ESP NINA-W102</a></li>
+<li><a class="reference internal" href="#building-nina-w102-firmware">Building NINA-W102 Firmware</a></li>
+<li><a class="reference internal" href="#programming-the-nina-w102-on-ad-apard32690">Programming the NINA-W102 on AD-APARD32690</a></li>
+<li><a class="reference internal" href="#standalone-programming">Standalone Programming</a></li>
+<li><a class="reference internal" href="#at-command-verification">AT Command Verification</a></li>
+<li><a class="reference internal" href="#integrating-into-zephyr">Integrating Into Zephyr</a><ul>
+<li><a class="reference internal" href="#apard-wifi-overlay">apard_wifi.overlay</a></li>
+<li><a class="reference internal" href="#apard-wifi-conf">apard_wifi.conf</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#software-setup">Software Setup</a><ul>
-<li><a class="reference internal" href="#updating-the-ad-swiot1l-sl-firmware">Updating the AD-SWIOT1L-SL Firmware</a></li>
-<li><a class="reference internal" href="#programming-the-ad-swiot1l-sl">Programming the AD-SWIOT1L-SL</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
 </ul>
 </li>
 </ul>
@@ -271,9 +274,9 @@ Content on this topic
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../application-software/index.html">Application Software</a></li>
 <li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12" id="toctree-collapse-12" checked=""/><div class="collapse"><a class="reference internal" href="../../index.html">Reference Designs</a><label for="toctree-collapse-12"><div class="icon"></div></label></div><ul class="current">
-<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-1" id="toctree-collapse-12-1"/><div class="collapse"><a class="reference internal" href="../../ad-apard32690-sl/index.html">AD-APARD32690-SL</a><label for="toctree-collapse-12-1"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ad-apard32690-sl/nina-w102/index.html">NINA-W102 Networking Support</a></li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-1" id="toctree-collapse-12-1" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">AD-APARD32690-SL</a><label for="toctree-collapse-12-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ad-t1lusb-ebz/index.html">AD-T1LUSB2.0-EBZ</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">NINA-W102 Networking Support</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-2" id="toctree-collapse-12-2"/><div class="collapse"><a class="reference internal" href="../../ad-bmse2e3w-sl/index.html">AD-BMSE2E3W-SL</a><label for="toctree-collapse-12-2"><div class="icon"></div></label></div><ul>
@@ -300,9 +303,9 @@ Content on this topic
 <li class="toctree-l3"><a class="reference internal" href="../../ad-gmslcamrpi-adp/raspberry-pi-user-guide/index.html">Using with Raspberry Pi</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-6" id="toctree-collapse-12-6" checked=""/><div class="collapse"><a class="reference internal" href="../index.html">AD-SWIOT1L-SL</a><label for="toctree-collapse-12-6"><div class="icon"></div></label></div><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../hardware-guide/index.html">Hardware User Guide</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Software User Guide</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-12-6" id="toctree-collapse-12-6"/><div class="collapse"><a class="reference internal" href="../../ad-swiot1l-sl/index.html">AD-SWIOT1L-SL</a><label for="toctree-collapse-12-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-swiot1l-sl/hardware-guide/index.html">Hardware User Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ad-swiot1l-sl/software-guide/index.html">Software User Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../eval-cn0575-rpiz/index.html">EVAL-CN0575-RPIZ</a></li>
@@ -364,119 +367,254 @@ Content on this topic
         <div class="bodywrapper" id="top-anchor">
           <div class="body" role="main">
             
-  <section id="software-user-guide">
-<h1>Software User Guide<a class="headerlink" href="#software-user-guide" title="Link to this heading"></a></h1>
-<section id="hardware-setup">
-<h2>Hardware Setup<a class="headerlink" href="#hardware-setup" title="Link to this heading"></a></h2>
-<section id="required-hardware">
-<h3>Required Hardware<a class="headerlink" href="#required-hardware" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p><strong>Development kit</strong>: <a class="icon adi reference external" href="https://www.analog.com/AD-SWIOT1L-SL">AD-SWIOT1L-SL</a> Software-configurable Analog and Digital I/O with 10BASE-T1L</p></li>
-<li><p><strong>Power supplies</strong>: 24V power supply at minimum 2A</p></li>
-<li><p><strong>Programmer</strong>: <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO">MAX32625PICO</a> or any other similar programmer supporting the SWD interface</p></li>
-<li><p>Connect the AD-SWIOT1L-SL to the AD-T1LUSB2.0-EBZ using the single pair Ethernet cable.</p></li>
-<li><p>Connect the AD-T1LUSB2.0-EBZ to your PC using an USB cable.</p></li>
-<li><p>Connect the 24 V power supply to the AD-SWIOT1L-SL.</p></li>
-</ul>
-<figure class="align-left" id="id1">
-<a class="reference internal image-reference" href="../../../../_images/picture1.jpg"><img alt="../../../../_images/picture1.jpg" src="../../../../_images/picture1.jpg" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 1 </span><span class="caption-text">AD-SWIOT1L-SL Hardware Setup</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-right" id="id2">
-<a class="reference internal image-reference" href="../../../../_images/picture3.jpg"><img alt="../../../../_images/picture3.jpg" src="../../../../_images/picture3.jpg" style="width: 600px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 2 </span><span class="caption-text">Connecting the <a class="icon adi reference external" href="https://www.analog.com/MAX32625PICO">MAX32625PICO</a> Programmer</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+  <section id="nina-w102-networking-support">
+<h1>NINA-W102 Networking Support<a class="headerlink" href="#nina-w102-networking-support" title="Link to this heading"></a></h1>
+<p>The following document describes how to build and flash firmware for boards with the NINA-W102 WiFi module. As an example, it will use the <a class="icon adi reference external" href="https://www.analog.com/AD-APARD32690-SL">MAX32690 Arduino Form-Factor Board</a>.
+It will also describe how to build and  flash the Zephyr Wifi sample to work with this board once the NINA-W102 has been flashed.</p>
+<p>Some familiarity with Zephyr and building / flashing Zephyr applications is assumed. If you are new to Zephyr, please start with the Getting Started Guide:
+<a class="reference external" href="https://docs.zephyrproject.org/latest/develop/getting_started/index.html">https://docs.zephyrproject.org/latest/develop/getting_started/index.html</a></p>
+<section id="wifi">
+<h2>WiFi<a class="headerlink" href="#wifi" title="Link to this heading"></a></h2>
+<p>The wifi chip on the AD-APARD32690 is a uBlox NINA-W102 “Open CPU” Wifi/Bluetooth module.  The modules is based on an ESP32 chip, with “Open CPU” meaning it does NOT come preloaded with firmware from uBlox, but rather is intended for customers to develop their own firmware to run on it.</p>
+<p>Details of the chip: <a class="reference external" href="https://www.u-blox.com/en/product/nina-w10-series-open-cpu">https://www.u-blox.com/en/product/nina-w10-series-open-cpu</a></p>
+<p>Software must be developed using the ESP32 SDK: <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html">https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html</a></p>
+<p>Core ESP32 Device:  ESP32-D0WDQ6-V3</p>
 </section>
+<section id="pre-built-firmware-for-esp-nina-w102">
+<h2>Pre-Built Firmware for ESP NINA-W102<a class="headerlink" href="#pre-built-firmware-for-esp-nina-w102" title="Link to this heading"></a></h2>
+<p>ESP provides pre-built firmware for integrating Wifi and BLE through AT commands.  This can be found here: <a class="reference external" href="https://www.espressif.com/en/products/sdks/esp-at/overview">https://www.espressif.com/en/products/sdks/esp-at/overview</a>. There is also a Zephyr driver for this firmware to make it look like generic Wifi here: <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/tree/main/drivers/wifi/esp_at">https://github.com/zephyrproject-rtos/zephyr/tree/main/drivers/wifi/esp_at</a> and a block talking about using the AT Firmware with Zephyr for a specific ESP32 module: <a class="reference external" href="https://blog.golioth.io/esp32-esp-at-enables-connectivity-on-any-zephyr-project/">https://blog.golioth.io/esp32-esp-at-enables-connectivity-on-any-zephyr-project/</a>.</p>
+<p>However, the pre-built firmware is for ESP32 development boards which have a different pin out than the NINA-W102.  Instructions are provided (<a class="reference external" href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_set_AT_port_pin.html">https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_set_AT_port_pin.html</a>) describing how to change the port pins for the firmware image.</p>
 </section>
-<section id="software-setup">
-<h2>Software Setup<a class="headerlink" href="#software-setup" title="Link to this heading"></a></h2>
-<p>The system is accompanied by an open-source software stack and associated
-collateral, enabling a complete experience from evaluation and prototyping all
-the way to production firmware and applications development.</p>
-<p>The <a class="reference external" href="https://wiki.analog.com/university/tools/m2k/scopy/plugins/swiot1l">Scopy</a> PC application
-provides system configuration and data visualization tools to enable easy system
-evaluation from a PC connected to the AD-SWIOT1L-SL via the 10BASE-T1L
-interface.</p>
-<p>The <a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/tree/main/projects/swiot1l">AD-SWIOT1L-SL firmware</a> is
-based on Analog Devices’ open-source no-OS framework, which includes all the
-tools required for embedded code development and debugging as well as libraries
-enabling host-side connectivity for system configuration and data transfer over
-the UART or the 10BASE-T1L interfaces. The firmware source code and related
-documentation can be found on the Analog Devices GitHub at the link above.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The system comes pre-programmed with a firmware that
-works with the <strong>Scopy</strong> application, allowing complete system evaluation.</p>
-<p>The firmware should be updated only to switch to a newer version or as part of
-the software development process.</p>
-<p><strong>Scopy</strong> will work only with the official
-<a class="icon git reference external" href="https://github.com/analogdevicesinc/no-OS/releases/tag/swiot1l-v0.1">AD-SWIOT1L-SL firmware releases</a></p>
-</div>
-<section id="updating-the-ad-swiot1l-sl-firmware">
-<h3>Updating the AD-SWIOT1L-SL Firmware<a class="headerlink" href="#updating-the-ad-swiot1l-sl-firmware" title="Link to this heading"></a></h3>
-<p>To update the board’s firmware, a new bootloader has to be flashed on the
-MAX32625PICO.</p>
+<section id="building-nina-w102-firmware">
+<h2>Building NINA-W102 Firmware<a class="headerlink" href="#building-nina-w102-firmware" title="Link to this heading"></a></h2>
+<p>Before proceeding, ensure that P50 and P55 on the APARD32690 board are in position 1-2 if you are trying to get the NINA-W102 UART data through the SWD connector. Be sure to switch this back later for testing the Zephyr application.</p>
+<p>The following instructions mostly come from this document:
+<a class="reference external" href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html">https://docs.espressif.com/projects/esp-at/en/latest/esp32/Compile_and_Develop/How_to_clone_project_and_compile_it.html</a></p>
+<p>Install the ESP SDK: <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html">https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html</a></p>
+<p>Open the ESP-IDF Command Prompt and run the following steps:</p>
 <ol class="arabic">
-<li><p>Download the firmware image: <a class="reference external" href="https://github.com/MaximIntegrated/max32625pico-firmware-images/raw/master/bin/max32625_max32650fthr_if_crc_swd_v1.0.6.bin">MAX32625PICO firmware</a></p></li>
-<li><p>Set the MAX32625PICO in MAINTENANCE mode:</p>
-<ul>
-<li><p>Disconnect the MAX32625PICO from the PC and the AD-SWIOT1L-SL board.</p></li>
-<li><p>Plug the micro USB cable only in the MAX32625PICO.</p></li>
-<li><p>Keep the button on the MAX32625PICO pressed.</p></li>
-<li><p>Plug the micro USB cable into the PC.</p></li>
-<li><p>Once you see the MAINTENANCE drive being mounted, you may release the button.</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../../../../_images/picture21.jpg"><img alt="../../../../_images/picture21.jpg" src="../../../../_images/picture21.jpg" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Figure 3 </span><span class="caption-text">MAX32625PICO Button</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<li><p>Get the project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>--recursive<span class="w"> </span>https://github.com/espressif/esp-at.git
+</pre></div>
+</div>
 </li>
+<li><dl class="simple">
+<dt>Run the builder:  python build.py install</dt><dd><ul class="simple">
+<li><p>Select PLATFORM_ESP32</p></li>
+<li><p>Select module ESP32-D2WD as it has the same flash size as the NINA-W102, making it easier to configure</p></li>
+<li><p>When asked about silent mode, select Y.  Otherwise, if silent mode is not enable, you’ll need to set the compiler options later to Optimize for Size to get it to fit</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>Drag and drop (to the MAINTENANCE drive) the firmware image you previously downloaded.</p></li>
-<li><p>After a few seconds, the MAINTENANCE drive will disappear and will be replaced
-by a drive named DAPLINK. Once this is done, the process is complete, and the
-MAX32625PICO may be used to flash the firmware of the AD-SWIOT1L-SL board.</p></li>
+<li><dl>
+<dt>Edit the components/customized_partitions/raw_data/factory_param_data.csv file so the D2WD line reads the following:</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PLATFORM_ESP32</span><span class="p">,</span><span class="n">ESP32</span><span class="o">-</span><span class="n">D2WD</span><span class="p">,</span><span class="s2">&quot;2MB flash, No OTA&quot;</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">78</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="n">CN</span><span class="p">,</span><span class="mi">115200</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Build the project by running python build.py build</p></li>
+<li><p>The complete firmware image is located in buildfactoryfactory_ESP32-&lt;device&gt;.bin and can be archived for later loading of devices.</p></li>
 </ol>
 </section>
-<section id="programming-the-ad-swiot1l-sl">
-<h3>Programming the AD-SWIOT1L-SL<a class="headerlink" href="#programming-the-ad-swiot1l-sl" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Connect the MAX32625PICO to the PC using the micro USB cable.</p></li>
-<li><p>Connect the MAX32625PICO to the AD-SWIOT1L-SL board using the 10-pin ribbon cable.</p></li>
-<li><p>Connect the 24 V power supply to the AD-SWIOT1L-SL. Make sure the board is powered up for the next steps.</p></li>
-</ul>
-<figure class="align-default" id="id4">
-<img alt="../../../../_images/img_20230912_145550.jpg" src="../../../../_images/img_20230912_145550.jpg" />
-<figcaption>
-<p><span class="caption-number">Figure 4 </span><span class="caption-text">AD-SWIOT1L-SL Programming Setup</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<ul class="simple">
-<li><p>A DAPLINK drive should appear as mounted on your PC.</p></li>
-<li><p>Drag and drop the new firmware image into the DAPLINK drive. After a few seconds, the drive will be remounted.</p></li>
-<li><p>Check the DAPLINK directory and make sure there is no FAIL.TXT file. In case
-there is, repeat the drag and drop step. Otherwise, you may disconnect the
-MAX32625PICO from the AD-SWIOT1L-SL, since the firmware update is complete.</p></li>
-</ul>
+<section id="programming-the-nina-w102-on-ad-apard32690">
+<h2>Programming the NINA-W102 on AD-APARD32690<a class="headerlink" href="#programming-the-nina-w102-on-ad-apard32690" title="Link to this heading"></a></h2>
+<p>A USB-UART adapter will be needed. A good one can be found here if needed:
+<a class="reference external" href="https://ftdichip.com/products/ttl-232r-3v3/">https://ftdichip.com/products/ttl-232r-3v3/</a></p>
+<ol class="arabic">
+<li><p>Connect a USB-UART adapter to the NINA-W102 through P38-2 and P56-2, and a ground on P2 or P5</p></li>
+<li><p>Prior to powering up the board, pull the ESP32 SYS_BOOT pin low, but connecting P47 to ground</p></li>
+<li><p>Power up the board.  You can verify the bootloader started correctly by observing the USB-UART adapter in a terminal.  There should be text similar to the following:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rst:0x1 (POWERON_RESET),boot:0x23 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+</pre></div>
+</div>
+</li>
+</ol>
+<p>4. From the ESP command line, run <code class="code docutils literal notranslate"><span class="pre">python</span> <span class="pre">build.py</span> <span class="pre">-p</span> <span class="pre">&lt;COMPORT&gt;</span> <span class="pre">flash</span></code>. The flash operation should be performed
+Depending on the integrity of the cables (bad jumper wires, etc), you may be have to add the -b 115200 forced slower baud rate for data integrity.</p>
+</section>
+<section id="standalone-programming">
+<h2>Standalone Programming<a class="headerlink" href="#standalone-programming" title="Link to this heading"></a></h2>
+<p>The NINA-W102 device may be flashed using the stand alone ESP Flash download tool without needing to install the full SDK.</p>
+<p>Follow the instructions in the previous section up through step 3, then consult the ESP-AT Downloading guide for using the Flash Download Tool on Windows. Selecting the combined factory firmware image, as described above.
+<a class="reference external" href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/Get_Started/Downloading_guide.html#flash-at-firmware-into-your-device">https://docs.espressif.com/projects/esp-at/en/latest/esp32/Get_Started/Downloading_guide.html#flash-at-firmware-into-your-device</a></p>
+</section>
+<section id="at-command-verification">
+<h2>AT Command Verification<a class="headerlink" href="#at-command-verification" title="Link to this heading"></a></h2>
+<p>The AT command set can be found here: <a class="reference external" href="https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/index.html">https://docs.espressif.com/projects/esp-at/en/latest/esp32/AT_Command_Set/index.html</a>.  Some basic AT commands can be done to verify the part is programmed correctly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AT</span>
+
+<span class="n">OK</span>
+<span class="n">AT</span><span class="o">+</span><span class="n">GMR</span>
+<span class="n">AT</span> <span class="n">version</span><span class="p">:</span><span class="mf">4.1.0.0</span><span class="o">-</span><span class="n">dev</span><span class="p">(</span><span class="n">eb730f6</span> <span class="o">-</span> <span class="n">ESP32</span> <span class="o">-</span> <span class="n">Jan</span>  <span class="mi">3</span> <span class="mi">2024</span> <span class="mi">08</span><span class="p">:</span><span class="mi">18</span><span class="p">:</span><span class="mi">49</span><span class="p">)</span>
+<span class="n">SDK</span> <span class="n">version</span><span class="p">:</span><span class="n">v5</span><span class="mf">.0.4</span><span class="o">-</span><span class="n">dirty</span>
+<span class="nb">compile</span> <span class="n">time</span><span class="p">(</span><span class="mi">899230</span><span class="n">b2</span><span class="p">):</span><span class="n">Jan</span> <span class="mi">14</span> <span class="mi">2024</span> <span class="mi">17</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">03</span>
+<span class="n">Bin</span> <span class="n">version</span><span class="p">:</span><span class="n">v3</span><span class="mf">.2.0.0</span><span class="p">(</span><span class="n">ESP32</span><span class="o">-</span><span class="n">D2WD</span><span class="p">)</span>
+
+<span class="n">OK</span>
+<span class="n">AT</span><span class="o">+</span><span class="n">CWINIT</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="n">OK</span>
+<span class="n">AT</span><span class="o">+</span><span class="n">CWMODE</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="n">OK</span>
+<span class="n">AT</span><span class="o">+</span><span class="n">CWLAP</span>
+<span class="o">+</span><span class="n">CWLAP</span><span class="p">:(</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;MySSID&quot;</span><span class="p">,</span><span class="o">-</span><span class="mi">74</span><span class="p">,</span><span class="s2">&quot;94:a6:7e:e3:b8:38&quot;</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">OK</span>
+</pre></div>
+</div>
+<p>Finished code block</p>
+</section>
+<section id="integrating-into-zephyr">
+<h2>Integrating Into Zephyr<a class="headerlink" href="#integrating-into-zephyr" title="Link to this heading"></a></h2>
+<p>Create files in your Zephyr workspace called <cite>apard_wifi.conf</cite> and <cite>apard_wifi.overlay</cite>.</p>
+<p>Next, place the text below in these files:</p>
+<section id="apard-wifi-overlay">
+<h3>apard_wifi.overlay<a class="headerlink" href="#apard-wifi-overlay" title="Link to this heading"></a></h3>
+<div class="highlight-dts notranslate" id="id1"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="na">uart2</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">pinctrl-0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;&amp;</span><span class="na">uart2a_tx_p1_10</span><span class="w"> </span><span class="o">&amp;</span><span class="na">uart2a_rx_p1_9</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">pinctrl-names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;default&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">current-speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="mi">115200</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;okay&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="nl">esp_wifi</span><span class="p">:</span><span class="w"> </span><span class="nf">esp-wifi</span><span class="cm"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">compatible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;espressif,esp-at&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;okay&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">};</span>
+
+<span class="nf">/</span><span class="cm"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nf">aliases</span><span class="cm"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">wifi0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">esp_wifi</span><span class="p">;</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</section>
+<section id="apard-wifi-conf">
+<h3>apard_wifi.conf<a class="headerlink" href="#apard-wifi-conf" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate" id="id2"><div class="highlight"><pre><span></span><span class="c1"># Enable WiFi via ESP-AT</span>
+<span class="n">CONFIG_WIFI</span><span class="o">=</span><span class="n">y</span>
+<span class="n">CONFIG_WIFI_ESP_AT</span><span class="o">=</span><span class="n">y</span>
+<span class="n">CONFIG_WIFI_ESP_AT_MDM_RX_BUF_COUNT</span><span class="o">=</span><span class="mi">40</span>
+
+<span class="c1"># Disable NET_L2_ETHERNET to avoid T1L PHY errors</span>
+<span class="c1"># when not using T1L, but enabling net-if</span>
+<span class="n">CONFIG_NET_L2_ETHERNET</span><span class="o">=</span><span class="n">n</span>
+
+<span class="c1"># Increment max IPV4 count if using multiple net-if interfaces</span>
+<span class="n">CONFIG_NET_IF_MAX_IPV4_COUNT</span><span class="o">=</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Build your application as below:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>west<span class="w"> </span>build<span class="w"> </span>-p<span class="w"> </span>auto<span class="w"> </span>-b<span class="w"> </span>apard32690//m4<span class="w"> </span>zephyr/samples/net/wifi/shell<span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-DDTC_OVERLAY_FILE<span class="o">=</span><span class="nv">$PWD</span>/apard_wifi.overlay<span class="w"> </span>-DEXTRA_CONF_FILE<span class="o">=</span><span class="nv">$PWD</span>/apard_wifi.conf
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div><p>Flash the application using a Segger JLink as below:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>west<span class="w"> </span>flash<span class="w"> </span>-r<span class="w"> </span>jlink
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div><p>At this point, make sure that P55 and P50 on the APARD32690 board are in positions 2-3 to get UART data from the MAX32690.</p>
 </section>
 </section>
+<section id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h2>
+<p>At this point, make sure that P55 and P50 on the APARD32690 board are in positions 2-3 to get UART data from the MAX32690. Connect to a terminal application with 115200 baud, 8-N-1 UART settings. Make sure that P56 and P38 are also connected.
+The Zephyr Wifi sample application comes with a Wifi shell for doing basic Wifi interactions.  After launching the scan, and connect commands were used to successfully connect to an AP via the Zephyr network subsystem.</p>
+<p>Verify the devices installed with <cite>device list</cite>:</p>
+<div class="code-shell"><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>*** Booting Zephyr OS build zephyr-v3.5.0-4086-g0a8d03b95f84 ***
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>device<span class="w"> </span>list
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>devices:
+- rcc@40021000 (READY)
+- reset-controller (READY)
+- interrupt-controller@40010400 (READY)
+- gpio@48001800 (READY)
+- gpio@48001400 (READY)
+- gpio@48001000 (READY)
+- gpio@48000c00 (READY)
+- gpio@48000800 (READY)
+- gpio@48000400 (READY)
+- gpio@48000000 (READY)
+- rng@50060800 (READY)
+- serial@40008000 (READY)
+- serial@40013800 (READY)
+- esp-wifi (READY)
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div><p>Request a wifi scan with wifi scan:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wifi<span class="w"> </span>scan
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>Scan requested
+
+Num  | SSID         (len) | Chan (Band)   | RSSI | Security  | BSSID | MFP
+1    | MySSID       9     | 10   (2.4GHz) | -70  | WPA2-PSK  |       | Disable
+Scan request done
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div><p>Connect to a Wifi Access Point with <cite>wifi connect</cite>.  Note PSK was omitted in the following terminal log:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wifi<span class="w"> </span>connect<span class="w"> </span><span class="s2">&quot;MySSID&quot;</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>****PSK<span class="w"> </span>HERE****
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>Connection requested
+Connected
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div><p>Get status information with <cite>wifi status</cite>:</p>
+<div class="code-shell"><div><div class="no-select float-left highlight-default notranslate"><div class="highlight"><pre><span></span>~$
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wifi<span class="w"> </span>status
+</pre></div>
+</div>
+<div class="clear-left"></div></div><div><div class="no-select highlight-text notranslate"><div class="highlight"><pre><span></span>Status: successful
+==================
+State: COMPLETED
+Interface Mode: STATION
+Link Mode: UNKNOWN
+SSID: MySSID
+BSSID: &lt;__:__:__:__:__:__&gt;
+Band: 2.4GHz
+Channel: 10
+Security: UNKNOWN
+MFP: UNKNOWN
+RSSI: -69
+Beacon Interval: 0
+DTIM: 0
+TWT: Not supported
+</pre></div>
+</div>
+<div class="clear-left"></div></div></div></section>
 </section>
 
 
           </div>
               <div class="related">
                 &nbsp;
-    <a href="../hardware-guide/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Hardware User Guide</a>
-    <a href="../../eval-cn0575-rpiz/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">EVAL-CN0575-RPIZ</a>
+    <a href="../ad-t1lusb-ebz/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">AD-T1LUSB2.0-EBZ</a>
+    <a href="../../ad-bmse2e3w-sl/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">AD-BMSE2E3W-SL</a>
               </div>
           
         </div>
